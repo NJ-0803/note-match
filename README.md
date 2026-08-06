@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Note Match
 
-## Getting Started
+Find perfumes by scent notes — search a perfume you love (or describe a scent in your own words) and get back similar perfumes ranked by note similarity, with India retailer buy links.
 
-First, run the development server:
+## Stack
+- Next.js (App Router) + TypeScript + Tailwind CSS
+- Fuse.js for fuzzy name search
+- Recharts for the note pyramid / scent DNA radar charts
+- Groq API (`llama-3.1-8b-instant`, free tier) for AI-powered recommendation ranking, match explanations, note descriptions, and live free-text search
+
+## Setup
+
+```bash
+npm install
+```
+
+Create `.env.local` with your Groq API key (free, no credit card — sign up at console.groq.com):
+
+```
+GROQ_API_KEY=gsk_...
+```
+
+## Generating the AI data
+
+The core dataset (`data/perfumes.json`) is static and already included. Two scripts generate the AI-derived data on top of it — run these once, and again whenever `perfumes.json` changes:
+
+```bash
+node scripts/build-recommendations.mjs   # similarity rankings + match explanations (~1-1.5hr on the free tier)
+node scripts/build-explanations.mjs      # plain-English note descriptions (resumable if rate-limited)
+```
+
+Both are one-time batch costs — the live site doesn't call the AI for these, only for free-text search.
+
+## Development
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Deployment
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deployed on Vercel. Requires a `GROQ_API_KEY` environment variable set on the hosting platform for the live free-text search feature to work.

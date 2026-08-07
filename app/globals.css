@@ -1,12 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #faf7f2;
+  --background: #f3ecdf;
+  --background-glow: #fffaf0;
   --foreground: #2b2622;
   --surface: #fdfbf8;
-  --surface-muted: #f2ede4;
-  --border: #e4dcd0;
-  --muted-foreground: #7a7168;
+  --surface-muted: #ece2d0;
+  --border: #ddd0b8;
+  --muted-foreground: #746a5c;
 }
 
 @theme inline {
@@ -22,17 +23,34 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #1c1814;
-    --foreground: #efe9df;
-    --surface: #221e18;
-    --surface-muted: #2a251d;
-    --border: #372f26;
-    --muted-foreground: #a89d8d;
+    --background: #2a231b;
+    --background-glow: #3d3222;
+    --foreground: #f3ecdc;
+    --surface: #332b21;
+    --surface-muted: #3d3426;
+    --border: #4a3f2e;
+    --muted-foreground: #b7a98f;
   }
 }
 
 body {
-  background: var(--background);
+  background:
+    radial-gradient(ellipse 1100px 700px at 18% -8%, var(--background-glow), transparent 60%),
+    radial-gradient(ellipse 900px 700px at 100% 10%, var(--background-glow), transparent 55%),
+    var(--background);
+  background-attachment: fixed;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

@@ -38,7 +38,7 @@ export default function Footer() {
       <div className="mx-auto max-w-5xl px-6 py-10">
         <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
           <div>
-            <p className="text-lg font-semibold tracking-tight">🌸 Note Match</p>
+            <p className="font-display text-lg tracking-tight">Note Match</p>
             <p className="mt-2 max-w-xs text-sm text-muted-foreground">
               Find your next favourite scent by the notes you already love — not guesswork.
             </p>

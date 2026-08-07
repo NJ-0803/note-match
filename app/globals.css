@@ -1,13 +1,13 @@
 @import "tailwindcss";
 
 :root {
-  --background: #f3ecdf;
-  --background-glow: #fffaf0;
-  --foreground: #2b2622;
-  --surface: #fdfbf8;
-  --surface-muted: #ece2d0;
-  --border: #ddd0b8;
-  --muted-foreground: #746a5c;
+  --background: #0b0b0c;
+  --foreground: #f2efe8;
+  --surface: #131211;
+  --surface-muted: #1a1815;
+  --border: #2a2723;
+  --muted-foreground: #9a958c;
+  --accent: #c2a878;
 }
 
 @theme inline {
@@ -17,26 +17,16 @@
   --color-surface-muted: var(--surface-muted);
   --color-border: var(--border);
   --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #2a231b;
-    --background-glow: #3d3222;
-    --foreground: #f3ecdc;
-    --surface: #332b21;
-    --surface-muted: #3d3426;
-    --border: #4a3f2e;
-    --muted-foreground: #b7a98f;
-  }
+  --font-display: var(--font-fraunces);
 }
 
 body {
   background:
-    radial-gradient(ellipse 1100px 700px at 18% -8%, var(--background-glow), transparent 60%),
-    radial-gradient(ellipse 900px 700px at 100% 10%, var(--background-glow), transparent 55%),
+    radial-gradient(ellipse 1200px 800px at 15% -10%, color-mix(in srgb, var(--accent) 10%, transparent), transparent 60%),
+    radial-gradient(ellipse 900px 700px at 100% 0%, color-mix(in srgb, var(--accent) 6%, transparent), transparent 55%),
     var(--background);
   background-attachment: fixed;
   color: var(--foreground);
@@ -50,7 +40,7 @@ body::before {
   inset: 0;
   z-index: -1;
   pointer-events: none;
-  opacity: 0.05;
+  opacity: 0.045;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }

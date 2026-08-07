@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { Perfume } from "@/types/perfume";
 import PerfumeCard from "./PerfumeCard";
+import MagneticButton from "./motion/MagneticButton";
 
 interface ApiMatch {
   id: string;
@@ -41,8 +42,8 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
 
   return (
     <div className="rounded-2xl border border-border bg-gradient-to-br from-surface-muted to-surface p-5">
-      <p className="mb-2 text-sm font-semibold text-foreground">
-        ✨ Or just describe a scent
+      <p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">
+        N&deg; 002 — Or describe a scent
       </p>
       <form onSubmit={handleSubmit} className="flex gap-2">
         <input
@@ -52,13 +53,13 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
           placeholder="something smoky and vanilla for winter evenings…"
           className="flex-1 rounded-full border border-border bg-surface px-4 py-2.5 text-sm outline-none focus:border-foreground"
         />
-        <button
+        <MagneticButton
           type="submit"
           disabled={loading}
           className="rounded-full bg-foreground px-4 py-2.5 text-sm font-medium text-background transition-opacity disabled:opacity-50"
         >
           {loading ? "Thinking…" : "Find"}
-        </button>
+        </MagneticButton>
       </form>
 
       {error && <p className="mt-3 text-sm text-red-600">{error}</p>}

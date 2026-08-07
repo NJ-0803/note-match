@@ -49,6 +49,7 @@ export default function Footer() {
             <div className="flex flex-col gap-2 text-sm">
               <NavLink href="/">Discover</NavLink>
               <NavLink href="/compare">Compare</NavLink>
+              <NavLink href="/catalogue">Catalogue</NavLink>
               <NavLink href="/collection">My Collection</NavLink>
               <NavLink href="/about">About</NavLink>
             </div>

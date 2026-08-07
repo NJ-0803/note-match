@@ -37,6 +37,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             <nav className="flex gap-6 text-sm font-medium">
               <NavLink href="/">Discover</NavLink>
               <NavLink href="/compare">Compare</NavLink>
+              <NavLink href="/catalogue">Catalogue</NavLink>
               <NavLink href="/collection">My Collection</NavLink>
               <NavLink href="/about">About</NavLink>
             </nav>

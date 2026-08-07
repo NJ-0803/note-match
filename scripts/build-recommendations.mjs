@@ -106,12 +106,24 @@ async function main() {
   const perfumes = JSON.parse(await readFile(path.join(DATA_DIR, "perfumes.json"), "utf-8"));
   console.log(`Loaded ${perfumes.length} perfumes.`);
 
+  const recPath = path.join(DATA_DIR, "perfumes.recommendations.json");
+  const expPath = path.join(DATA_DIR, "explanations.json");
+  let recommendations = {};
+  let explanations = {};
+  try {
+    recommendations = JSON.parse(await readFile(recPath, "utf-8"));
+    explanations = JSON.parse(await readFile(expPath, "utf-8"));
+    console.log(`Resuming: ${Object.keys(recommendations).length} perfumes already processed.`);
+  } catch {
+    // no existing output yet, start fresh
+  }
+
   const client = getClient();
-  const recommendations = {};
-  const explanations = {};
+  const todo = perfumes.filter((p) => !recommendations[p.id] || recommendations[p.id].length === 0);
+  console.log(`${todo.length} perfumes need (re)processing.`);
   let done = 0;
 
-  for (const perfume of perfumes) {
+  for (const perfume of todo) {
     try {
       const candidates = preFilterCandidates(perfume, perfumes, SHORTLIST_SIZE);
       const matches = await getMatchesFor(client, perfume, candidates);
@@ -131,16 +143,14 @@ async function main() {
       recommendations[perfume.id] = [];
     }
     done += 1;
-    if (done % 10 === 0) console.log(`  ${done}/${perfumes.length} done`);
+    console.log(`  ${done}/${todo.length} done`);
+    // Save incrementally so a later failure doesn't lose progress.
+    await writeFile(recPath, JSON.stringify(recommendations, null, 2));
+    await writeFile(expPath, JSON.stringify(explanations, null, 2));
     await sleep(DELAY_MS);
   }
 
-  await writeFile(
-    path.join(DATA_DIR, "perfumes.recommendations.json"),
-    JSON.stringify(recommendations, null, 2),
-  );
-  await writeFile(path.join(DATA_DIR, "explanations.json"), JSON.stringify(explanations, null, 2));
-  console.log(`Wrote recommendations + explanations for ${Object.keys(recommendations).length} perfumes.`);
+  console.log(`Done. ${Object.keys(recommendations).length}/${perfumes.length} perfumes have recommendations.`);
 }
 
 main().catch((err) => {

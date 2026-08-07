@@ -70,7 +70,79 @@
       ]
     }
   ],
-  "dior-eau-sauvage": [],
+  "dior-eau-sauvage": [
+    {
+      "id": "4711-original-eau-de-cologne",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Orange",
+        "Petitgrain"
+      ]
+    },
+    {
+      "id": "chanel-cristalle",
+      "score": 0.82,
+      "sharedNotes": [
+        "Lemon",
+        "Bergamot",
+        "Mandarin"
+      ]
+    },
+    {
+      "id": "ck-one",
+      "score": 0.79,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Green Notes"
+      ]
+    },
+    {
+      "id": "creed-silver-mountain-water",
+      "score": 0.77,
+      "sharedNotes": [
+        "Bergamot",
+        "Green Tea"
+      ]
+    },
+    {
+      "id": "armani-acqua-di-gio",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Rosemary"
+      ]
+    },
+    {
+      "id": "narciso-rodriguez-for-him",
+      "score": 0.72,
+      "sharedNotes": [
+        "Vetiver",
+        "Musk"
+      ]
+    },
+    {
+      "id": "elizabeth-arden-green-tea",
+      "score": 0.69,
+      "sharedNotes": [
+        "Jasmine",
+        "Basil",
+        "Musk"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.67,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Neroli",
+        "Vetiver"
+      ]
+    }
+  ],
   "chanel-bleu-de-chanel": [
     {
       "id": "hugo-boss-bottled",
@@ -2521,7 +2593,72 @@
       ]
     }
   ],
-  "tf-noir": [],
+  "tf-noir": [
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vetiver",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "narciso-rodriguez-for-her",
+      "score": 0.6,
+      "sharedNotes": [
+        "Vanilla",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "amouage-jubilation-xxv",
+      "score": 0.4,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "guerlain-shalimar",
+      "score": 0.3,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "tf-black-orchid",
+      "score": 0.2,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "thierry-mugler-angel",
+      "score": 0.1,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-woman",
+      "score": 0.1,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla"
+      ]
+    }
+  ],
   "tf-black-orchid": [
     {
       "id": "amouage-jubilation-xxv",

@@ -41,11 +41,11 @@ export default function NotePyramidChart({ perfume }: { perfume: Perfume }) {
                 const d = payload[0].payload as (typeof data)[number];
                 const pct = Math.round((d.value / total) * 100);
                 return (
-                  <div className="rounded-lg border border-neutral-200 bg-white p-2 text-xs shadow-lg dark:border-neutral-700 dark:bg-neutral-900">
+                  <div className="rounded-lg border border-border bg-surface p-2 text-xs shadow-lg">
                     <p className="font-semibold" style={{ color: LAYER_COLORS[d.layer as keyof typeof LAYER_COLORS] }}>
                       {d.layer} notes · {pct}%
                     </p>
-                    <p className="mt-1 text-neutral-600 dark:text-neutral-400">{d.notes.join(", ")}</p>
+                    <p className="mt-1 text-muted-foreground">{d.notes.join(", ")}</p>
                   </div>
                 );
               }}
@@ -60,8 +60,8 @@ export default function NotePyramidChart({ perfume }: { perfume: Perfume }) {
               className="h-2.5 w-2.5 rounded-full"
               style={{ backgroundColor: LAYER_COLORS[d.layer as keyof typeof LAYER_COLORS] }}
             />
-            <span className="font-medium text-neutral-700 dark:text-neutral-300">{d.layer}:</span>
-            <span className="text-neutral-500 dark:text-neutral-400">{d.notes.join(", ")}</span>
+            <span className="font-medium text-foreground">{d.layer}:</span>
+            <span className="text-muted-foreground">{d.notes.join(", ")}</span>
           </li>
         ))}
       </ul>

@@ -28,7 +28,7 @@ export default function ScentRadarChart({ perfumes }: { perfumes: Perfume[] }) {
     <div className="h-72 w-full">
       <ResponsiveContainer width="100%" height="100%">
         <RadarChart data={data} outerRadius="75%">
-          <PolarGrid stroke="currentColor" className="text-neutral-200 dark:text-neutral-700" />
+          <PolarGrid stroke="currentColor" className="text-border" />
           <PolarAngleAxis dataKey="axis" tick={{ fontSize: 11, fill: "currentColor" }} />
           <PolarRadiusAxis domain={[0, 10]} tick={false} axisLine={false} />
           {perfumes.map((p, i) => (

@@ -1,6 +1,30 @@
 import Fuse from "fuse.js";
 import type { Perfume } from "@/types/perfume";
 
+// Common brand abbreviations people search with but that don't appear in
+// the actual brand text, so plain fuzzy matching never finds them.
+const BRAND_ALIASES: Record<string, string> = {
+  ysl: "Yves Saint Laurent",
+  ys: "Yves Saint Laurent",
+  tf: "Tom Ford",
+  mfk: "Maison Francis Kurkdjian",
+  jpg: "Jean Paul Gaultier",
+  ck: "Calvin Klein",
+  "d&g": "Dolce & Gabbana",
+  dg: "Dolce & Gabbana",
+  vr: "Viktor & Rolf",
+  pdm: "Parfums de Marly",
+};
+
+// Only the leading token is checked (not substrings anywhere in the query)
+// to avoid false-positive collisions, e.g. "ck" embedded in another word.
+function expandBrandAbbreviations(query: string): string {
+  const trimmed = query.trim();
+  const [first, ...rest] = trimmed.split(/\s+/);
+  const alias = BRAND_ALIASES[first.toLowerCase()];
+  return alias ? [alias, ...rest].join(" ") : trimmed;
+}
+
 export function createSearchIndex(perfumes: Perfume[]) {
   return new Fuse(perfumes, {
     keys: [
@@ -16,7 +40,7 @@ export function createSearchIndex(perfumes: Perfume[]) {
 export function searchPerfumes(index: Fuse<Perfume>, query: string, limit = 8): Perfume[] {
   if (!query.trim()) return [];
   return index
-    .search(query, { limit })
+    .search(expandBrandAbbreviations(query), { limit })
     .map((result) => result.item);
 }
 

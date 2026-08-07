@@ -25,19 +25,19 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
         onFocus={() => setOpen(true)}
         onBlur={() => setTimeout(() => setOpen(false), 150)}
         placeholder="Search a perfume you love… (e.g. Sauvage, Bleu de Chanel)"
-        className="w-full rounded-full border border-neutral-300 bg-white px-5 py-3 text-sm shadow-sm outline-none transition focus:border-neutral-900 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-100"
+        className="w-full rounded-full border border-border bg-surface px-5 py-3 text-sm shadow-sm outline-none transition-colors focus:border-foreground"
       />
       {open && results.length > 0 && (
-        <ul className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
+        <ul className="absolute z-20 mt-2 w-full overflow-hidden rounded-2xl border border-border bg-surface shadow-lg">
           {results.map((p) => (
             <li key={p.id}>
               <button
                 type="button"
                 onMouseDown={() => router.push(`/perfume/${p.id}`)}
-                className="flex w-full flex-col items-start px-4 py-2.5 text-left hover:bg-neutral-50 dark:hover:bg-neutral-800"
+                className="flex w-full flex-col items-start px-4 py-2.5 text-left transition-colors hover:bg-surface-muted"
               >
-                <span className="text-xs uppercase tracking-wide text-neutral-400">{p.brand}</span>
-                <span className="text-sm font-medium text-neutral-900 dark:text-neutral-50">{p.name}</span>
+                <span className="text-xs uppercase tracking-wide text-muted-foreground">{p.brand}</span>
+                <span className="text-sm font-medium text-foreground">{p.name}</span>
               </button>
             </li>
           ))}

@@ -26,12 +26,12 @@ export default function CollectionClient({ perfumes }: { perfumes: Perfume[] }) 
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
       <h1 className="text-2xl font-bold tracking-tight">My Collection</h1>
-      <p className="mt-1 text-neutral-500 dark:text-neutral-400">
+      <p className="mt-1 text-muted-foreground">
         Saved on this device only — no account needed.
       </p>
 
       {mounted && entries.length === 0 && (
-        <p className="mt-8 text-sm text-neutral-500">
+        <p className="mt-8 text-sm text-muted-foreground">
           Nothing saved yet. Browse perfumes and tap "Own it" or "Want to try" to build your collection.
         </p>
       )}

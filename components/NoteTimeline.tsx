@@ -54,7 +54,7 @@ export default function NoteTimeline({ perfume }: { perfume: Perfume }) {
         <button
           type="button"
           onClick={() => setPlaying((p) => !p)}
-          className="rounded-full bg-neutral-900 px-3 py-1.5 text-xs font-medium text-white dark:bg-neutral-100 dark:text-neutral-900"
+          className="rounded-full bg-foreground px-3 py-1.5 text-xs font-medium text-background transition-transform active:scale-95"
         >
           {playing ? "Pause" : "▶ Play wear timeline"}
         </button>
@@ -70,7 +70,7 @@ export default function NoteTimeline({ perfume }: { perfume: Perfume }) {
           }}
           className="flex-1"
         />
-        <span className="w-16 text-right text-xs tabular-nums text-neutral-500">
+        <span className="w-16 text-right text-xs tabular-nums text-muted-foreground">
           {hour < 1 ? `${Math.round(hour * 60)}m` : `${hour.toFixed(1)}h`}
         </span>
       </div>
@@ -78,7 +78,7 @@ export default function NoteTimeline({ perfume }: { perfume: Perfume }) {
       <div className="space-y-2">
         {layers.map((layer) => (
           <div key={layer.key} className="flex items-center gap-2">
-            <span className="w-12 shrink-0 text-xs font-medium text-neutral-500">{layer.label}</span>
+            <span className="w-12 shrink-0 text-xs font-medium text-muted-foreground">{layer.label}</span>
             <div className="flex flex-1 flex-wrap gap-1.5">
               {layer.notes.map((note) => {
                 const { color, bg } = getNoteColor(note);

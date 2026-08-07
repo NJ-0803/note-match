@@ -37,21 +37,21 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
     <div className="mx-auto max-w-4xl px-6 py-10">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-medium uppercase tracking-wide text-neutral-400">{perfume.brand}</p>
+          <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">{perfume.brand}</p>
           <h1 className="text-3xl font-bold tracking-tight">{perfume.name}</h1>
           <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
             <span style={{ color: family.color, backgroundColor: family.bg }} className="rounded-full px-2 py-0.5 font-medium">
               {family.emoji} {perfume.family}
             </span>
-            <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+            <span className="rounded-full bg-surface-muted px-2 py-0.5 text-muted-foreground">
               {PRICE_TIER_LABELS[perfume.priceTier]}
             </span>
-            <span className="rounded-full bg-neutral-100 px-2 py-0.5 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-300">
+            <span className="rounded-full bg-surface-muted px-2 py-0.5 text-muted-foreground">
               {perfume.gender}
             </span>
           </div>
           {perfume.description && (
-            <p className="mt-3 max-w-lg text-sm text-neutral-500 dark:text-neutral-400">{perfume.description}</p>
+            <p className="mt-3 max-w-lg text-sm text-muted-foreground">{perfume.description}</p>
           )}
         </div>
         <div className="flex flex-col items-end gap-2">
@@ -60,32 +60,32 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
         </div>
       </div>
 
-      <section className="mt-8 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">Note pyramid</h2>
+      <section className="mt-8 rounded-2xl border border-border bg-surface p-5">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Note pyramid</h2>
         <NotePyramidChart perfume={perfume} />
       </section>
 
-      <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">Scent DNA</h2>
+      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Scent DNA</h2>
         <ScentRadarChart perfumes={[perfume]} />
       </section>
 
-      <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">How it wears over time</h2>
+      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">How it wears over time</h2>
         <NoteTimeline perfume={perfume} />
       </section>
 
       {allNotes.some((n) => noteDescriptions[n]) && (
-        <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">
+        <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
+          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
             What do these notes actually smell like?
           </h2>
           <dl className="grid grid-cols-1 gap-3 sm:grid-cols-2">
             {[...new Set(allNotes)].map((note) =>
               noteDescriptions[note] ? (
                 <div key={note}>
-                  <dt className="text-sm font-semibold text-neutral-700 dark:text-neutral-200">{note}</dt>
-                  <dd className="text-sm text-neutral-500 dark:text-neutral-400">{noteDescriptions[note]}</dd>
+                  <dt className="text-sm font-semibold text-foreground">{note}</dt>
+                  <dd className="text-sm text-muted-foreground">{noteDescriptions[note]}</dd>
                 </div>
               ) : null,
             )}
@@ -93,8 +93,8 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
         </section>
       )}
 
-      <section className="mt-6 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-neutral-400">Where to buy (India)</h2>
+      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
+        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Where to buy (India)</h2>
         <BuyLinks perfume={perfume} />
       </section>
 

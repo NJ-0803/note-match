@@ -52,7 +52,7 @@ export default function FamilyFilter({
                 const d = payload[0].payload as { family: FragranceFamily };
                 const style = FAMILY_STYLES[d.family];
                 return (
-                  <div className="rounded-lg border border-neutral-200 bg-white px-2 py-1 text-xs font-medium shadow-lg dark:border-neutral-700 dark:bg-neutral-900">
+                  <div className="rounded-lg border border-border bg-surface px-2 py-1 text-xs font-medium shadow-lg">
                     {style.emoji} {d.family}
                   </div>
                 );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { motion } from "motion/react";
 import { getStatus, setStatus, type CollectionStatus } from "@/lib/collection";
 
 export default function CollectionButton({ id }: { id: string }) {
@@ -21,32 +22,34 @@ export default function CollectionButton({ id }: { id: string }) {
   }
 
   const baseBtn =
-    "rounded-full px-3 py-1.5 text-xs font-medium transition border";
+    "rounded-full px-3 py-1.5 text-xs font-medium transition-colors border";
 
   return (
     <div className="flex gap-2">
-      <button
+      <motion.button
         type="button"
+        whileTap={{ scale: 0.94 }}
         onClick={() => toggle("own")}
         className={`${baseBtn} ${
           status === "own"
             ? "border-emerald-600 bg-emerald-600 text-white"
-            : "border-neutral-300 text-neutral-600 hover:border-emerald-600 hover:text-emerald-700 dark:border-neutral-700 dark:text-neutral-300"
+            : "border-border text-muted-foreground hover:border-emerald-600 hover:text-emerald-700"
         }`}
       >
         {status === "own" ? "✓ Own it" : "Own it"}
-      </button>
-      <button
+      </motion.button>
+      <motion.button
         type="button"
+        whileTap={{ scale: 0.94 }}
         onClick={() => toggle("want")}
         className={`${baseBtn} ${
           status === "want"
             ? "border-amber-600 bg-amber-600 text-white"
-            : "border-neutral-300 text-neutral-600 hover:border-amber-600 hover:text-amber-700 dark:border-neutral-700 dark:text-neutral-300"
+            : "border-border text-muted-foreground hover:border-amber-600 hover:text-amber-700"
         }`}
       >
         {status === "want" ? "✓ Want to try" : "Want to try"}
-      </button>
+      </motion.button>
     </div>
   );
 }

@@ -40,8 +40,8 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
   const byId = new Map(perfumes.map((p) => [p.id, p]));
 
   return (
-    <div className="rounded-2xl border border-neutral-200 bg-gradient-to-br from-neutral-50 to-white p-5 dark:border-neutral-800 dark:from-neutral-900 dark:to-neutral-950">
-      <p className="mb-2 text-sm font-semibold text-neutral-700 dark:text-neutral-200">
+    <div className="rounded-2xl border border-border bg-gradient-to-br from-surface-muted to-surface p-5">
+      <p className="mb-2 text-sm font-semibold text-foreground">
         ✨ Or just describe a scent
       </p>
       <form onSubmit={handleSubmit} className="flex gap-2">
@@ -50,12 +50,12 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
           value={query}
           onChange={(e) => setQuery(e.target.value)}
           placeholder="something smoky and vanilla for winter evenings…"
-          className="flex-1 rounded-full border border-neutral-300 bg-white px-4 py-2.5 text-sm outline-none focus:border-neutral-900 dark:border-neutral-700 dark:bg-neutral-900 dark:focus:border-neutral-100"
+          className="flex-1 rounded-full border border-border bg-surface px-4 py-2.5 text-sm outline-none focus:border-foreground"
         />
         <button
           type="submit"
           disabled={loading}
-          className="rounded-full bg-neutral-900 px-4 py-2.5 text-sm font-medium text-white disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
+          className="rounded-full bg-foreground px-4 py-2.5 text-sm font-medium text-background transition-opacity disabled:opacity-50"
         >
           {loading ? "Thinking…" : "Find"}
         </button>
@@ -73,7 +73,7 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
             );
           })}
           {matches.length === 0 && (
-            <p className="text-sm text-neutral-500">No close matches found — try describing it differently.</p>
+            <p className="text-sm text-muted-foreground">No close matches found — try describing it differently.</p>
           )}
         </div>
       )}

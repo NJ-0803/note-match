@@ -9,16 +9,16 @@ export default function MatchTags({
 }) {
   if (sharedNotes.length === 0 && !explanation) return null;
   return (
-    <div className="mt-2 space-y-1.5 border-t border-dashed border-neutral-200 pt-2 dark:border-neutral-700">
+    <div className="mt-2 space-y-1.5 border-t border-dashed border-border pt-2">
       {sharedNotes.length > 0 && (
         <div>
-          <p className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-neutral-400">
+          <p className="mb-1 text-[11px] font-semibold uppercase tracking-wide text-muted-foreground">
             Why it matched
           </p>
           <NoteTags notes={sharedNotes} />
         </div>
       )}
-      {explanation && <p className="text-xs text-neutral-500 dark:text-neutral-400">{explanation}</p>}
+      {explanation && <p className="text-xs text-muted-foreground">{explanation}</p>}
     </div>
   );
 }

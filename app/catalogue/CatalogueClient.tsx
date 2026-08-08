@@ -17,11 +17,11 @@ const cardVariants = {
 };
 
 export default function CatalogueClient({ perfumes }: { perfumes: Perfume[] }) {
-  const [family, setFamily] = useState<FragranceFamily | null>(null);
+  const [families, setFamilies] = useState<FragranceFamily[]>([]);
 
   const filtered = useMemo(
-    () => (family ? perfumes.filter((p) => p.family === family) : perfumes),
-    [perfumes, family],
+    () => (families.length > 0 ? perfumes.filter((p) => families.includes(p.family)) : perfumes),
+    [perfumes, families],
   );
 
   return (
@@ -44,14 +44,14 @@ export default function CatalogueClient({ perfumes }: { perfumes: Perfume[] }) {
         className="mt-8"
       >
         <div className="flex justify-center">
-          <FamilyFilter active={family} onChange={setFamily} />
+          <FamilyFilter active={families} onChange={setFamilies} />
         </div>
       </motion.section>
 
       <div className="mt-10">
         <div className="mb-4 flex items-baseline justify-between">
           <h2 className="text-lg font-semibold">
-            {family ? `${family} perfumes` : "All perfumes"}{" "}
+            {families.length > 0 ? `${families.join(", ")} perfumes` : "All perfumes"}{" "}
             <span className="text-sm font-normal text-muted-foreground">({filtered.length})</span>
           </h2>
         </div>

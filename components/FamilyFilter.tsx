@@ -8,10 +8,14 @@ export default function FamilyFilter({
   active,
   onChange,
 }: {
-  active: FragranceFamily | null;
-  onChange: (family: FragranceFamily | null) => void;
+  active: FragranceFamily[];
+  onChange: (families: FragranceFamily[]) => void;
 }) {
   const data = FRAGRANCE_FAMILIES.map((family) => ({ family, value: 1 }));
+
+  function toggle(family: FragranceFamily) {
+    onChange(active.includes(family) ? active.filter((f) => f !== family) : [...active, family]);
+  }
 
   return (
     <div className="flex flex-col items-center gap-3 sm:flex-row sm:items-center">
@@ -27,19 +31,19 @@ export default function FamilyFilter({
               paddingAngle={3}
               onClick={(entry: { family?: FragranceFamily; payload?: { family: FragranceFamily } }) => {
                 const family = entry.family ?? entry.payload?.family;
-                if (family) onChange(active === family ? null : family);
+                if (family) toggle(family);
               }}
               cursor="pointer"
               isAnimationActive={false}
             >
               {data.map((d) => {
                 const style = FAMILY_STYLES[d.family];
-                const isActive = active === d.family;
+                const isActive = active.includes(d.family);
                 return (
                   <Cell
                     key={d.family}
                     fill={style.color}
-                    opacity={active && !isActive ? 0.3 : 1}
+                    opacity={active.length > 0 && !isActive ? 0.3 : 1}
                     stroke={isActive ? "#111" : "none"}
                     strokeWidth={isActive ? 2 : 0}
                   />
@@ -64,12 +68,12 @@ export default function FamilyFilter({
       <div className="flex flex-wrap gap-1.5">
         {FRAGRANCE_FAMILIES.map((family) => {
           const style = FAMILY_STYLES[family];
-          const isActive = active === family;
+          const isActive = active.includes(family);
           return (
             <button
               key={family}
               type="button"
-              onClick={() => onChange(isActive ? null : family)}
+              onClick={() => toggle(family)}
               style={{
                 color: isActive ? "#fff" : style.color,
                 backgroundColor: isActive ? style.color : style.bg,

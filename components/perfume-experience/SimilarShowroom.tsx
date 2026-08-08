@@ -23,19 +23,31 @@ export default function SimilarShowroom({
   onPreviewColor: (color: string | null) => void;
 }) {
   const router = useRouter();
-  const items = useMemo(
-    () =>
-      recommendations
-        .map((rec) => ({ rec, perfume: perfumesById[rec.id] }))
-        .filter((x): x is { rec: RecommendationEntry; perfume: Perfume } => Boolean(x.perfume)),
-    [recommendations, perfumesById],
-  );
+  const [cheaperFirst, setCheaperFirst] = useState(false);
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  const items = useMemo(() => {
+    const list = recommendations
+      .map((rec) => ({ rec, perfume: perfumesById[rec.id] }))
+      .filter((x): x is { rec: RecommendationEntry; perfume: Perfume } => Boolean(x.perfume));
+    if (!cheaperFirst) return list;
+    return [...list].sort((a, b) => a.perfume.priceTier - b.perfume.priceTier);
+  }, [recommendations, perfumesById, cheaperFirst]);
+
+  const [activeId, setActiveId] = useState<string | null>(items[0]?.perfume.id ?? null);
   const [selectingId, setSelectingId] = useState<string | null>(null);
   const [wasPanning, setWasPanning] = useState(false);
 
+  const activeIndex = Math.max(
+    0,
+    items.findIndex((it) => it.perfume.id === activeId),
+  );
   const active = items[activeIndex];
+
+  function setActiveIndex(updater: number | ((i: number) => number)) {
+    const nextIndex = typeof updater === "function" ? updater(activeIndex) : updater;
+    const clamped = Math.min(items.length - 1, Math.max(0, nextIndex));
+    setActiveId(items[clamped]?.perfume.id ?? null);
+  }
 
   useEffect(() => {
     if (!active) return;
@@ -94,6 +106,15 @@ export default function SimilarShowroom({
       <div className="mx-auto mb-2 text-center">
         <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">Similar showroom</p>
         <h2 className="mt-2 font-display text-2xl tracking-tight sm:text-3xl">Drag, swipe, or use the arrow keys</h2>
+        <label className="mt-3 inline-flex cursor-pointer items-center gap-2 text-xs text-muted-foreground">
+          <input
+            type="checkbox"
+            checked={cheaperFirst}
+            onChange={(e) => setCheaperFirst(e.target.checked)}
+            className="h-3.5 w-3.5 rounded border-border"
+          />
+          Cheapest first
+        </label>
       </div>
 
       <motion.div

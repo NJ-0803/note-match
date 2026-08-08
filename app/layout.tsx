@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import CustomCursor from "@/components/CustomCursor";
 import AtmosphericBackground from "@/components/experience/AtmosphericBackground";
+import { AtmosphereColorProvider } from "@/lib/atmosphereColor";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -35,11 +36,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <AtmosphericBackground />
-        <CustomCursor />
-        <Navigation />
-        <main className="relative z-10 flex-1">{children}</main>
-        <Footer />
+        <AtmosphereColorProvider>
+          <AtmosphericBackground />
+          <CustomCursor />
+          <Navigation />
+          <main className="relative z-10 flex-1">{children}</main>
+          <Footer />
+        </AtmosphereColorProvider>
       </body>
     </html>
   );

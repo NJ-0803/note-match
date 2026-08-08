@@ -6,15 +6,7 @@ import {
   getExplanations,
   getNoteDescriptions,
 } from "@/lib/data";
-import { FAMILY_STYLES, PRICE_TIER_LABELS } from "@/lib/family";
-import PerfumeBottleLoader from "@/components/experience/PerfumeBottleLoader";
-import NotePyramidChart from "@/components/NotePyramidChart";
-import ScentRadarChart from "@/components/ScentRadarChart";
-import NoteTimeline from "@/components/NoteTimeline";
-import RecommendationsList from "@/components/RecommendationsList";
-import BuyLinks from "@/components/BuyLinks";
-import CollectionButton from "@/components/CollectionButton";
-import ShareButton from "@/components/ShareButton";
+import PerfumeExperience from "@/components/perfume-experience/PerfumeExperience";
 
 export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">) {
   const { id } = await params;
@@ -31,87 +23,14 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
     if (text) explanations[rec.id] = text;
   }
   const noteDescriptions = getNoteDescriptions();
-  const allNotes = [...perfume.topNotes, ...perfume.heartNotes, ...perfume.baseNotes];
-  const family = FAMILY_STYLES[perfume.family];
 
   return (
-    <div>
-      <div className="relative min-h-[70vh] overflow-hidden" data-cursor="Rotate" data-cursor-strong>
-        <PerfumeBottleLoader color={family.color} />
-        <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-4xl flex-col justify-center px-6">
-          <div className="ml-auto w-full max-w-sm text-right md:max-w-md">
-            <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{perfume.brand}</p>
-            <h1 className="font-display text-4xl tracking-tight sm:text-5xl">{perfume.name}</h1>
-            <div className="mt-3 flex flex-wrap items-center justify-end gap-1.5 text-xs">
-              <span style={{ color: family.color, backgroundColor: family.bg }} className="rounded-full px-2 py-0.5 font-medium">
-                {family.emoji} {perfume.family}
-              </span>
-              <span className="rounded-full bg-surface-muted px-2 py-0.5 text-muted-foreground">
-                {PRICE_TIER_LABELS[perfume.priceTier]}
-              </span>
-              <span className="rounded-full bg-surface-muted px-2 py-0.5 text-muted-foreground">
-                {perfume.gender}
-              </span>
-            </div>
-            {perfume.description && (
-              <p className="mt-3 text-sm text-muted-foreground">{perfume.description}</p>
-            )}
-            <div className="mt-5 flex flex-col items-end gap-2">
-              <CollectionButton id={perfume.id} />
-              <ShareButton perfumeId={perfume.id} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="relative z-10 mx-auto max-w-4xl px-6 pb-10">
-      <section className="mt-8 rounded-2xl border border-border bg-surface p-5">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Note pyramid</h2>
-        <NotePyramidChart perfume={perfume} />
-      </section>
-
-      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Scent DNA</h2>
-        <ScentRadarChart perfumes={[perfume]} />
-      </section>
-
-      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">How it wears over time</h2>
-        <NoteTimeline perfume={perfume} />
-      </section>
-
-      {allNotes.some((n) => noteDescriptions[n]) && (
-        <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
-          <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">
-            What do these notes actually smell like?
-          </h2>
-          <dl className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-            {[...new Set(allNotes)].map((note) =>
-              noteDescriptions[note] ? (
-                <div key={note}>
-                  <dt className="text-sm font-semibold text-foreground">{note}</dt>
-                  <dd className="text-sm text-muted-foreground">{noteDescriptions[note]}</dd>
-                </div>
-              ) : null,
-            )}
-          </dl>
-        </section>
-      )}
-
-      <section className="mt-6 rounded-2xl border border-border bg-surface p-5">
-        <h2 className="mb-3 text-sm font-semibold uppercase tracking-wide text-muted-foreground">Where to buy (India)</h2>
-        <BuyLinks perfume={perfume} />
-      </section>
-
-      <section className="mt-8">
-        <h2 className="mb-4 text-lg font-semibold">Similar perfumes</h2>
-        <RecommendationsList
-          recommendations={recommendations}
-          perfumesById={perfumesById}
-          explanations={explanations}
-        />
-      </section>
-      </div>
-    </div>
+    <PerfumeExperience
+      perfume={perfume}
+      recommendations={recommendations}
+      perfumesById={perfumesById}
+      explanations={explanations}
+      noteDescriptions={noteDescriptions}
+    />
   );
 }

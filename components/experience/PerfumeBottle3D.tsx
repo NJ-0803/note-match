@@ -7,7 +7,19 @@ import * as THREE from "three";
 import { useHeroCapabilities, useIsMobileViewport } from "@/lib/useHeroCapabilities";
 import ParticleField from "./ParticleField";
 
-function BottleMesh({ color, reveal, offsetX }: { color: string; reveal: number; offsetX: number }) {
+function BottleMesh({
+  color,
+  reveal,
+  offsetX,
+  targetScale,
+  dim,
+}: {
+  color: string;
+  reveal: number;
+  offsetX: number;
+  targetScale: number;
+  dim: number;
+}) {
   const groupRef = useRef<THREE.Group>(null);
   const { pointer } = useThree();
 
@@ -24,11 +36,13 @@ function BottleMesh({ color, reveal, offsetX }: { color: string; reveal: number;
 
     // Gentle vertical float, like it's suspended.
     group.position.y = Math.sin(performance.now() * 0.0006) * 0.08;
-    group.position.x = offsetX;
+    group.position.x = THREE.MathUtils.lerp(group.position.x, offsetX, 0.05);
 
-    const targetScale = 0.9 + reveal * 0.1;
-    group.scale.setScalar(THREE.MathUtils.lerp(group.scale.x, targetScale, 0.06));
+    const scaleGoal = (0.9 + reveal * 0.1) * targetScale;
+    group.scale.setScalar(THREE.MathUtils.lerp(group.scale.x, scaleGoal, 0.06));
   });
+
+  const opacity = reveal * dim;
 
   return (
     <group ref={groupRef} position={[offsetX, 0, 0]} scale={0.9}>
@@ -48,7 +62,7 @@ function BottleMesh({ color, reveal, offsetX }: { color: string; reveal: number;
           temporalDistortion={0.04}
           clearcoat={1}
           clearcoatRoughness={0.08}
-          opacity={reveal}
+          opacity={opacity}
           transparent
         />
       </mesh>
@@ -62,14 +76,14 @@ function BottleMesh({ color, reveal, offsetX }: { color: string; reveal: number;
           ior={1.4}
           color={color}
           clearcoat={1}
-          opacity={reveal}
+          opacity={opacity}
           transparent
         />
       </mesh>
       {/* Cap */}
       <mesh position={[0, 1.05, 0]}>
         <cylinderGeometry args={[0.24, 0.24, 0.22, 32]} />
-        <meshStandardMaterial color="#1a1815" metalness={0.7} roughness={0.35} opacity={reveal} transparent />
+        <meshStandardMaterial color="#1a1815" metalness={0.7} roughness={0.35} opacity={opacity} transparent />
       </mesh>
     </group>
   );
@@ -94,7 +108,17 @@ function RevealController({ children }: { children: (reveal: number) => React.Re
   return <>{children(reveal)}</>;
 }
 
-export default function PerfumeBottle3D({ color }: { color: string }) {
+export default function PerfumeBottle3D({
+  color,
+  offsetX: offsetXProp,
+  scale = 1,
+  dim = 1,
+}: {
+  color: string;
+  offsetX?: number;
+  scale?: number;
+  dim?: number;
+}) {
   const capability = useHeroCapabilities();
   const isMobile = useIsMobileViewport();
   const containerRef = useRef<HTMLDivElement>(null);
@@ -121,7 +145,7 @@ export default function PerfumeBottle3D({ color }: { color: string }) {
     );
   }
 
-  const offsetX = isMobile ? 0 : -1.7;
+  const offsetX = offsetXProp ?? (isMobile ? 0 : 1.6);
 
   return (
     <div ref={containerRef} className="h-full w-full">
@@ -137,8 +161,8 @@ export default function PerfumeBottle3D({ color }: { color: string }) {
         <RevealController>
           {(reveal) => (
             <>
-              <ParticleField count={isMobile ? 50 : 130} opacity={reveal * 0.5} />
-              <BottleMesh color={color} reveal={reveal} offsetX={offsetX} />
+              <ParticleField count={isMobile ? 50 : 130} opacity={reveal * 0.5 * dim} />
+              <BottleMesh color={color} reveal={reveal} offsetX={offsetX} targetScale={scale} dim={dim} />
             </>
           )}
         </RevealController>

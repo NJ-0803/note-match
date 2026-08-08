@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "motion/react";
+import { motion, useMotionValue, useSpring, useAnimationFrame } from "motion/react";
 
 // Layered glow rings, largest/blurriest/faintest first so they sit behind
 // the tighter, brighter ones - each follows the one before it with
@@ -26,6 +26,26 @@ export default function CustomCursor() {
 
   const coreX = useSpring(rawX, CORE_SPRING);
   const coreY = useSpring(rawY, CORE_SPRING);
+
+  // Meteor streak: stretches and orients along the direction of travel as
+  // the pointer speeds up, and relaxes back to nothing once it slows or
+  // stops - fast movement reads as a longer trailing tail, not just a chain
+  // of catching-up dots.
+  const streakLength = useMotionValue(0);
+  const streakAngle = useMotionValue(0);
+
+  useAnimationFrame(() => {
+    if (!enabled) return;
+    const vx = rawX.getVelocity();
+    const vy = rawY.getVelocity();
+    const speed = Math.hypot(vx, vy);
+    const targetLength = Math.min(52, speed / 26);
+    streakLength.set(streakLength.get() + (targetLength - streakLength.get()) * 0.25);
+    if (speed > 40) {
+      const angleDeg = (Math.atan2(vy, vx) * 180) / Math.PI + 180;
+      streakAngle.set(angleDeg);
+    }
+  });
 
   // Build the glow chain, each layer's spring source is the previous
   // layer's own (already-springy) output.
@@ -133,6 +153,26 @@ export default function CustomCursor() {
           className="pointer-events-none z-[100] rounded-full"
         />
       ))}
+
+      {/* Speed-reactive meteor streak, trailing behind the direction of travel */}
+      <motion.div
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          x: coreX,
+          y: coreY,
+          width: streakLength,
+          height: 3,
+          marginTop: -1.5,
+          rotate: streakAngle,
+          transformOrigin: "0% 50%",
+          background: "linear-gradient(90deg, var(--accent) 0%, transparent 100%)",
+          opacity: 0.75,
+          mixBlendMode: "screen",
+        }}
+        className="pointer-events-none z-[99] rounded-full"
+      />
 
       {/* Bright energy core */}
       <motion.div

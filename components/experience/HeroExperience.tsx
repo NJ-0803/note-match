@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Canvas } from "@react-three/fiber";
 import { useHeroCapabilities, useIsMobileViewport } from "@/lib/useHeroCapabilities";
 import ParticleField from "./ParticleField";
-import GalaxyRing from "./GalaxyRing";
+import MarsPlanet from "./MarsPlanet";
 import StaticHeroFallback from "./StaticHeroFallback";
 
 function RevealController({ children }: { children: (reveal: number) => React.ReactNode }) {
@@ -62,8 +62,13 @@ export default function HeroExperience() {
         <RevealController>
           {(reveal) => (
             <>
-              <ParticleField count={isMobile ? 60 : 180} opacity={reveal * 0.6} />
-              <GalaxyRing reveal={reveal} />
+              <ParticleField
+                count={isMobile ? 140 : 420}
+                opacity={reveal * 0.8}
+                scale={isMobile ? [16, 11, 16] : [22, 14, 22]}
+                size={1.6}
+              />
+              <MarsPlanet reveal={reveal} />
             </>
           )}
         </RevealController>

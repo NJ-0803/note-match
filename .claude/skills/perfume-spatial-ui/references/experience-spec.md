@@ -31,8 +31,9 @@ Cinematic, minimal, restrained luxury fragrance house crossed with an advanced l
 
 ## 3D (`three` + `@react-three/fiber` + `@react-three/drei`)
 
-- Used for: homepage hero (`HeroExperience.tsx` — starfield particles + `GalaxyRing`, a flattened orbital ring of glowing points around a bloom-faked core, tilted edge-on) and the perfume detail page bottle (`PerfumeBottle3D.tsx` — `MeshTransmissionMaterial` bottle + `ParticleField`).
-- `GalaxyRing.tsx` fakes bloom with layered additive-blended `meshBasicMaterial` spheres rather than a postprocessing pipeline (no `@react-three/postprocessing` dependency) — keep that pattern for future glow effects instead of adding a bloom pass.
+- Used for: homepage hero (`HeroExperience.tsx` — a wide starfield via `ParticleField` scaled up to span the whole frame, plus `MarsPlanet`, a rust-toned procedural-texture sphere with a thin additive atmosphere rim) and the perfume detail page bottle (`PerfumeBottle3D.tsx` — `MeshTransmissionMaterial` bottle + `ParticleField`).
+- `MarsPlanet.tsx` draws its surface texture once to a `<canvas>` (gradient + blotchy noise + polar caps) rather than shipping an image asset, and fakes an atmosphere glow with a single back-facing additive-blended shell rather than a postprocessing pipeline (no `@react-three/postprocessing` dependency) — keep that pattern for future glow effects instead of adding a bloom pass.
+- `ParticleField` takes optional `scale`/`size` props (defaults match the perfume-page usage) — the homepage passes a much larger `scale` so stars read as spanning the full viewport rather than clustering near the hero object.
 - Always dynamically imported with `next/dynamic({ ssr: false })` from a client-component boundary — never import Three.js directly into a Server Component.
 - Always layered `absolute inset-0` behind a `relative z-10` DOM content layer holding real, accessible, fully-functional UI (search box, headline, buy links, etc.) — the 3D layer is decoration, never load-bearing for functionality.
 - Gate on `useHeroCapabilities` (`lib/useHeroCapabilities.ts`): starts in a `"checking"` state (SSR-safe), resolves `prefers-reduced-motion` + WebGL support client-side, falls back to `StaticHeroFallback.tsx` when either fails.

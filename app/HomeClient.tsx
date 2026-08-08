@@ -13,63 +13,69 @@ const HeroExperience = dynamic(() => import("@/components/experience/HeroExperie
 
 export default function HomeClient({ perfumes }: { perfumes: Perfume[] }) {
   return (
-    <div className="relative min-h-[85vh]">
-      <HeroExperience />
+    <div className="relative">
+      <div className="relative min-h-screen">
+        <HeroExperience />
 
-      {/* Soft vignette between the canvas and the text so the bright orbital
-          particles never fight the headline/paragraph for contrast - a
-          cinematic falloff rather than a hard scrim box. */}
-      <div
-        className="pointer-events-none absolute inset-0 z-[5]"
-        style={{
-          background:
-            "radial-gradient(ellipse 640px 420px at 50% 48%, color-mix(in srgb, var(--background) 65%, transparent) 0%, transparent 72%)",
-        }}
-      />
+        {/* Soft vignette between the canvas and the text so the starfield and
+            planet never fight the headline/intro for contrast - a cinematic
+            falloff rather than a hard scrim box. */}
+        <div
+          className="pointer-events-none absolute inset-0 z-[5]"
+          style={{
+            background:
+              "radial-gradient(ellipse 780px 520px at 50% 38%, color-mix(in srgb, var(--background) 68%, transparent) 0%, transparent 72%)",
+          }}
+        />
 
-      <div className="relative z-10 mx-auto flex min-h-[85vh] max-w-5xl flex-col justify-center px-6 py-10">
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 0.1 }}
-          className="mb-3 text-center font-mono text-xs uppercase tracking-[0.3em] text-accent [text-shadow:0_2px_14px_rgba(0,0,0,0.85)]"
-        >
-          N&deg; 001 — Olfactory Discovery System
-        </motion.p>
+        <div className="relative z-10 mx-auto flex min-h-screen max-w-5xl flex-col justify-center px-6 pb-24">
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            className="mb-3 text-center font-mono text-xs uppercase tracking-[0.3em] text-accent [text-shadow:0_2px_14px_rgba(0,0,0,0.85)]"
+          >
+            N&deg; 001 — Olfactory Discovery System
+          </motion.p>
 
-        <h1 className="font-display text-3xl leading-tight tracking-tight [text-shadow:0_2px_18px_rgba(0,0,0,0.85)] sm:text-5xl">
-          <RevealText text="Own a scent you love?" delay={0.3} className="block text-center" />
-          <RevealText text="Find what to wear next." delay={0.75} className="block text-center" />
-        </h1>
+          <h1 className="font-display text-3xl leading-tight tracking-tight [text-shadow:0_2px_18px_rgba(0,0,0,0.85)] sm:text-5xl">
+            <RevealText text="Own a scent you love?" delay={0.3} className="block text-center" />
+            <RevealText text="Find what to wear next." delay={0.75} className="block text-center" />
+          </h1>
 
-        <motion.p
-          initial={{ opacity: 0, y: 8 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.3 }}
-          className="mx-auto mt-4 max-w-xl text-center text-foreground/80 [text-shadow:0_2px_14px_rgba(0,0,0,0.85)]"
-        >
-          Search a perfume already in your collection, or describe the scent you're after, and get
-          matches ranked by shared notes — plus where to buy them in India.
-        </motion.p>
+          <motion.p
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 1.3 }}
+            className="mx-auto mt-4 max-w-xl text-center text-foreground/80 [text-shadow:0_2px_14px_rgba(0,0,0,0.85)]"
+          >
+            Search a perfume already in your collection, or describe the scent you're after, and get
+            matches ranked by shared notes — plus where to buy them in India.
+          </motion.p>
 
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.6 }}
-          className="mx-auto mt-8 w-full max-w-xl"
-        >
-          <SearchBox perfumes={perfumes} />
-        </motion.div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 12 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 1.8 }}
-          className="mt-8"
-        >
-          <FreeTextSearch perfumes={perfumes} />
-        </motion.div>
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: [0, 1, 1, 0.4] }}
+            transition={{ duration: 2.4, delay: 2, times: [0, 0.25, 0.7, 1] }}
+            className="mt-16 text-center font-mono text-[10px] uppercase tracking-[0.3em] text-muted-foreground"
+          >
+            Scroll to search ↓
+          </motion.p>
+        </div>
       </div>
+
+      <motion.div
+        initial={{ opacity: 0, scale: 0.85, y: 28 }}
+        whileInView={{ opacity: 1, scale: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.4 }}
+        transition={{ type: "spring", stiffness: 240, damping: 22 }}
+        className="relative z-10 mx-auto max-w-5xl px-6 pb-24"
+      >
+        <SearchBox perfumes={perfumes} />
+        <div className="mt-8">
+          <FreeTextSearch perfumes={perfumes} />
+        </div>
+      </motion.div>
     </div>
   );
 }

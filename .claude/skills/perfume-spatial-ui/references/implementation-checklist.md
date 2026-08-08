@@ -11,7 +11,7 @@ What's built, where it lives, and what's still roadmap. Check this before adding
 
 ## Per-page / per-component, already built
 
-- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx`) — `HeroExperience` (WebGL starfield particles + `GalaxyRing`, an orbital particle-ring hero object), entrance sequence via `RevealText` + staged `motion` delays, `SearchBox` + `FreeTextSearch` layered above the canvas.
+- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx`) — deliberately split into two scroll sections, not one continuous block: section 1 is `min-h-screen`, holding only the `HeroExperience` (starfield + `MarsPlanet`), eyebrow, headline, intro paragraph, and a fading "Scroll to search ↓" hint — no search UI is visible without scrolling. Section 2 (`SearchBox` + `FreeTextSearch`) uses `whileInView` with a spring "pop" (scale 0.85→1) instead of a time-delayed fade, so it only appears once the user actually scrolls into it. Don't collapse this back into one section without checking with the user first — it's an intentional redesign, not an oversight.
 - **Perfume detail** (`app/perfume/[id]/page.tsx`) — full-bleed hero with `PerfumeBottleLoader` → `PerfumeBottle3D` (interactive glass bottle, cursor-tilt, `data-cursor="Rotate" data-cursor-strong` on the hero container), `app/perfume/[id]/template.tsx` for the per-navigation iris-wipe entrance (`PageMaterializeOverlay`).
 - **Navigation** (`components/Navigation.tsx`) — thin top bar, fullscreen `AnimatePresence` overlay menu with large Fraunces numbered links, menu trigger has `data-cursor="Open"`.
 - **PerfumeCard** (`components/PerfumeCard.tsx`) — title link has `data-cursor="View"`.

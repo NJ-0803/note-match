@@ -30,7 +30,12 @@ export default function ScentDNASpectrum({ perfume, color }: { perfume: Perfume;
 
   return (
     <div className="flex flex-col items-center gap-8 sm:flex-row sm:items-center sm:gap-12">
-      <svg width={SIZE} height={SIZE} viewBox={`0 0 ${SIZE} ${SIZE}`} className="shrink-0 overflow-visible">
+      <svg
+        width={SIZE}
+        height={SIZE}
+        viewBox={`0 0 ${SIZE} ${SIZE}`}
+        className="h-auto w-full max-w-[260px] shrink-0 overflow-visible sm:max-w-[320px]"
+      >
         <defs>
           <filter id={glowId} x="-50%" y="-50%" width="200%" height="200%">
             <feGaussianBlur stdDeviation="6" result="blur" />

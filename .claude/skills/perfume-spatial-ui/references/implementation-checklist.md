@@ -11,8 +11,8 @@ What's built, where it lives, and what's still roadmap. Check this before adding
 
 ## Per-page / per-component, already built
 
-- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx`) — deliberately split into two scroll sections, not one continuous block: section 1 is `ScrubVideoHero` (real scroll-scrubbed bottle video, see experience-spec.md), holding the eyebrow, split-line headline ("Own a scent // you love", `//` in accent color), tagline, and intro paragraph — no search UI is visible without scrolling. Section 2 (`SearchBox` + `FreeTextSearch`) uses `whileInView` with a spring "pop" (scale 0.85→1) instead of a time-delayed fade, so it only appears once the user actually scrolls into it. Don't collapse this back into one section without checking with the user first — it's an intentional redesign, not an oversight.
-- `HeroExperience.tsx`, `MarsPlanet.tsx`, `StaticHeroFallback.tsx`, and the old `GalaxyRing.tsx` are all deleted — the homepage went through orbital-particle-ring → Mars-planet → real-video before landing on the current approach. If you're tempted to build another abstract 3D hero object for the homepage, re-read the "Homepage hero" section of experience-spec.md first.
+- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx` → `FloatingHero.tsx`) — single choreographed hero, not split into scroll-gated sections. Floating fragrance-ingredient objects + central bottle + asymmetric editorial headline ("Own a scent you love?" top-left / "Find what to wear next." bottom-right) + `ModeSwitchSearch` (toggles between `SearchBox` and `FreeTextSearch` via `AnimatePresence`, both restyled to a minimal underline input rather than a bordered box) all animate in together on load — search is visible without scrolling. See experience-spec.md's "Homepage hero: floating composition" section for the full breakdown. Don't reintroduce the earlier two-section scroll-gated design or the video hero without checking first.
+- `HeroExperience.tsx`, `MarsPlanet.tsx`, `StaticHeroFallback.tsx`, `GalaxyRing.tsx`, `ScrubVideoHero.tsx`, and `HeroCrosshair.tsx` are all deleted — the homepage went through orbital-particle-ring → Mars-planet → real-scroll-video → the current floating-composition approach. If you're tempted to build another version of the homepage hero, re-read the "Homepage hero" section of experience-spec.md first and check with the user — this is the third major pivot, not a stable target to casually redo.
 - **Perfume detail** (`app/perfume/[id]/page.tsx`) — full-bleed hero with `PerfumeBottleLoader` → `PerfumeBottle3D` (interactive glass bottle, cursor-tilt, `data-cursor="Rotate" data-cursor-strong` on the hero container), `app/perfume/[id]/template.tsx` for the per-navigation iris-wipe entrance (`PageMaterializeOverlay`).
 - **Navigation** (`components/Navigation.tsx`) — thin top bar, fullscreen `AnimatePresence` overlay menu with large Fraunces numbered links, menu trigger has `data-cursor="Open"`.
 - **PerfumeCard** (`components/PerfumeCard.tsx`) — title link has `data-cursor="View"`.
@@ -20,7 +20,7 @@ What's built, where it lives, and what's still roadmap. Check this before adding
 
 ## `data-cursor` label conventions already in use
 
-`"Rotate"` (perfume bottle hero, strong), `"Open"` (nav menu trigger), `"View"` (perfume card title link). Keep new labels short, single-word, uppercase-styled by the cursor component automatically — don't invent a different labeling convention per component.
+`"Rotate"` (perfume bottle hero, strong), `"Open"` (nav menu trigger), `"View"` (perfume card title link), `"Explore"` (homepage `CentralBottle`, strong), `"Search"` (homepage search inputs), `"Discover"` (floating ingredient objects), `"Enter"` (homepage mode-switch buttons). Keep new labels short, single-word, uppercase-styled by the cursor component automatically — don't invent a different labeling convention per component.
 
 ## Explicitly roadmap — do not build unless the user asks
 

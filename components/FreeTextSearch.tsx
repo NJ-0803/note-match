@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { motion } from "motion/react";
 import type { Perfume } from "@/types/perfume";
 import PerfumeCard from "./PerfumeCard";
 import MagneticButton from "./motion/MagneticButton";
@@ -16,6 +17,7 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [matches, setMatches] = useState<ApiMatch[] | null>(null);
+  const [focused, setFocused] = useState(false);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
@@ -41,36 +43,57 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
   const byId = new Map(perfumes.map((p) => [p.id, p]));
 
   return (
-    <div className="rounded-2xl border border-border bg-gradient-to-br from-surface-muted to-surface p-5">
-      <p className="mb-2 font-mono text-xs uppercase tracking-widest text-muted-foreground">
-        N&deg; 002 — Or describe a scent
+    <div>
+      <p className="mb-3 text-center text-xs uppercase tracking-[0.3em] text-muted-foreground">
+        Describe what you want
       </p>
-      <form onSubmit={handleSubmit} className="flex gap-2">
-        <input
-          type="text"
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          placeholder="something smoky and vanilla for winter evenings…"
-          className="flex-1 rounded-full border border-border bg-surface px-4 py-2.5 text-sm outline-none focus:border-foreground"
-        />
+      <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
+        <div className="relative w-full">
+          <input
+            type="text"
+            data-cursor="Search"
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            onFocus={() => setFocused(true)}
+            onBlur={() => setFocused(false)}
+            placeholder="smoky vanilla for winter evenings…"
+            className="w-full border-0 border-b border-border bg-transparent px-1 py-3 text-center text-lg text-foreground outline-none placeholder:text-muted-foreground/60"
+          />
+          <div className="absolute inset-x-0 bottom-0 h-px bg-border">
+            <motion.div
+              initial={false}
+              animate={{ scaleX: focused ? 1 : 0, opacity: focused ? 1 : 0 }}
+              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
+              className="h-px w-full origin-center bg-accent"
+              style={{ boxShadow: focused ? "0 0 12px 1px var(--accent)" : undefined }}
+            />
+          </div>
+        </div>
         <MagneticButton
           type="submit"
           disabled={loading}
-          className="rounded-full bg-foreground px-4 py-2.5 text-sm font-medium text-background transition-opacity disabled:opacity-50"
+          className="rounded-full border border-border px-6 py-2 text-xs uppercase tracking-[0.25em] text-foreground transition-colors hover:border-accent hover:text-accent disabled:opacity-50"
         >
           {loading ? "Thinking…" : "Find"}
         </MagneticButton>
       </form>
 
-      {error && <p className="mt-3 text-sm text-red-600">{error}</p>}
+      {error && <p className="mt-3 text-center text-sm text-red-400">{error}</p>}
 
       {matches && (
-        <div className="mt-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
-          {matches.map((m) => {
+        <div className="mt-8 grid grid-cols-1 gap-3 sm:grid-cols-2">
+          {matches.map((m, i) => {
             const perfume = byId.get(m.id);
             if (!perfume) return null;
             return (
-              <PerfumeCard key={m.id} perfume={perfume} matchScore={m.score} explanation={m.reason} />
+              <motion.div
+                key={m.id}
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.06 }}
+              >
+                <PerfumeCard perfume={perfume} matchScore={m.score} explanation={m.reason} />
+              </motion.div>
             );
           })}
           {matches.length === 0 && (

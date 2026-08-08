@@ -12,8 +12,7 @@ function scramble(text: string) {
 }
 
 // One-off scramble-to-resolve reveal, meant for a single moment (not a
-// running/repeating effect) - see the top-strip product label in
-// ScrubVideoHero. Runs once on mount, then settles.
+// running/repeating effect). Runs once on mount, then settles.
 export default function DecryptedText({
   text,
   className = "",

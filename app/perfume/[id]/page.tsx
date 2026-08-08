@@ -8,7 +8,6 @@ import {
 } from "@/lib/data";
 import { FAMILY_STYLES, PRICE_TIER_LABELS } from "@/lib/family";
 import PerfumeBottleLoader from "@/components/experience/PerfumeBottleLoader";
-import AtmosphericBackground from "@/components/experience/AtmosphericBackground";
 import NotePyramidChart from "@/components/NotePyramidChart";
 import ScentRadarChart from "@/components/ScentRadarChart";
 import NoteTimeline from "@/components/NoteTimeline";
@@ -37,7 +36,6 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
 
   return (
     <div>
-      <AtmosphericBackground color={family.color} />
       <div className="relative min-h-[70vh] overflow-hidden" data-cursor="Rotate" data-cursor-strong>
         <PerfumeBottleLoader color={family.color} />
         <div className="relative z-10 mx-auto flex min-h-[70vh] max-w-4xl flex-col justify-center px-6">

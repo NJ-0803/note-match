@@ -8,7 +8,7 @@ import { motion, useScroll, useTransform } from "motion/react";
  * no WebGL) - meant to make the space below the 3D hero feel like a
  * continuation of the same environment rather than a flat cutoff, giving
  * a subtle sense of descending through layers of light as you scroll. */
-export default function AtmosphericBackground({ color }: { color: string }) {
+export default function AtmosphericBackground({ color = "var(--accent)" }: { color?: string }) {
   const { scrollYProgress } = useScroll();
 
   const farY = useTransform(scrollYProgress, [0, 1], [0, 260]);

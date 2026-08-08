@@ -5,8 +5,9 @@ import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import { MeshTransmissionMaterial } from "@react-three/drei";
 import * as THREE from "three";
 import { useHeroCapabilities, useIsMobileViewport } from "@/lib/useHeroCapabilities";
+import ParticleField from "./ParticleField";
 
-function BottleMesh({ color, reveal }: { color: string; reveal: number }) {
+function BottleMesh({ color, reveal, offsetX }: { color: string; reveal: number; offsetX: number }) {
   const groupRef = useRef<THREE.Group>(null);
   const { pointer } = useThree();
 
@@ -23,13 +24,14 @@ function BottleMesh({ color, reveal }: { color: string; reveal: number }) {
 
     // Gentle vertical float, like it's suspended.
     group.position.y = Math.sin(performance.now() * 0.0006) * 0.08;
+    group.position.x = offsetX;
 
     const targetScale = 0.9 + reveal * 0.1;
     group.scale.setScalar(THREE.MathUtils.lerp(group.scale.x, targetScale, 0.06));
   });
 
   return (
-    <group ref={groupRef} scale={0.9}>
+    <group ref={groupRef} position={[offsetX, 0, 0]} scale={0.9}>
       {/* Body */}
       <mesh position={[0, -0.1, 0]}>
         <cylinderGeometry args={[0.55, 0.62, 1.5, 48]} />
@@ -119,18 +121,27 @@ export default function PerfumeBottle3D({ color }: { color: string }) {
     );
   }
 
+  const offsetX = isMobile ? 0 : -1.7;
+
   return (
     <div ref={containerRef} className="h-full w-full">
       <Canvas
         dpr={isMobile ? [1, 1.5] : [1, 2]}
         gl={{ antialias: !isMobile }}
         frameloop={inView ? "always" : "never"}
-        camera={{ position: [0, 0, 4], fov: 40 }}
+        camera={{ position: [0, 0, 5], fov: 45 }}
       >
         <ambientLight intensity={0.35} />
-        <pointLight position={[2.5, 2, 3]} intensity={140} color="#f2efe8" decay={1.5} />
-        <pointLight position={[-2.5, -1, 2]} intensity={70} color={color} decay={1.5} />
-        <RevealController>{(reveal) => <BottleMesh color={color} reveal={reveal} />}</RevealController>
+        <pointLight position={[2.5, 2, 3]} intensity={160} color="#f2efe8" decay={1.5} />
+        <pointLight position={[-2.5, -1, 2]} intensity={80} color={color} decay={1.5} />
+        <RevealController>
+          {(reveal) => (
+            <>
+              <ParticleField count={isMobile ? 50 : 130} opacity={reveal * 0.5} />
+              <BottleMesh color={color} reveal={reveal} offsetX={offsetX} />
+            </>
+          )}
+        </RevealController>
       </Canvas>
     </div>
   );

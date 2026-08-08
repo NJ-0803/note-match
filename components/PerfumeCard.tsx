@@ -28,7 +28,7 @@ export default function PerfumeCard({
       className="rounded-2xl border border-border bg-surface p-4 shadow-sm transition-shadow hover:shadow-md"
     >
       <div className="flex items-start justify-between gap-2">
-        <Link href={`/perfume/${perfume.id}`} className="group">
+        <Link href={`/perfume/${perfume.id}`} className="group" data-cursor="View">
           <p className="text-xs font-medium uppercase tracking-wide text-muted-foreground">{perfume.brand}</p>
           <h3 className="text-lg font-semibold text-foreground group-hover:underline">
             {perfume.name}

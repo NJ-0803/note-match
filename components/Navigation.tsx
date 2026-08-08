@@ -39,6 +39,7 @@ export default function Navigation() {
           <button
             type="button"
             onClick={() => setOpen(true)}
+            data-cursor="Open"
             className="flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-foreground"
             aria-expanded={open}
             aria-label="Open menu"

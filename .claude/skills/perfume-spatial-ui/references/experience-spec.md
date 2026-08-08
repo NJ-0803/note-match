@@ -31,13 +31,18 @@ Cinematic, minimal, restrained luxury fragrance house crossed with an advanced l
 
 ## 3D (`three` + `@react-three/fiber` + `@react-three/drei`)
 
-- Used for: homepage hero (`HeroExperience.tsx` — a wide starfield via `ParticleField` scaled up to span the whole frame, plus `MarsPlanet`, a rust-toned procedural-texture sphere with a thin additive atmosphere rim) and the perfume detail page bottle (`PerfumeBottle3D.tsx` — `MeshTransmissionMaterial` bottle + `ParticleField`).
-- `MarsPlanet.tsx` draws its surface texture once to a `<canvas>` (gradient + blotchy noise + polar caps) rather than shipping an image asset, and fakes an atmosphere glow with a single back-facing additive-blended shell rather than a postprocessing pipeline (no `@react-three/postprocessing` dependency) — keep that pattern for future glow effects instead of adding a bloom pass.
-- `ParticleField` takes optional `scale`/`size` props (defaults match the perfume-page usage) — the homepage passes a much larger `scale` so stars read as spanning the full viewport rather than clustering near the hero object.
+- Used for the perfume detail page bottle only (`PerfumeBottle3D.tsx` — `MeshTransmissionMaterial` bottle + `ParticleField`). The homepage hero is **no longer WebGL** (see "Homepage hero: scroll-scrubbed real video" below) — two prior fully-abstract attempts (an orbital particle ring, then a procedural Mars planet) were both rejected by the user as not reading as premium; the working direction turned out to be real photography/video, not more abstract 3D. Don't reintroduce a generated 3D object as the homepage's primary visual without checking first.
 - Always dynamically imported with `next/dynamic({ ssr: false })` from a client-component boundary — never import Three.js directly into a Server Component.
-- Always layered `absolute inset-0` behind a `relative z-10` DOM content layer holding real, accessible, fully-functional UI (search box, headline, buy links, etc.) — the 3D layer is decoration, never load-bearing for functionality.
-- Gate on `useHeroCapabilities` (`lib/useHeroCapabilities.ts`): starts in a `"checking"` state (SSR-safe), resolves `prefers-reduced-motion` + WebGL support client-side, falls back to `StaticHeroFallback.tsx` when either fails.
+- Always layered `absolute inset-0` behind a `relative z-10` DOM content layer holding real, accessible, fully-functional UI — the 3D layer is decoration, never load-bearing for functionality.
+- Gate on `useHeroCapabilities` (`lib/useHeroCapabilities.ts`): starts in a `"checking"` state (SSR-safe), resolves `prefers-reduced-motion` + WebGL support client-side.
 - Perf levers, in priority order: `dpr` cap (`[1,1.5]` mobile / `[1,2]` desktop — the dominant lever since `MeshTransmissionMaterial`'s refraction cost scales with pixel count), particle count reduction on mobile (`isMobile` checks via `window.innerWidth < 768`, not UA sniffing), `frameloop` toggled via `IntersectionObserver` when off-screen. No HDRI/`<Environment>` — plain `ambientLight` + tinted `pointLight`s only, to avoid an external asset fetch.
+
+## Homepage hero: scroll-scrubbed real video (`components/experience/ScrubVideoHero.tsx`)
+
+- Real footage, not generated imagery — `public/hero/bottle-scrub.mp4` (transcoded from a user-provided phone video of a hand holding an actual Emporio Armani bottle) plus `public/hero/bottle-poster.jpg` as the poster/reduced-motion fallback. If this asset ever needs replacing, it must be another real photo/video the user provides — don't swap in a WebGL/procedural stand-in.
+- Technique: `useScroll({ target, offset: ["start start", "end start"] })` over the section's own one-viewport scroll range drives `video.currentTime = progress * video.duration` via `useMotionValueEvent`, so scrolling reads as scrubbing through the clip frame-by-frame (60 frames), not a normal autoplaying video. The same scroll progress also drives a late-stage dissolve (opacity/scale/blur) so the hero visibly falls away into the section below, rather than just scrolling off-screen.
+- Reference for this pattern (an external site, not code the user has rights to copy verbatim, only to draw technique from): a scroll-scrubbed "SMASH // THE SEAR" cinematic product demo — corner-bracket viewfinder framing, a REC-style top strip, a bottom timeline scrubber with a live frame counter, rotated side labels. `ScrubVideoHero` reimplements this chrome from scratch with the site's own tokens/copy, not copied assets.
+- `useReducedMotion()` (from `motion/react`) swaps the whole scrubbed-video section for a plain static `next/image` poster — no scroll-linked motion at all for users who've asked for less.
 
 ## Cursor (`components/CustomCursor.tsx`, mounted once in `app/layout.tsx`)
 

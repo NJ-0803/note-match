@@ -13,10 +13,12 @@ import {
 export default function ScrubVideoHero({
   videoSrc,
   posterSrc,
+  totalFrames = 60,
   children,
 }: {
   videoSrc: string;
   posterSrc: string;
+  totalFrames?: number;
   children: React.ReactNode;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -24,7 +26,6 @@ export default function ScrubVideoHero({
   const prefersReducedMotion = useReducedMotion();
   const [duration, setDuration] = useState(0);
   const [frame, setFrame] = useState(0);
-  const totalFrames = 60;
 
   const { scrollYProgress } = useScroll({ target: sectionRef, offset: ["start start", "end start"] });
 

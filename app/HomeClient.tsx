@@ -10,7 +10,7 @@ import ScrubVideoHero from "@/components/experience/ScrubVideoHero";
 export default function HomeClient({ perfumes }: { perfumes: Perfume[] }) {
   return (
     <div className="relative">
-      <ScrubVideoHero videoSrc="/hero/bottle-scrub.mp4" posterSrc="/hero/bottle-poster.jpg">
+      <ScrubVideoHero videoSrc="/hero/bottle-ai.mp4" posterSrc="/hero/bottle-ai-poster.jpg" totalFrames={242}>
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-5xl flex-col justify-center px-8">
           <motion.p
             initial={{ opacity: 0 }}

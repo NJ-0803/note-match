@@ -10,6 +10,7 @@ const LINKS = [
   { href: "/compare", label: "Compare" },
   { href: "/catalogue", label: "Catalogue" },
   { href: "/collection", label: "My Collection" },
+  { href: "/login", label: "Sign in" },
   { href: "/about", label: "About" },
 ];
 

@@ -1,7 +1,8 @@
 "use client";
 
+import { useRef } from "react";
 import dynamic from "next/dynamic";
-import { motion } from "motion/react";
+import { motion, useScroll, useTransform } from "motion/react";
 import type { Perfume } from "@/types/perfume";
 import SearchBox from "@/components/SearchBox";
 import FreeTextSearch from "@/components/FreeTextSearch";
@@ -12,9 +13,25 @@ const HeroExperience = dynamic(() => import("@/components/experience/HeroExperie
 });
 
 export default function HomeClient({ perfumes }: { perfumes: Perfume[] }) {
+  const heroRef = useRef<HTMLDivElement>(null);
+
+  // Ties the hero's dissolve directly to how far the user has scrolled past
+  // it (not a fixed-duration animation), so it reads as the scene physically
+  // falling away rather than a canned transition playing once.
+  const { scrollYProgress } = useScroll({ target: heroRef, offset: ["start start", "end start"] });
+  const heroOpacity = useTransform(scrollYProgress, [0, 0.7, 1], [1, 0.6, 0]);
+  const heroScale = useTransform(scrollYProgress, [0, 1], [1, 1.35]);
+  const heroBlurPx = useTransform(scrollYProgress, [0, 1], [0, 18]);
+  const heroFilter = useTransform(heroBlurPx, (v) => `blur(${v}px)`);
+  const heroY = useTransform(scrollYProgress, [0, 1], [0, -60]);
+
   return (
     <div className="relative">
-      <div className="relative min-h-screen">
+      <motion.div
+        ref={heroRef}
+        style={{ opacity: heroOpacity, scale: heroScale, filter: heroFilter, y: heroY }}
+        className="relative min-h-screen overflow-hidden"
+      >
         <HeroExperience />
 
         {/* Soft vignette between the canvas and the text so the starfield and
@@ -62,7 +79,7 @@ export default function HomeClient({ perfumes }: { perfumes: Perfume[] }) {
             Scroll to search ↓
           </motion.p>
         </div>
-      </div>
+      </motion.div>
 
       <motion.div
         initial={{ opacity: 0, scale: 0.85, y: 28 }}

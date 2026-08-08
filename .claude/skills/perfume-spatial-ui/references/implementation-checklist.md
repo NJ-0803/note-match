@@ -11,7 +11,7 @@ What's built, where it lives, and what's still roadmap. Check this before adding
 
 ## Per-page / per-component, already built
 
-- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx`) — `HeroExperience` (WebGL particles + `ScentObject` glass icosahedron), entrance sequence via `RevealText` + staged `motion` delays, `SearchBox` + `FreeTextSearch` layered above the canvas.
+- **Homepage** (`app/page.tsx` → `app/HomeClient.tsx`) — `HeroExperience` (WebGL starfield particles + `GalaxyRing`, an orbital particle-ring hero object), entrance sequence via `RevealText` + staged `motion` delays, `SearchBox` + `FreeTextSearch` layered above the canvas.
 - **Perfume detail** (`app/perfume/[id]/page.tsx`) — full-bleed hero with `PerfumeBottleLoader` → `PerfumeBottle3D` (interactive glass bottle, cursor-tilt, `data-cursor="Rotate" data-cursor-strong` on the hero container), `app/perfume/[id]/template.tsx` for the per-navigation iris-wipe entrance (`PageMaterializeOverlay`).
 - **Navigation** (`components/Navigation.tsx`) — thin top bar, fullscreen `AnimatePresence` overlay menu with large Fraunces numbered links, menu trigger has `data-cursor="Open"`.
 - **PerfumeCard** (`components/PerfumeCard.tsx`) — title link has `data-cursor="View"`.

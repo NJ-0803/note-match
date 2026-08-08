@@ -4,9 +4,9 @@ import { useMemo, useRef } from "react";
 import { useFrame, useThree } from "@react-three/fiber";
 import * as THREE from "three";
 
-const PARTICLE_COUNT = 2200;
-const INNER_RADIUS = 0.75;
-const OUTER_RADIUS = 1.55;
+const PARTICLE_COUNT = 2000;
+const INNER_RADIUS = 0.65;
+const OUTER_RADIUS = 1.25;
 
 // A flattened ring of points, denser and brighter near the inner edge and
 // thinning into a wispy, cooler-toned trail toward the outside - reads as an

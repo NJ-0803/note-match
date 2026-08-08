@@ -7,6 +7,7 @@ import {
   getNoteDescriptions,
 } from "@/lib/data";
 import { FAMILY_STYLES, PRICE_TIER_LABELS } from "@/lib/family";
+import PerfumeBottleLoader from "@/components/experience/PerfumeBottleLoader";
 import NotePyramidChart from "@/components/NotePyramidChart";
 import ScentRadarChart from "@/components/ScentRadarChart";
 import NoteTimeline from "@/components/NoteTimeline";
@@ -35,11 +36,15 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
 
   return (
     <div className="mx-auto max-w-4xl px-6 py-10">
-      <div className="flex flex-wrap items-start justify-between gap-4">
-        <div>
-          <p className="text-sm font-medium uppercase tracking-wide text-muted-foreground">{perfume.brand}</p>
-          <h1 className="text-3xl font-bold tracking-tight">{perfume.name}</h1>
-          <div className="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
+      <div className="grid grid-cols-1 items-center gap-8 md:grid-cols-2">
+        <div className="order-2 h-[340px] sm:h-[420px] md:order-1">
+          <PerfumeBottleLoader color={family.color} />
+        </div>
+
+        <div className="order-1 md:order-2">
+          <p className="font-mono text-xs uppercase tracking-widest text-muted-foreground">{perfume.brand}</p>
+          <h1 className="font-display text-4xl tracking-tight">{perfume.name}</h1>
+          <div className="mt-3 flex flex-wrap items-center gap-1.5 text-xs">
             <span style={{ color: family.color, backgroundColor: family.bg }} className="rounded-full px-2 py-0.5 font-medium">
               {family.emoji} {perfume.family}
             </span>
@@ -53,10 +58,10 @@ export default async function PerfumePage({ params }: PageProps<"/perfume/[id]">
           {perfume.description && (
             <p className="mt-3 max-w-lg text-sm text-muted-foreground">{perfume.description}</p>
           )}
-        </div>
-        <div className="flex flex-col items-end gap-2">
-          <CollectionButton id={perfume.id} />
-          <ShareButton perfumeId={perfume.id} />
+          <div className="mt-5 flex flex-col items-start gap-2">
+            <CollectionButton id={perfume.id} />
+            <ShareButton perfumeId={perfume.id} />
+          </div>
         </div>
       </div>
 

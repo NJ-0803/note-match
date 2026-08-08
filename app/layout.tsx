@@ -17,6 +17,14 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+// Full variable weight axis, kept separate from geistMono above so the
+// site-wide static weight is untouched — only VariableProximity uses this.
+const geistMonoVariable = Geist_Mono({
+  variable: "--font-geist-mono-variable",
+  subsets: ["latin"],
+  weight: "variable",
+});
+
 const fraunces = Fraunces({
   variable: "--font-fraunces",
   subsets: ["latin"],
@@ -33,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${geistMonoVariable.variable} ${fraunces.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <AtmosphereColorProvider>

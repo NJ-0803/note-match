@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
+import SilkPanelBackground from "../experience/SilkPanelBackground";
 
 export default function StagePanel({
   children,
@@ -23,6 +24,7 @@ export default function StagePanel({
         align === "center" ? "items-center text-center" : ""
       }`}
     >
+      <SilkPanelBackground />
       <p className="font-mono text-xs uppercase tracking-[0.3em] text-accent">{eyebrow}</p>
       <h2 className="mt-2 font-display text-3xl tracking-tight sm:text-4xl">{title}</h2>
       <div className="mt-10">{children}</div>

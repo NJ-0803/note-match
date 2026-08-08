@@ -5,20 +5,26 @@ import type { Perfume } from "@/types/perfume";
 import SearchBox from "@/components/SearchBox";
 import FreeTextSearch from "@/components/FreeTextSearch";
 import RevealText from "@/components/motion/RevealText";
+import VariableProximity from "@/components/motion/VariableProximity";
 import ScrubVideoHero from "@/components/experience/ScrubVideoHero";
 
 export default function HomeClient({ perfumes }: { perfumes: Perfume[] }) {
   return (
     <div className="relative">
-      <ScrubVideoHero videoSrc="/hero/bottle-ai.mp4" posterSrc="/hero/bottle-ai-poster.jpg" totalFrames={242}>
+      <ScrubVideoHero
+        videoSrc="/hero/bottle-ai-nowall.mp4"
+        posterSrc="/hero/bottle-ai-nowall-poster.jpg"
+        totalFrames={242}
+        blendWithAtmosphere
+      >
         <div className="relative z-10 mx-auto flex min-h-[calc(100vh-88px)] max-w-5xl flex-col justify-center px-8">
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="mb-4 font-mono text-xs uppercase tracking-[0.3em] text-accent"
+            className="mb-4 text-xs uppercase tracking-[0.3em] text-accent"
           >
-            N&deg; 001 — Olfactory Discovery System
+            <VariableProximity text="N° 001 — Olfactory Discovery System" />
           </motion.p>
 
           <h1 className="font-display text-4xl leading-[0.95] tracking-tight sm:text-7xl">

@@ -9,16 +9,25 @@ import {
   useMotionValueEvent,
   useReducedMotion,
 } from "motion/react";
+import VariableProximity from "@/components/motion/VariableProximity";
+import HeroCrosshair from "@/components/experience/HeroCrosshair";
+import DecryptedText from "@/components/motion/DecryptedText";
 
 export default function ScrubVideoHero({
   videoSrc,
   posterSrc,
   totalFrames = 60,
+  blendWithAtmosphere = false,
   children,
 }: {
   videoSrc: string;
   posterSrc: string;
   totalFrames?: number;
+  /** For footage shot/generated against a solid black backdrop: screen-blends
+   * the video so black dissolves into the page instead of showing as a flat
+   * box, letting the site's own dark atmosphere show through around the
+   * subject. Don't use this on footage with a real (non-black) background. */
+  blendWithAtmosphere?: boolean;
   children: React.ReactNode;
 }) {
   const sectionRef = useRef<HTMLElement>(null);
@@ -62,10 +71,17 @@ export default function ScrubVideoHero({
           ? undefined
           : { opacity: dissolveOpacity, scale: dissolveScale, filter: dissolveFilter }
       }
-      className="relative min-h-screen overflow-hidden bg-black"
+      className={`relative min-h-screen overflow-hidden ${blendWithAtmosphere ? "" : "bg-black"}`}
     >
       {prefersReducedMotion ? (
-        <Image src={posterSrc} alt="" fill priority className="object-cover" />
+        <Image
+          src={posterSrc}
+          alt=""
+          fill
+          priority
+          className="object-cover"
+          style={blendWithAtmosphere ? { mixBlendMode: "screen" } : undefined}
+        />
       ) : (
         <video
           ref={videoRef}
@@ -74,12 +90,17 @@ export default function ScrubVideoHero({
           preload="auto"
           poster={posterSrc}
           className="absolute inset-0 h-full w-full object-cover"
+          style={blendWithAtmosphere ? { mixBlendMode: "screen" } : undefined}
         >
           <source src={videoSrc} type="video/mp4" />
         </video>
       )}
 
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-black/55 via-black/15 to-black/75" />
+      <div
+        className={`pointer-events-none absolute inset-0 bg-gradient-to-b ${
+          blendWithAtmosphere ? "from-black/35 via-transparent to-black/60" : "from-black/55 via-black/15 to-black/75"
+        }`}
+      />
 
       {/* Viewfinder corner brackets */}
       <div className="pointer-events-none absolute inset-6 sm:inset-8">
@@ -101,12 +122,16 @@ export default function ScrubVideoHero({
       <div className="relative z-10 flex items-start justify-between px-8 pt-8 font-mono text-[10px] uppercase tracking-[0.3em] text-foreground/50 sm:pt-10">
         <span className="flex items-center gap-2">
           <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-          Fragrance Archive
+          <VariableProximity text="Fragrance Archive" />
         </span>
-        <span className="hidden sm:inline">Emporio Armani · Stronger With You Absolutely</span>
+        <span className="hidden sm:inline">
+          <DecryptedText text="Emporio Armani · Stronger With You Absolutely" delay={600} />
+        </span>
       </div>
 
       {children}
+
+      <HeroCrosshair containerRef={sectionRef} />
 
       {/* Center scroll prompt */}
       <motion.div

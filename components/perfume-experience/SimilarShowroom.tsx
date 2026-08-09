@@ -44,9 +44,18 @@ export default function SimilarShowroom({
   const active = items[activeIndex];
 
   function setActiveIndex(updater: number | ((i: number) => number)) {
-    const nextIndex = typeof updater === "function" ? updater(activeIndex) : updater;
-    const clamped = Math.min(items.length - 1, Math.max(0, nextIndex));
-    setActiveId(items[clamped]?.perfume.id ?? null);
+    // Goes through setActiveId's own functional-update form rather than
+    // closing over the `activeIndex` computed during this render - the
+    // keydown listener below is only re-attached when `items` changes, so
+    // reading `activeIndex` directly here would leave repeated key presses
+    // stuck recomputing from the same stale starting index instead of the
+    // current one.
+    setActiveId((prevId) => {
+      const prevIndex = Math.max(0, items.findIndex((it) => it.perfume.id === prevId));
+      const nextIndex = typeof updater === "function" ? updater(prevIndex) : updater;
+      const clamped = Math.min(items.length - 1, Math.max(0, nextIndex));
+      return items[clamped]?.perfume.id ?? null;
+    });
   }
 
   useEffect(() => {
@@ -62,7 +71,7 @@ export default function SimilarShowroom({
     }
     window.addEventListener("keydown", onKey);
     return () => window.removeEventListener("keydown", onKey);
-  }, [items.length]);
+  }, [items]);
 
   function commit(id: string) {
     if (selectingId) return;

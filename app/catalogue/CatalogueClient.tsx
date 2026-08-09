@@ -4,6 +4,7 @@ import { useMemo, useState } from "react";
 import { motion } from "motion/react";
 import type { Perfume, FragranceFamily } from "@/types/perfume";
 import FamilyFilter from "@/components/FamilyFilter";
+import NotesFilter, { type NotesMode } from "@/components/NotesFilter";
 import PerfumeCard from "@/components/PerfumeCard";
 
 const gridVariants = {
@@ -18,11 +19,19 @@ const cardVariants = {
 
 export default function CatalogueClient({ perfumes }: { perfumes: Perfume[] }) {
   const [families, setFamilies] = useState<FragranceFamily[]>([]);
+  const [notes, setNotes] = useState<string[]>([]);
+  const [notesMode, setNotesMode] = useState<NotesMode>("OR");
 
-  const filtered = useMemo(
-    () => (families.length > 0 ? perfumes.filter((p) => families.includes(p.family)) : perfumes),
-    [perfumes, families],
-  );
+  const filtered = useMemo(() => {
+    return perfumes.filter((p) => {
+      if (families.length > 0 && !families.includes(p.family)) return false;
+      if (notes.length === 0) return true;
+      const perfumeNotes = new Set([...p.topNotes, ...p.heartNotes, ...p.baseNotes]);
+      return notesMode === "AND"
+        ? notes.every((n) => perfumeNotes.has(n))
+        : notes.some((n) => perfumeNotes.has(n));
+    });
+  }, [perfumes, families, notes, notesMode]);
 
   return (
     <div className="mx-auto max-w-5xl px-6 py-10">
@@ -46,12 +55,22 @@ export default function CatalogueClient({ perfumes }: { perfumes: Perfume[] }) {
         <div className="flex justify-center">
           <FamilyFilter active={families} onChange={setFamilies} />
         </div>
+        <div className="mt-8">
+          <NotesFilter perfumes={perfumes} active={notes} mode={notesMode} onChangeActive={setNotes} onChangeMode={setNotesMode} />
+        </div>
       </motion.section>
 
       <div className="mt-10">
         <div className="mb-4 flex items-baseline justify-between">
           <h2 className="text-lg font-semibold">
-            {families.length > 0 ? `${families.join(", ")} perfumes` : "All perfumes"}{" "}
+            {families.length > 0 || notes.length > 0
+              ? [
+                  families.length > 0 ? families.join(", ") : null,
+                  notes.length > 0 ? `${notes.join(notesMode === "AND" ? " + " : " or ")}` : null,
+                ]
+                  .filter(Boolean)
+                  .join(" · ") + " perfumes"
+              : "All perfumes"}{" "}
             <span className="text-sm font-normal text-muted-foreground">({filtered.length})</span>
           </h2>
         </div>

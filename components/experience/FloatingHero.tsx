@@ -4,7 +4,7 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { usePointerParallax } from "@/lib/usePointerParallax";
 import FloatingIngredient, { type IngredientConfig } from "./FloatingIngredient";
-import CentralBottle from "./CentralBottle";
+import ElectricFlow from "./ElectricFlow";
 import MaskReveal from "@/components/motion/MaskReveal";
 import VariableProximity from "@/components/motion/VariableProximity";
 import DecryptedText from "@/components/motion/DecryptedText";
@@ -125,7 +125,7 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
       {!prefersReducedMotion &&
         INGREDIENTS.map((cfg) => <FloatingIngredient key={cfg.id} config={cfg} pointerX={x} pointerY={y} />)}
 
-      <CentralBottle pointerX={x} pointerY={y} />
+      {!prefersReducedMotion && <ElectricFlow pointerX={x} pointerY={y} />}
 
       {/* Eyebrow */}
       <motion.div

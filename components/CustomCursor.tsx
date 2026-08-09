@@ -7,15 +7,18 @@ import { motion, useMotionValue, useSpring, useAnimationFrame } from "motion/rea
 // the tighter, brighter ones - each follows the one before it with
 // progressively softer spring physics, which is what makes the whole
 // chain read as one continuous dissolving tail rather than separate dots
-// trailing the mouse.
+// trailing the mouse. Rendered inside a goo-filtered wrapper (see
+// CURSOR_GOO_FILTER_ID below) so the chain merges into one liquid blob
+// instead of looking like discrete overlapping circles.
 const GLOW_LAYERS = [
-  { size: 46, blur: 28, opacity: 0.08, stiffness: 55, damping: 20 },
-  { size: 38, blur: 22, opacity: 0.14, stiffness: 80, damping: 21 },
-  { size: 30, blur: 16, opacity: 0.22, stiffness: 130, damping: 23 },
-  { size: 22, blur: 10, opacity: 0.35, stiffness: 220, damping: 26 },
-  { size: 14, blur: 5, opacity: 0.55, stiffness: 420, damping: 32 },
+  { size: 52, blur: 24, opacity: 0.16, stiffness: 55, damping: 20 },
+  { size: 42, blur: 19, opacity: 0.24, stiffness: 80, damping: 21 },
+  { size: 33, blur: 14, opacity: 0.34, stiffness: 130, damping: 23 },
+  { size: 24, blur: 9, opacity: 0.48, stiffness: 220, damping: 26 },
+  { size: 15, blur: 4, opacity: 0.68, stiffness: 420, damping: 32 },
 ];
 const CORE_SPRING = { stiffness: 900, damping: 42 };
+const CURSOR_GOO_FILTER_ID = "cursor-goo";
 
 export default function CustomCursor() {
   const [enabled, setEnabled] = useState(false);
@@ -39,7 +42,7 @@ export default function CustomCursor() {
     const vx = rawX.getVelocity();
     const vy = rawY.getVelocity();
     const speed = Math.hypot(vx, vy);
-    const targetLength = Math.min(52, speed / 26);
+    const targetLength = Math.min(72, speed / 20);
     streakLength.set(streakLength.get() + (targetLength - streakLength.get()) * 0.25);
     if (speed > 40) {
       const angleDeg = (Math.atan2(vy, vx) * 180) / Math.PI + 180;
@@ -131,28 +134,47 @@ export default function CustomCursor() {
         }
       `}</style>
 
-      {chain.map(([mx, my, layer], i) => (
-        <motion.div
-          key={i}
-          style={{
-            position: "fixed",
-            left: 0,
-            top: 0,
-            x: mx,
-            y: my,
-            width: layer.size * intensity,
-            height: layer.size * intensity,
-            marginLeft: -(layer.size * intensity) / 2,
-            marginTop: -(layer.size * intensity) / 2,
-            opacity: layer.opacity,
-            filter: `blur(${layer.blur}px)`,
-            background: "radial-gradient(circle, var(--accent) 0%, transparent 72%)",
-            mixBlendMode: "screen",
-            transition: "width 0.25s ease, height 0.25s ease, margin 0.25s ease",
-          }}
-          className="pointer-events-none z-[100] rounded-full"
-        />
-      ))}
+      {/* Zero-size, defines the liquid-merge filter used below - never
+          rendered visibly itself. */}
+      <svg width="0" height="0" className="absolute" aria-hidden>
+        <defs>
+          <filter id={CURSOR_GOO_FILTER_ID}>
+            <feGaussianBlur in="SourceGraphic" stdDeviation="9" result="blur" />
+            <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 22 -9" result="goo" />
+            <feBlend in="SourceGraphic" in2="goo" />
+          </filter>
+        </defs>
+      </svg>
+
+      {/* `filter` makes this the containing block for its fixed children,
+          so it must itself span the viewport for their positioning to stay
+          correct. */}
+      <div
+        className="pointer-events-none fixed inset-0 z-[100]"
+        style={{ filter: `url(#${CURSOR_GOO_FILTER_ID})` }}
+      >
+        {chain.map(([mx, my, layer], i) => (
+          <motion.div
+            key={i}
+            style={{
+              position: "fixed",
+              left: 0,
+              top: 0,
+              x: mx,
+              y: my,
+              width: layer.size * intensity,
+              height: layer.size * intensity,
+              marginLeft: -(layer.size * intensity) / 2,
+              marginTop: -(layer.size * intensity) / 2,
+              opacity: layer.opacity,
+              filter: `blur(${layer.blur}px)`,
+              background: "radial-gradient(circle, var(--accent) 0%, transparent 72%)",
+              transition: "width 0.25s ease, height 0.25s ease, margin 0.25s ease",
+            }}
+            className="rounded-full"
+          />
+        ))}
+      </div>
 
       {/* Speed-reactive meteor streak, trailing behind the direction of travel */}
       <motion.div
@@ -168,13 +190,30 @@ export default function CustomCursor() {
           rotate: streakAngle,
           transformOrigin: "0% 50%",
           background: "linear-gradient(90deg, var(--accent) 0%, transparent 100%)",
-          opacity: 0.75,
+          opacity: 0.9,
+          filter: "drop-shadow(0 0 5px var(--accent))",
           mixBlendMode: "screen",
         }}
         className="pointer-events-none z-[99] rounded-full"
       />
 
-      {/* Bright energy core */}
+      {/* Bright energy core, with a thin electric ring for extra punch */}
+      <motion.div
+        style={{
+          position: "fixed",
+          left: 0,
+          top: 0,
+          x: coreX,
+          y: coreY,
+          marginLeft: -9,
+          marginTop: -9,
+          width: 18,
+          height: 18,
+          border: "1px solid var(--accent)",
+          opacity: 0.55,
+        }}
+        className="pointer-events-none z-[100] rounded-full"
+      />
       <motion.div
         style={{
           position: "fixed",
@@ -187,14 +226,14 @@ export default function CustomCursor() {
           width: 6,
           height: 6,
         }}
-        className="pointer-events-none z-[101] rounded-full bg-foreground shadow-[0_0_6px_1px_var(--accent),0_0_16px_4px_color-mix(in_srgb,var(--accent)_60%,transparent)]"
+        className="pointer-events-none z-[101] rounded-full bg-foreground shadow-[0_0_10px_2px_var(--accent),0_0_24px_6px_color-mix(in_srgb,var(--accent)_70%,transparent)]"
       />
 
       {label && (
         <motion.div
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0 }}
+          exit={{ opacity: 0, scale: 1 }}
           transition={{ duration: 0.18 }}
           style={{ position: "fixed", left: 0, top: 0, x: coreX, y: coreY }}
           className="pointer-events-none z-[102] -translate-x-1/2 translate-y-4 font-mono text-[10px] uppercase tracking-[0.25em] text-foreground"

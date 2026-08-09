@@ -21,27 +21,32 @@ export default function ModeSwitchSearch({ perfumes }: { perfumes: Perfume[] }) 
 
   return (
     <div>
-      <div className="mb-8 flex justify-center gap-1 font-mono text-[10px] uppercase tracking-[0.25em]">
-        {MODES.map((m) => (
-          <button
-            key={m.id}
-            type="button"
-            data-cursor="Enter"
-            onClick={() => setMode(m.id)}
-            className={`relative px-4 py-2 transition-colors ${
-              mode === m.id ? "text-accent" : "text-muted-foreground hover:text-foreground"
-            }`}
-          >
-            {mode === m.id && (
+      <div className="mb-8 flex justify-center gap-3 font-mono text-sm uppercase tracking-[0.2em] sm:text-base">
+        {MODES.map((m) => {
+          const active = mode === m.id;
+          return (
+            <button
+              key={m.id}
+              type="button"
+              data-cursor="Enter"
+              onClick={() => setMode(m.id)}
+              style={active ? { boxShadow: "0 0 18px 1px color-mix(in srgb, var(--accent) 55%, transparent)" } : undefined}
+              className={`relative overflow-hidden rounded-full border px-5 py-2.5 transition-colors duration-300 ${
+                active
+                  ? "border-accent text-accent"
+                  : "border-border text-muted-foreground hover:border-foreground/40 hover:text-foreground"
+              }`}
+            >
               <motion.span
-                layoutId="mode-switch-underline"
-                transition={{ type: "spring", stiffness: 320, damping: 30 }}
-                className="absolute inset-x-3 -bottom-0.5 h-px bg-accent"
+                aria-hidden
+                className="pointer-events-none absolute inset-y-0 w-1/3 -skew-x-12 bg-gradient-to-r from-transparent via-foreground/25 to-transparent"
+                animate={{ x: ["-120%", "260%"] }}
+                transition={{ duration: 2.8, repeat: Infinity, ease: "easeInOut", repeatDelay: 1.6, delay: active ? 0 : 0.6 }}
               />
-            )}
-            {m.label}
-          </button>
-        ))}
+              <span className="relative">{m.label}</span>
+            </button>
+          );
+        })}
       </div>
 
       <AnimatePresence mode="wait">

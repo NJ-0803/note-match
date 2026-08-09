@@ -152,14 +152,16 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
         </h2>
       </div>
 
-      {/* Search, appears last */}
+      {/* Search, appears last - centered in the hero viewport rather than
+          following the headline in flow, so it anchors the space the
+          central object used to occupy. */}
       <motion.div
         initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.8, delay: 1.3, ease: [0.16, 1, 0.3, 1] }}
-        className="relative z-20 mx-auto w-full max-w-2xl px-6 pb-24 sm:pb-28"
+        className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center px-6"
       >
-        {children}
+        <div className="pointer-events-auto w-full max-w-2xl">{children}</div>
       </motion.div>
 
       {/* Scroll indicator */}

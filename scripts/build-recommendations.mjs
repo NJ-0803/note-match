@@ -14,6 +14,8 @@ import {
   getToolArgs,
   createWithRetry,
   LLM_MODEL,
+  REASONING_EFFORT,
+  normalizeScore,
   noteText,
   perfumeLabel,
   sleep,
@@ -89,7 +91,8 @@ async function getMatchesFor(client, perfume, candidates) {
 
   const completion = await createWithRetry(client, {
     model: LLM_MODEL,
-    max_tokens: 1200,
+    max_tokens: 1500,
+    reasoning_effort: REASONING_EFFORT,
     messages: [
       { role: "system", content: systemText },
       { role: "user", content: userText },
@@ -132,7 +135,7 @@ async function main() {
 
       recommendations[perfume.id] = cleanMatches.map((m) => ({
         id: m.id,
-        score: m.score,
+        score: normalizeScore(m.score),
         sharedNotes: m.sharedNotes,
       }));
       for (const m of cleanMatches) {

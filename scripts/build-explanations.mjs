@@ -5,7 +5,7 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { getClient, getToolArgs, createWithRetry, LLM_MODEL, sleep } from "./_shared.mjs";
+import { getClient, getToolArgs, createWithRetry, LLM_MODEL, REASONING_EFFORT, sleep } from "./_shared.mjs";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const DATA_DIR = path.join(__dirname, "..", "data");
@@ -45,7 +45,8 @@ const NOTES_TOOL = {
 async function describeNoteBatch(client, notes) {
   const completion = await createWithRetry(client, {
     model: LLM_MODEL,
-    max_tokens: 1200,
+    max_tokens: 1500,
+    reasoning_effort: REASONING_EFFORT,
     messages: [
       {
         role: "user",

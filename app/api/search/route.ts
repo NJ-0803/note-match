@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getLlmClient, LLM_MODEL } from "@/lib/llm";
+import { getLlmClient, LLM_MODEL, REASONING_EFFORT, normalizeScore } from "@/lib/llm";
 import { getAllPerfumes } from "@/lib/data";
 import { preFilterByDescription } from "@/lib/search";
 
@@ -74,7 +74,8 @@ export async function POST(request: NextRequest) {
 
   const callParams = {
     model: LLM_MODEL,
-    max_tokens: 1200,
+    max_tokens: 1500,
+    reasoning_effort: REASONING_EFFORT,
     messages: [
       {
         role: "system" as const,
@@ -95,28 +96,44 @@ export async function POST(request: NextRequest) {
     tool_choice: { type: "function" as const, function: { name: "submit_matches" } },
   };
 
+  async function attemptSearch() {
+    const completion = await client!.chat.completions.create(callParams);
+    const toolCall = completion.choices[0]?.message?.tool_calls?.[0];
+    if (!toolCall?.function?.arguments) throw new Error("Model returned no tool call");
+    // Throws if the model emitted malformed JSON - caught by the retry below,
+    // not just network/API errors from the completion call itself.
+    return JSON.parse(toolCall.function.arguments).matches ?? [];
+  }
+
+  let matches: Array<{ id: string; score: number; reason: string }>;
   try {
     // llama-3.1-8b-instant occasionally emits a malformed tool call under
-    // strict forced tool_choice - retry once before failing the request.
-    let completion;
+    // strict forced tool_choice - retry the full attempt (call + parse)
+    // once before falling back, since the failure can surface either as a
+    // thrown request error or as unparseable content in an otherwise
+    // "successful" response.
     try {
-      completion = await client.chat.completions.create(callParams);
+      matches = await attemptSearch();
     } catch {
-      completion = await client.chat.completions.create(callParams);
+      matches = await attemptSearch();
     }
-
-    const toolCall = completion.choices[0]?.message?.tool_calls?.[0];
-    const matches = toolCall?.function?.arguments
-      ? (JSON.parse(toolCall.function.arguments).matches ?? [])
-      : [];
-    const validIds = new Set(shortlist.map((p) => p.id));
-    const filtered = (matches as Array<{ id: string; score: number; reason: string }>).filter((m) =>
-      validIds.has(m.id),
-    );
-
-    return NextResponse.json({ matches: filtered });
   } catch (err) {
-    console.error("Free-text search failed:", err);
-    return NextResponse.json({ error: "Search failed, please try again" }, { status: 502 });
+    console.error("Free-text search failed, falling back to note-overlap shortlist:", err);
+    // Never leave the visitor with a bare error for a working query - fall
+    // back to the deterministic local shortlist (already ranked by note/
+    // family/description overlap) so a description still returns something.
+    const fallback = shortlist.slice(0, 6).map((p, i) => ({
+      id: p.id,
+      score: Math.max(0.4, 0.85 - i * 0.08),
+      reason: "Matched by note overlap with your description (AI ranking was unavailable).",
+    }));
+    return NextResponse.json({ matches: fallback });
   }
+
+  const validIds = new Set(shortlist.map((p) => p.id));
+  const filtered = matches
+    .filter((m) => validIds.has(m.id))
+    .map((m) => ({ ...m, score: normalizeScore(m.score) }));
+
+  return NextResponse.json({ matches: filtered });
 }

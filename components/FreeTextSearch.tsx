@@ -48,7 +48,20 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
         Describe what you want
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col items-center gap-4">
-        <div className="relative w-full">
+        <div
+          className={`flex w-full items-center gap-3 rounded-full border bg-surface/90 px-5 py-3 backdrop-blur-sm transition-colors duration-300 ${
+            focused ? "border-accent" : "border-border"
+          }`}
+          style={{
+            boxShadow: focused
+              ? "0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent), 0 0 26px 3px color-mix(in srgb, var(--accent) 35%, transparent)"
+              : "0 0 20px 2px color-mix(in srgb, var(--accent) 14%, transparent)",
+          }}
+        >
+          <svg aria-hidden viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-muted-foreground">
+            <circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" strokeWidth="2" />
+            <line x1="21" y1="21" x2="16.2" y2="16.2" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+          </svg>
           <input
             type="text"
             data-cursor="Search"
@@ -57,17 +70,8 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
             onFocus={() => setFocused(true)}
             onBlur={() => setFocused(false)}
             placeholder="smoky vanilla for winter evenings…"
-            className="w-full border-0 border-b border-border bg-transparent px-1 py-3 text-center text-lg text-foreground outline-none placeholder:text-muted-foreground/60"
+            className="w-full border-0 bg-transparent text-left text-base text-foreground outline-none placeholder:text-muted-foreground/70 sm:text-lg"
           />
-          <div className="absolute inset-x-0 bottom-0 h-px bg-border">
-            <motion.div
-              initial={false}
-              animate={{ scaleX: focused ? 1 : 0, opacity: focused ? 1 : 0 }}
-              transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-              className="h-px w-full origin-center bg-accent"
-              style={{ boxShadow: focused ? "0 0 12px 1px var(--accent)" : undefined }}
-            />
-          </div>
         </div>
         <MagneticButton
           type="submit"

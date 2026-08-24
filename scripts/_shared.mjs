@@ -1,10 +1,25 @@
 import Groq from "groq-sdk";
 
-// Open-weight model on Groq's free tier - chosen over the larger gpt-oss
-// models specifically for its much higher daily quota (14,400 requests/day,
-// 500K tokens/day vs 1,000 req/day and 200K tokens/day for gpt-oss-120b),
-// since this workload is many small calls rather than a few large ones.
-export const LLM_MODEL = "llama-3.1-8b-instant";
+// llama-3.1-8b-instant was removed from Groq's catalog (calls now 404 with
+// model_not_found) - openai/gpt-oss-20b is the smallest current Groq model
+// with tool-calling support, keeping this many-small-calls workload on the
+// cheapest/fastest option available today.
+export const LLM_MODEL = "openai/gpt-oss-20b";
+
+// gpt-oss models emit a chain-of-thought before the tool call, which counts
+// against max_tokens - "low" keeps that short so requests don't truncate
+// mid-JSON, without materially hurting quality for a task this narrow
+// (ranking an already-filtered shortlist).
+export const REASONING_EFFORT = "low";
+
+// gpt-oss doesn't reliably keep scores on the requested 0-1 scale (observed
+// values up to ~10) - rescale defensively instead of trusting the prompt.
+export function normalizeScore(raw) {
+  if (typeof raw !== "number" || !Number.isFinite(raw)) return 0;
+  if (raw > 10) return Math.min(1, raw / 100);
+  if (raw > 1) return raw / 10;
+  return Math.max(0, raw);
+}
 
 export function getClient() {
   const apiKey = process.env.GROQ_API_KEY;
@@ -24,8 +39,8 @@ export function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
 
-/** llama-3.1-8b-instant occasionally emits a malformed (non-JSON) tool call
- * under Groq's strict forced tool_choice, especially with larger schemas.
+/** Small models occasionally emit a malformed (non-JSON) tool call under
+ * Groq's strict forced tool_choice, especially with larger schemas.
  * Retry a couple of times with a short backoff before giving up. */
 export async function createWithRetry(client, params, retries = 2) {
   let lastErr;

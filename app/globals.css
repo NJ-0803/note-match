@@ -44,3 +44,30 @@ body::before {
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+
+/* The search always sits in normal document flow right after the
+   headline, rather than as an absolutely-positioned overlay centered
+   over the whole hero - flow layout can't overlap a sibling by
+   construction, which is what actually guarantees no overlap at any
+   viewport size (an absolute overlay centered on viewport height, keyed
+   to a single breakpoint, is exactly what let the headline and search
+   collide on both narrow portrait AND short landscape viewports, and
+   even on some wide desktop windows once vw-scaled fonts grew the
+   headline enough). The heading block still gets extra breathing room on
+   spacious screens, purely for the editorial top/bottom-right headline
+   spacing - that's safe to vary because it can only push the search
+   further down, never under it. */
+.hero-heading-block {
+  min-height: 0;
+}
+.hero-search-anchor {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.5rem 3rem;
+}
+@media (min-width: 900px) and (min-height: 700px) {
+  .hero-heading-block {
+    min-height: 48vh;
+  }
+}

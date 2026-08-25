@@ -140,7 +140,7 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
       </motion.div>
 
       {/* Editorial headline, asymmetric placement */}
-      <div className="relative z-20 mx-auto flex min-h-[42vh] w-full max-w-6xl flex-col justify-between px-6 py-6 sm:min-h-[62vh] sm:px-10">
+      <div className="hero-heading-block relative z-20 mx-auto flex w-full max-w-6xl flex-col justify-between px-6 py-6 sm:px-10">
         <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-tight text-foreground sm:text-[6.4vw]">
           <MaskReveal text="Own a scent" delay={0.8} />
           <MaskReveal text="you love?" delay={0.92} className="text-foreground/80" />
@@ -152,15 +152,14 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
         </h2>
       </div>
 
-      {/* Search, appears last - anchored lower on mobile so it never
-          collides with the "Find what to wear next" headline above it,
-          centered in the full hero viewport from sm: up where there's
-          room for both. */}
+      {/* Search, appears last - always flows in normal document flow
+          right after the headline (see .hero-search-anchor in
+          globals.css), so it can never overlay it at any viewport size. */}
       <motion.div
         initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
         transition={{ duration: 0.8, delay: 1.3, ease: [0.16, 1, 0.3, 1] }}
-        className="pointer-events-none absolute inset-0 z-30 flex items-end justify-center px-6 pb-28 sm:items-center sm:pb-0"
+        className="hero-search-anchor pointer-events-none z-30"
       >
         <div className="pointer-events-auto w-full max-w-2xl">{children}</div>
       </motion.div>

@@ -71,3 +71,60 @@ body::before {
     min-height: 48vh;
   }
 }
+
+/* Pure CSS animation (not JS/Framer-driven) so the search pill's glow is
+   already mid-pulse on first paint, before React hydrates or the browser's
+   rAF loop has "warmed up" - a JS-driven animate() only reliably starts
+   once something has triggered a render/interaction, which is too late for
+   an ambient cue meant to catch the eye immediately. */
+@keyframes glow-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 18px 3px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+  50% {
+    box-shadow: 0 0 34px 7px color-mix(in srgb, var(--accent) 42%, transparent);
+  }
+}
+.glow-pill {
+  animation: glow-pulse 2.6s ease-in-out infinite;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+.glow-pill.is-focused {
+  animation: none;
+  border-color: var(--accent);
+  box-shadow:
+    0 0 0 1px color-mix(in srgb, var(--accent) 55%, transparent),
+    0 0 26px 3px color-mix(in srgb, var(--accent) 35%, transparent);
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-pill {
+    animation: none;
+    box-shadow: 0 0 18px 3px color-mix(in srgb, var(--accent) 22%, transparent);
+  }
+}
+
+/* The placeholder text ("Search fragrance...", "smoky vanilla for winter
+   evenings...") pulses in sync with the pill's border glow, so the
+   invitation to type reads as glowing too, not just the outline. */
+@keyframes glow-pulse-text {
+  0%,
+  100% {
+    text-shadow: 0 0 6px color-mix(in srgb, var(--accent) 35%, transparent);
+  }
+  50% {
+    text-shadow: 0 0 14px color-mix(in srgb, var(--accent) 70%, transparent);
+  }
+}
+.glow-pill input::placeholder {
+  color: color-mix(in srgb, var(--accent) 65%, var(--muted-foreground));
+  animation: glow-pulse-text 2.6s ease-in-out infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .glow-pill input::placeholder {
+    animation: none;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+}

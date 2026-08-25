@@ -9202,5 +9202,2294 @@
     "family": "Fresh",
     "priceTier": 1,
     "description": "A mass-market Indian body spray-perfume hybrid with a clean, spicy profile."
+  },
+  {
+    "id": "jpg-le-beau-le-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Beau Le Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Pineapple",
+      "Iris",
+      "Ginger",
+      "Cypress"
+    ],
+    "heartNotes": [
+      "Coconut",
+      "Woody Notes"
+    ],
+    "baseNotes": [
+      "Tonka Bean",
+      "Sandalwood",
+      "Amber",
+      "Ambergris"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A tropical-gourmand skin scent built on pineapple, coconut, and warm tonka bean."
+  },
+  {
+    "id": "jpg-la-belle",
+    "brand": "Jean Paul Gaultier",
+    "name": "La Belle",
+    "gender": "Feminine",
+    "topNotes": [
+      "Pear",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Floral Notes",
+      "Leather"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Vetiver",
+      "Amber",
+      "Musk"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A juicy pear-and-vanilla gourmand with an unexpected leathery edge."
+  },
+  {
+    "id": "jpg-la-belle-le-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "La Belle Le Parfum",
+    "gender": "Feminine",
+    "topNotes": [
+      "Pear"
+    ],
+    "heartNotes": [
+      "Tonka Bean",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Vanilla"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A denser, boozier vanilla-tonka intensification of La Belle."
+  },
+  {
+    "id": "mancera-red-tobacco",
+    "brand": "Mancera",
+    "name": "Red Tobacco",
+    "gender": "Unisex",
+    "topNotes": [
+      "Cinnamon",
+      "Saffron",
+      "Agarwood",
+      "Green Apple"
+    ],
+    "heartNotes": [
+      "Patchouli",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Tobacco",
+      "Vanilla",
+      "Sandalwood",
+      "White Musk"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A spiced tobacco-vanilla scent with sweet, boozy warmth and serious longevity."
+  },
+  {
+    "id": "mancera-instant-crush",
+    "brand": "Mancera",
+    "name": "Instant Crush",
+    "gender": "Unisex",
+    "topNotes": [
+      "Saffron",
+      "Ginger",
+      "Sicilian Bergamot"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Jasmine",
+      "Patchouli"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "White Musk",
+      "Sandalwood"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A rosy amber-wood scent that's sweet, spiced, and instantly recognizable."
+  },
+  {
+    "id": "mancera-roses-vanille",
+    "brand": "Mancera",
+    "name": "Roses Vanille",
+    "gender": "Feminine",
+    "topNotes": [
+      "Lemon"
+    ],
+    "heartNotes": [
+      "Turkish Rose"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "White Musk",
+      "Cedar"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A simple, powdery rose-and-vanilla scent that wears close to the skin."
+  },
+  {
+    "id": "zara-vibrant-leather-edp",
+    "brand": "Zara",
+    "name": "Vibrant Leather Eau de Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Bamboo"
+    ],
+    "baseNotes": [
+      "Leather"
+    ],
+    "family": "Woody",
+    "priceTier": 1,
+    "description": "A cheap ambroxan-leather scent almost identical in DNA to the original Vibrant Leather."
+  },
+  {
+    "id": "zara-red-temptation-for-her",
+    "brand": "Zara",
+    "name": "Red Temptation for Her",
+    "gender": "Feminine",
+    "topNotes": [
+      "Saffron",
+      "Bitter Orange",
+      "Coriander"
+    ],
+    "heartNotes": [
+      "Praline",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Moss",
+      "Musk"
+    ],
+    "family": "Oriental",
+    "priceTier": 1,
+    "description": "A budget spiced-amber gourmand with a praline sweetness and mossy base."
+  },
+  {
+    "id": "lv-imagination",
+    "brand": "Louis Vuitton",
+    "name": "Imagination",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot",
+      "Citron",
+      "Sicilian Orange"
+    ],
+    "heartNotes": [
+      "Neroli",
+      "Ginger",
+      "Ceylon Cinnamon"
+    ],
+    "baseNotes": [
+      "Black Tea",
+      "Ambroxan",
+      "Guaiac Wood"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 4,
+    "description": "A radiant citrus-tea scent laced with ginger and warm ambroxan - LV's breakout hit."
+  },
+  {
+    "id": "lv-l-immensite",
+    "brand": "Louis Vuitton",
+    "name": "L'Immensité",
+    "gender": "Masculine",
+    "topNotes": [
+      "Grapefruit",
+      "Ginger",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Sage",
+      "Rosemary",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Ambroxan",
+      "Amber",
+      "Labdanum"
+    ],
+    "family": "Fresh",
+    "priceTier": 4,
+    "description": "A crisp citrus-aromatic scent that leans into sage and mineral ambroxan."
+  },
+  {
+    "id": "dior-addict",
+    "brand": "Dior",
+    "name": "Addict",
+    "gender": "Feminine",
+    "topNotes": [
+      "Blackberry",
+      "Mandarin Leaf"
+    ],
+    "heartNotes": [
+      "Jasmine",
+      "Orange Blossom",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Tonka Bean",
+      "Sandalwood"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A glossy vanilla-floral scent with a sweet, magnetic sillage."
+  },
+  {
+    "id": "dior-dune",
+    "brand": "Dior",
+    "name": "Dune",
+    "gender": "Feminine",
+    "topNotes": [
+      "Rosewood",
+      "Mandarin Orange",
+      "Bergamot",
+      "Peony"
+    ],
+    "heartNotes": [
+      "Lily",
+      "Ylang-Ylang",
+      "Jasmine",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Sandalwood",
+      "Oakmoss",
+      "Vanilla"
+    ],
+    "family": "Chypre",
+    "priceTier": 3,
+    "description": "A moody amber-floral chypre with a mineral, wind-on-sand quality - a cult 90s classic."
+  },
+  {
+    "id": "dior-dolce-vita",
+    "brand": "Dior",
+    "name": "Dolce Vita",
+    "gender": "Feminine",
+    "topNotes": [
+      "Peach",
+      "Cardamom",
+      "Lily",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Cinnamon",
+      "Apricot",
+      "Rosewood",
+      "Magnolia"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Sandalwood",
+      "Cedar",
+      "Coconut"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A soft peach-vanilla scent with a warm, powdery spice underneath."
+  },
+  {
+    "id": "ysl-manifesto",
+    "brand": "Yves Saint Laurent",
+    "name": "Manifesto",
+    "gender": "Feminine",
+    "topNotes": [
+      "Black Currant",
+      "Bergamot",
+      "Green Notes"
+    ],
+    "heartNotes": [
+      "Jasmine Sambac",
+      "Lily-of-the-Valley"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Tonka Bean",
+      "Sandalwood",
+      "Cedar"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A confident vanilla-woody floral with a fruity, slightly tart opening."
+  },
+  {
+    "id": "ysl-parisienne",
+    "brand": "Yves Saint Laurent",
+    "name": "Parisienne",
+    "gender": "Feminine",
+    "topNotes": [
+      "Blackberry",
+      "Cranberry"
+    ],
+    "heartNotes": [
+      "Damask Rose",
+      "Violet",
+      "Peony"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Patchouli"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A dark, jammy rose scent - moody and a little rebellious for a Parisian floral."
+  },
+  {
+    "id": "jpg-le-beau-paradise-garden",
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Beau Paradise Garden",
+    "gender": "Masculine",
+    "topNotes": [
+      "Green Notes",
+      "Mint",
+      "Ginger"
+    ],
+    "heartNotes": [
+      "Coconut",
+      "Fig"
+    ],
+    "baseNotes": [
+      "Tonka Bean",
+      "Sandalwood"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A tropical coconut-fig gourmand, greener and less sweet than Le Beau Le Parfum."
+  },
+  {
+    "id": "jpg-scandal-by-night",
+    "brand": "Jean Paul Gaultier",
+    "name": "Scandal By Night",
+    "gender": "Feminine",
+    "topNotes": [
+      "Honey",
+      "Bitter Orange"
+    ],
+    "heartNotes": [
+      "Cherry",
+      "Tuberose",
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Tonka Bean",
+      "Vanilla",
+      "Patchouli"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A honeyed, cherry-tuberose flanker of Scandal with a boozy tonka warmth."
+  },
+  {
+    "id": "jpg-fleur-du-male",
+    "brand": "Jean Paul Gaultier",
+    "name": "Fleur du Male",
+    "gender": "Masculine",
+    "topNotes": [
+      "Petitgrain"
+    ],
+    "heartNotes": [
+      "Neroli"
+    ],
+    "baseNotes": [
+      "Chamomile",
+      "Basil"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A soft, green citrus-herbal scent - a gentler, more solar spin on Le Male."
+  },
+  {
+    "id": "jpg-kokorico",
+    "brand": "Jean Paul Gaultier",
+    "name": "Kokorico",
+    "gender": "Masculine",
+    "topNotes": [
+      "Fig Leaf"
+    ],
+    "heartNotes": [
+      "Cacao",
+      "Patchouli"
+    ],
+    "baseNotes": [
+      "Vetiver",
+      "Cedar"
+    ],
+    "family": "Gourmand",
+    "priceTier": 2,
+    "description": "A dark cocoa-patchouli scent with a green fig-leaf opening - JPG's cult chocolate fragrance."
+  },
+  {
+    "id": "jpg-ma-dame",
+    "brand": "Jean Paul Gaultier",
+    "name": "Ma Dame",
+    "gender": "Feminine",
+    "topNotes": [
+      "Orange"
+    ],
+    "heartNotes": [
+      "Grenadine",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Cedar"
+    ],
+    "family": "Gourmand",
+    "priceTier": 2,
+    "description": "A candy-bright pomegranate-rose scent, playful and lightly gourmand."
+  },
+  {
+    "id": "jpg-gaultier-divine",
+    "brand": "Jean Paul Gaultier",
+    "name": "Gaultier Divine",
+    "gender": "Feminine",
+    "topNotes": [
+      "Red Berries",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Lily",
+      "Ylang-Ylang",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Meringue",
+      "Musk",
+      "Patchouli"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A sugary white-floral scent with an odd, memorable meringue note underneath."
+  },
+  {
+    "id": "jpg-classique-essence-de-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "Classique Essence de Parfum",
+    "gender": "Feminine",
+    "topNotes": [
+      "Tangerine",
+      "Aldehydes",
+      "Ginger"
+    ],
+    "heartNotes": [
+      "Orange Blossom",
+      "Jasmine Sambac"
+    ],
+    "baseNotes": [
+      "Whipped Cream",
+      "Vanilla",
+      "Benzoin"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A richer, creamier vanilla concentration of the corset-bottle original."
+  },
+  {
+    "id": "jpg-scandal-pour-homme-le-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "Scandal Pour Homme Le Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Geranium"
+    ],
+    "heartNotes": [
+      "Tonka Bean"
+    ],
+    "baseNotes": [
+      "Sandalwood"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A stripped-down, sandalwood-tonka intensification of Scandal Pour Homme."
+  },
+  {
+    "id": "jpg-scandal-le-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "Scandal Le Parfum",
+    "gender": "Feminine",
+    "topNotes": [
+      "Jasmine"
+    ],
+    "heartNotes": [
+      "Caramel",
+      "Salt"
+    ],
+    "baseNotes": [
+      "Vanilla"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A salted-caramel take on Scandal, sweeter and more gourmand than the original."
+  },
+  {
+    "id": "jpg-le-male-essence-de-parfum",
+    "brand": "Jean Paul Gaultier",
+    "name": "Le Male Essence de Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Cardamom",
+      "Pepper",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Leather",
+      "Lavender",
+      "Cinnamon"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Amberwood",
+      "Musk"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A leather-spiced intensification of Le Male, darker and less sweet than the original."
+  },
+  {
+    "id": "jpg-fragile",
+    "brand": "Jean Paul Gaultier",
+    "name": "Fragile",
+    "gender": "Feminine",
+    "topNotes": [
+      "Orange Blossom",
+      "Ginger",
+      "Star Anise",
+      "Rose"
+    ],
+    "heartNotes": [
+      "Tuberose",
+      "Jasmine",
+      "Ylang-Ylang",
+      "Iris"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Vanilla",
+      "Cinnamon",
+      "Musk"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A spiced white-floral scent and a cult favorite from JPG's now-discontinued line."
+  },
+  {
+    "id": "jpg-classique-intense",
+    "brand": "Jean Paul Gaultier",
+    "name": "Classique Intense",
+    "gender": "Feminine",
+    "topNotes": [
+      "Tiare Flower",
+      "Pomegranate"
+    ],
+    "heartNotes": [
+      "Orange Blossom",
+      "Jasmine",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Patchouli"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A denser, more sultry take on Classique's corseted florals."
+  },
+  {
+    "id": "mancera-aoud-lemon-mint",
+    "brand": "Mancera",
+    "name": "Aoud Lemon Mint",
+    "gender": "Unisex",
+    "topNotes": [
+      "Lemon",
+      "Almond",
+      "Black Pepper"
+    ],
+    "heartNotes": [
+      "Agarwood",
+      "Patchouli",
+      "Mint"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "White Musk",
+      "Leather"
+    ],
+    "family": "Woody",
+    "priceTier": 3,
+    "description": "A bright citrus-mint scent over a dark, resinous oud base - a signature Mancera contrast."
+  },
+  {
+    "id": "mancera-tonka-cola",
+    "brand": "Mancera",
+    "name": "Tonka Cola",
+    "gender": "Unisex",
+    "topNotes": [
+      "Cinnamon",
+      "Cherry",
+      "Lemon",
+      "Nutmeg"
+    ],
+    "heartNotes": [
+      "Cola",
+      "Patchouli",
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Tonka Bean",
+      "Vanilla",
+      "Benzoin"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A genuinely soda-shop scent - cherry cola over warm tonka bean and vanilla."
+  },
+  {
+    "id": "mancera-hindu-kush",
+    "brand": "Mancera",
+    "name": "Hindu Kush",
+    "gender": "Unisex",
+    "topNotes": [
+      "Incense",
+      "Spices",
+      "Cannabis"
+    ],
+    "heartNotes": [
+      "Woody Notes",
+      "Patchouli"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Guaiac Wood",
+      "Vanilla"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A smoky, resinous amber scent built around incense and a green, herbal cannabis accord."
+  },
+  {
+    "id": "mancera-sicily",
+    "brand": "Mancera",
+    "name": "Sicily",
+    "gender": "Unisex",
+    "topNotes": [
+      "Mandarin",
+      "Grapefruit",
+      "Peach",
+      "Pineapple",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Jasmine",
+      "Ylang-Ylang",
+      "Violet"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Woody Notes"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A juicy Mediterranean fruit-basket scent, sunny and easy to wear."
+  },
+  {
+    "id": "mancera-intense-cedrat-boise",
+    "brand": "Mancera",
+    "name": "Intense Cedrat Boise",
+    "gender": "Masculine",
+    "topNotes": [
+      "Sicilian Citrus",
+      "Black Currant"
+    ],
+    "heartNotes": [
+      "Leather",
+      "Sandalwood",
+      "Oud",
+      "Patchouli"
+    ],
+    "baseNotes": [
+      "Ambergris",
+      "Oakmoss",
+      "Vanilla"
+    ],
+    "family": "Woody",
+    "priceTier": 3,
+    "description": "A darker, leather-oud intensification of Cedrat Boise's citrus-woody DNA."
+  },
+  {
+    "id": "mancera-coco-vanille",
+    "brand": "Mancera",
+    "name": "Coco Vanille",
+    "gender": "Feminine",
+    "topNotes": [
+      "Coconut",
+      "White Peach"
+    ],
+    "heartNotes": [
+      "Tiare Flower",
+      "Ylang-Ylang",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Madagascar Vanilla",
+      "White Musk"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A creamy coconut-vanilla scent that reads more beach vacation than gourmand dessert."
+  },
+  {
+    "id": "mancera-roses-greedy",
+    "brand": "Mancera",
+    "name": "Roses Greedy",
+    "gender": "Unisex",
+    "topNotes": [
+      "Peach",
+      "Black Currant",
+      "Pink Pepper",
+      "Coconut"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Sugar",
+      "Vanilla",
+      "Amber"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A sugared-rose scent, true to its name - sweet, plush, and a little gluttonous."
+  },
+  {
+    "id": "mancera-velvet-vanilla",
+    "brand": "Mancera",
+    "name": "Velvet Vanilla",
+    "gender": "Unisex",
+    "topNotes": [
+      "Pear",
+      "Angelica",
+      "Black Currant",
+      "Clove"
+    ],
+    "heartNotes": [
+      "Tuberose",
+      "Jasmine",
+      "Neroli",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "White Musk"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A creamy tuberose-vanilla scent, soft and velvety as the name promises."
+  },
+  {
+    "id": "mancera-aoud-vanille",
+    "brand": "Mancera",
+    "name": "Aoud Vanille",
+    "gender": "Unisex",
+    "topNotes": [
+      "Agarwood",
+      "Saffron",
+      "Black Pepper",
+      "Cardamom"
+    ],
+    "heartNotes": [
+      "Floral Notes"
+    ],
+    "baseNotes": [
+      "Madagascar Vanilla",
+      "Guaiac Wood",
+      "Sandalwood"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A sweet vanilla scent laid over a genuinely dark, smoky oud base."
+  },
+  {
+    "id": "mancera-holidays",
+    "brand": "Mancera",
+    "name": "Holidays",
+    "gender": "Unisex",
+    "topNotes": [
+      "Coconut",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Tiare Flower",
+      "Ylang-Ylang",
+      "Sea Notes"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Sandalwood",
+      "White Musk"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A sunscreen-and-coconut vacation scent, light and easy."
+  },
+  {
+    "id": "mancera-black-gold",
+    "brand": "Mancera",
+    "name": "Black Gold",
+    "gender": "Masculine",
+    "topNotes": [
+      "Lavender",
+      "Cinnamon",
+      "Citrus",
+      "Oud"
+    ],
+    "heartNotes": [
+      "Violet",
+      "Jasmine",
+      "Patchouli",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Leather",
+      "Woody Notes",
+      "Musk",
+      "Amber"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 3,
+    "description": "A spiced lavender-leather scent, dark and confident without leaning sweet."
+  },
+  {
+    "id": "mancera-jardin-exclusif",
+    "brand": "Mancera",
+    "name": "Jardin Exclusif",
+    "gender": "Unisex",
+    "topNotes": [
+      "Pear",
+      "White Peach",
+      "Lemon",
+      "Caramel",
+      "Green Apple"
+    ],
+    "heartNotes": [
+      "Jasmine",
+      "Ambergris",
+      "Violet",
+      "Rose"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Madagascar Vanilla",
+      "Sandalwood"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A powdery orchard-fruit scent with a soft caramel sweetness underneath."
+  },
+  {
+    "id": "zara-rose-gourmand-for-her",
+    "brand": "Zara",
+    "name": "Rose Gourmand for Her",
+    "gender": "Feminine",
+    "topNotes": [
+      "Rose"
+    ],
+    "heartNotes": [
+      "Amber"
+    ],
+    "baseNotes": [
+      "Vanilla"
+    ],
+    "family": "Gourmand",
+    "priceTier": 1,
+    "description": "A simple, budget rose-vanilla gourmand - straightforward but pleasant."
+  },
+  {
+    "id": "zara-applejuice",
+    "brand": "Zara",
+    "name": "Applejuice",
+    "gender": "Feminine",
+    "topNotes": [
+      "Apple",
+      "Grapefruit",
+      "Orange"
+    ],
+    "heartNotes": [
+      "Peony",
+      "Rose",
+      "Violet"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Cedar"
+    ],
+    "family": "Fresh",
+    "priceTier": 1,
+    "description": "A crisp apple-citrus scent, fruity and fresh with a soft floral heart."
+  },
+  {
+    "id": "zara-sunrise-on-the-red-sand-dunes",
+    "brand": "Zara",
+    "name": "Sunrise on the Red Sand Dunes",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot",
+      "Ginger"
+    ],
+    "heartNotes": [
+      "Mandarin",
+      "Orange Blossom",
+      "Cassis"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Amber"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 1,
+    "description": "A warm citrus-amber scent from Zara's evocatively-named travel-inspired line."
+  },
+  {
+    "id": "zara-oriental",
+    "brand": "Zara",
+    "name": "Oriental",
+    "gender": "Feminine",
+    "topNotes": [
+      "Freesia",
+      "Bergamot",
+      "Rose"
+    ],
+    "heartNotes": [
+      "Vanilla",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Caramel",
+      "Patchouli",
+      "Musk"
+    ],
+    "family": "Gourmand",
+    "priceTier": 1,
+    "description": "A caramel-vanilla gourmand, sweet and unfussy for the price."
+  },
+  {
+    "id": "zara-9-0-zara",
+    "brand": "Zara",
+    "name": "9.0 Zara",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot",
+      "Juniper",
+      "Coriander"
+    ],
+    "heartNotes": [
+      "Iris",
+      "Cardamom",
+      "Pepper"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Cedar",
+      "Vetiver"
+    ],
+    "family": "Woody",
+    "priceTier": 1,
+    "description": "A powdery iris-woody scent, one of Zara's more grown-up masculine offerings."
+  },
+  {
+    "id": "zara-vibrant-leather-oud",
+    "brand": "Zara",
+    "name": "Vibrant Leather Oud",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Incense",
+      "Woody Notes"
+    ],
+    "baseNotes": [
+      "Agarwood",
+      "Amber"
+    ],
+    "family": "Woody",
+    "priceTier": 1,
+    "description": "A darker, oud-heavy extension of the Vibrant Leather line."
+  },
+  {
+    "id": "zara-cherry-smoothie",
+    "brand": "Zara",
+    "name": "Cherry Smoothie",
+    "gender": "Feminine",
+    "topNotes": [
+      "Cherry",
+      "Almond",
+      "Plum"
+    ],
+    "heartNotes": [
+      "Peru Balsam",
+      "Heliotrope",
+      "Hawthorn"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Tonka Bean"
+    ],
+    "family": "Gourmand",
+    "priceTier": 1,
+    "description": "A cherry-almond gourmand that smells exactly as sweet as it sounds."
+  },
+  {
+    "id": "zara-sand-desert-at-sunset",
+    "brand": "Zara",
+    "name": "Sand Desert at Sunset",
+    "gender": "Masculine",
+    "topNotes": [
+      "Orange",
+      "Incense"
+    ],
+    "heartNotes": [
+      "Cinnamon",
+      "Tonka Bean",
+      "Chocolate"
+    ],
+    "baseNotes": [
+      "Iris",
+      "Cedar"
+    ],
+    "family": "Oriental",
+    "priceTier": 1,
+    "description": "A spiced chocolate-incense scent from Zara's atmospheric desert-themed line."
+  },
+  {
+    "id": "zara-femme-2018",
+    "brand": "Zara",
+    "name": "Zara Femme 2018",
+    "gender": "Feminine",
+    "topNotes": [
+      "Peony",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Tonka Bean",
+      "Sandalwood"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Musk",
+      "Patchouli"
+    ],
+    "family": "Gourmand",
+    "priceTier": 1,
+    "description": "A soft powdery-vanilla scent, understated and easy to wear daily."
+  },
+  {
+    "id": "zara-fashionably-london",
+    "brand": "Zara",
+    "name": "Fashionably London",
+    "gender": "Unisex",
+    "topNotes": [
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Rose"
+    ],
+    "baseNotes": [
+      "Musk"
+    ],
+    "family": "Floral",
+    "priceTier": 1,
+    "description": "A minimalist rose-musk scent, part of Zara's city-themed collection."
+  },
+  {
+    "id": "zara-elegantly-tokyo",
+    "brand": "Zara",
+    "name": "Elegantly Tokyo",
+    "gender": "Unisex",
+    "topNotes": [
+      "Lily"
+    ],
+    "heartNotes": [
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Akigalawood"
+    ],
+    "family": "Woody",
+    "priceTier": 1,
+    "description": "A clean white-floral scent grounded by a distinctive modern woody base note."
+  },
+  {
+    "id": "zara-violet-blossom",
+    "brand": "Zara",
+    "name": "Violet Blossom",
+    "gender": "Feminine",
+    "topNotes": [
+      "Cherry Blossom"
+    ],
+    "heartNotes": [
+      "Magnolia"
+    ],
+    "baseNotes": [
+      "Tonka Bean"
+    ],
+    "family": "Floral",
+    "priceTier": 1,
+    "description": "A soft cherry-blossom-and-magnolia scent, light and youthful."
+  },
+  {
+    "id": "zara-gardenia",
+    "brand": "Zara",
+    "name": "Gardenia",
+    "gender": "Feminine",
+    "topNotes": [
+      "Orange Blossom"
+    ],
+    "heartNotes": [
+      "Coffee"
+    ],
+    "baseNotes": [
+      "Vanilla"
+    ],
+    "family": "Gourmand",
+    "priceTier": 1,
+    "description": "An unexpected coffee-vanilla pairing under a soft orange blossom top."
+  },
+  {
+    "id": "lv-pacific-chill",
+    "brand": "Louis Vuitton",
+    "name": "Pacific Chill",
+    "gender": "Unisex",
+    "topNotes": [
+      "Citron",
+      "Orange",
+      "Mint",
+      "Black Currant"
+    ],
+    "heartNotes": [
+      "Apricot",
+      "Basil",
+      "May Rose"
+    ],
+    "baseNotes": [
+      "Fig",
+      "Dates",
+      "Ambrette"
+    ],
+    "family": "Fresh",
+    "priceTier": 4,
+    "description": "A green, herbal citrus scent with an unusual fig-and-date sweetness underneath."
+  },
+  {
+    "id": "lv-attrape-reves",
+    "brand": "Louis Vuitton",
+    "name": "Attrape-Rêves",
+    "gender": "Feminine",
+    "topNotes": [
+      "Litchi",
+      "Ginger",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Peony",
+      "Turkish Rose",
+      "Cacao"
+    ],
+    "baseNotes": [
+      "Patchouli"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "A fruity rose scent with a surprising dark cacao undertone."
+  },
+  {
+    "id": "lv-meteore",
+    "brand": "Louis Vuitton",
+    "name": "Météore",
+    "gender": "Masculine",
+    "topNotes": [
+      "Mandarin",
+      "Sicilian Orange",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Pink Pepper",
+      "Neroli",
+      "Nutmeg",
+      "Cardamom"
+    ],
+    "baseNotes": [
+      "Vetiver"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 4,
+    "description": "A radiant citrus-spice scent that finishes on clean, dry vetiver."
+  },
+  {
+    "id": "lv-orage",
+    "brand": "Louis Vuitton",
+    "name": "Orage",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot",
+      "Grapefruit"
+    ],
+    "heartNotes": [
+      "Iris",
+      "Pepper",
+      "Hedione"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Vetiver",
+      "Iso E Super"
+    ],
+    "family": "Woody",
+    "priceTier": 4,
+    "description": "A crisp, transparent woody-citrus scent built on modern synthetic musks."
+  },
+  {
+    "id": "lv-rose-des-vents",
+    "brand": "Louis Vuitton",
+    "name": "Rose des Vents",
+    "gender": "Feminine",
+    "topNotes": [
+      "Peach",
+      "Green Notes",
+      "Black Currant"
+    ],
+    "heartNotes": [
+      "May Rose",
+      "Turkish Rose",
+      "Iris"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Cedar",
+      "Violet Leaf"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "A powdery, wind-swept rose scent, elegant and understated."
+  },
+  {
+    "id": "lv-city-of-stars",
+    "brand": "Louis Vuitton",
+    "name": "City of Stars",
+    "gender": "Unisex",
+    "topNotes": [
+      "Lime",
+      "Blood Orange",
+      "Bergamot",
+      "Lemon"
+    ],
+    "heartNotes": [
+      "Tiare Flower"
+    ],
+    "baseNotes": [
+      "Powdery Notes",
+      "Musk",
+      "Sandalwood"
+    ],
+    "family": "Fresh",
+    "priceTier": 4,
+    "description": "A sparkling citrus scent that softens into a musky, powdery drydown."
+  },
+  {
+    "id": "lv-matiere-noire",
+    "brand": "Louis Vuitton",
+    "name": "Matière Noire",
+    "gender": "Feminine",
+    "topNotes": [
+      "Black Currant Syrup",
+      "Watery Notes"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Cyclamen",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Agarwood",
+      "Patchouli",
+      "Incense"
+    ],
+    "family": "Chypre",
+    "priceTier": 4,
+    "description": "A dark, resinous rose scent with a fruity top and a smoky oud base."
+  },
+  {
+    "id": "lv-on-the-beach",
+    "brand": "Louis Vuitton",
+    "name": "On the Beach",
+    "gender": "Unisex",
+    "topNotes": [
+      "Yuzu",
+      "Neroli"
+    ],
+    "heartNotes": [
+      "Rosemary",
+      "Thyme",
+      "Pink Pepper"
+    ],
+    "baseNotes": [
+      "Cypress"
+    ],
+    "family": "Aquatic",
+    "priceTier": 4,
+    "description": "A herbal, salt-tinged citrus scent that actually evokes sand and sea air."
+  },
+  {
+    "id": "lv-contre-moi",
+    "brand": "Louis Vuitton",
+    "name": "Contre Moi",
+    "gender": "Feminine",
+    "topNotes": [
+      "Herbal Notes",
+      "Lemon",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Magnolia",
+      "Orange Blossom",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Tahitian Vanilla",
+      "Cacao",
+      "Ambrette"
+    ],
+    "family": "Gourmand",
+    "priceTier": 4,
+    "description": "A vanilla-cacao floral scent, warm and intimate as the name suggests."
+  },
+  {
+    "id": "lv-sur-la-route",
+    "brand": "Louis Vuitton",
+    "name": "Sur la Route",
+    "gender": "Masculine",
+    "topNotes": [
+      "Calabrian Bergamot",
+      "Lemon",
+      "Pink Pepper"
+    ],
+    "heartNotes": [
+      "Nutmeg",
+      "Hedione",
+      "Cardamom"
+    ],
+    "baseNotes": [
+      "Leather",
+      "Cedar",
+      "Patchouli"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 4,
+    "description": "A spiced citrus-leather road-trip scent, fresh yet grounded."
+  },
+  {
+    "id": "lv-fleur-du-desert",
+    "brand": "Louis Vuitton",
+    "name": "Fleur du Désert",
+    "gender": "Unisex",
+    "topNotes": [
+      "Honey",
+      "Cinnamon"
+    ],
+    "heartNotes": [
+      "Jasmine",
+      "Rose",
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Agarwood",
+      "Ambroxan",
+      "Ambrette"
+    ],
+    "family": "Oriental",
+    "priceTier": 4,
+    "description": "A honeyed floral-oud scent, warm and slightly smoky."
+  },
+  {
+    "id": "lv-apogee",
+    "brand": "Louis Vuitton",
+    "name": "Apogée",
+    "gender": "Feminine",
+    "topNotes": [
+      "Tangerine",
+      "Orange"
+    ],
+    "heartNotes": [
+      "Lily-of-the-Valley",
+      "Magnolia",
+      "Rose",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Guaiac Wood",
+      "Sandalwood"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "A luminous white-floral scent, clean and classically feminine."
+  },
+  {
+    "id": "lv-mille-feux",
+    "brand": "Louis Vuitton",
+    "name": "Mille Feux",
+    "gender": "Feminine",
+    "topNotes": [
+      "Raspberry",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Saffron",
+      "Osmanthus",
+      "Iris"
+    ],
+    "baseNotes": [
+      "Leather",
+      "Orris Root",
+      "Sandalwood",
+      "Moss"
+    ],
+    "family": "Oriental",
+    "priceTier": 4,
+    "description": "A fruity rose-leather scent with a plush, saffron-tinted warmth."
+  },
+  {
+    "id": "dior-midnight-poison",
+    "brand": "Dior",
+    "name": "Midnight Poison",
+    "gender": "Feminine",
+    "topNotes": [
+      "Bergamot",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Rose"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Amber",
+      "Vanilla"
+    ],
+    "family": "Chypre",
+    "priceTier": 3,
+    "description": "A darker, patchouli-rose reworking of Poison for the after-hours crowd."
+  },
+  {
+    "id": "dior-poison-girl",
+    "brand": "Dior",
+    "name": "Poison Girl",
+    "gender": "Feminine",
+    "topNotes": [
+      "Bitter Orange",
+      "Lemon"
+    ],
+    "heartNotes": [
+      "Damask Rose",
+      "Grasse Rose",
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Almond",
+      "Tonka Bean"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A gourmand orange-almond reinterpretation of the Poison lineage."
+  },
+  {
+    "id": "dior-homme-parfum",
+    "brand": "Dior",
+    "name": "Dior Homme Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Tuscan Iris",
+      "Italian Orange"
+    ],
+    "heartNotes": [
+      "Leather",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Agarwood",
+      "Cedar"
+    ],
+    "family": "Woody",
+    "priceTier": 3,
+    "description": "A leathery, oud-tinged intensification of Dior Homme's signature iris."
+  },
+  {
+    "id": "dior-miss-dior-cherie",
+    "brand": "Dior",
+    "name": "Miss Dior Chérie",
+    "gender": "Feminine",
+    "topNotes": [
+      "Cherry",
+      "Strawberry",
+      "Pineapple",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Popcorn",
+      "Caramel",
+      "Rose",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Musk",
+      "Amber"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A candy-bright fruit-caramel scent - the beloved original before Miss Dior's relaunch."
+  },
+  {
+    "id": "dior-miss-dior-absolutely-blooming",
+    "brand": "Dior",
+    "name": "Miss Dior Absolutely Blooming",
+    "gender": "Feminine",
+    "topNotes": [
+      "Raspberry",
+      "Black Currant",
+      "Pomegranate",
+      "Pink Pepper"
+    ],
+    "heartNotes": [
+      "May Rose",
+      "Peony"
+    ],
+    "baseNotes": [
+      "White Musk"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A juicy berry-rose scent, fresher and fruitier than the core Miss Dior line."
+  },
+  {
+    "id": "dior-joy",
+    "brand": "Dior",
+    "name": "Joy by Dior",
+    "gender": "Feminine",
+    "topNotes": [
+      "Bergamot",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Jasmine",
+      "Grasse Rose",
+      "Peach"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Sandalwood",
+      "Cedar"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "A radiant, sunlit rose-jasmine scent built from exceptionally rich raw materials."
+  },
+  {
+    "id": "dior-fahrenheit-le-parfum",
+    "brand": "Dior",
+    "name": "Fahrenheit Le Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Suede",
+      "Licorice",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Violet Leaf",
+      "Rum",
+      "Coriander"
+    ],
+    "baseNotes": [
+      "Bourbon Vanilla"
+    ],
+    "family": "Oriental",
+    "priceTier": 4,
+    "description": "A boozy, suede-licorice intensification of Fahrenheit's famous gasoline-violet DNA."
+  },
+  {
+    "id": "dior-addict-2",
+    "brand": "Dior",
+    "name": "Addict 2",
+    "gender": "Feminine",
+    "topNotes": [
+      "Grapefruit",
+      "Freesia",
+      "Orange"
+    ],
+    "heartNotes": [
+      "Pomegranate",
+      "Lotus",
+      "Lily-of-the-Valley"
+    ],
+    "baseNotes": [
+      "White Musk",
+      "Cedar",
+      "Sandalwood"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A fresher, fruitier reboot of Addict - crisp rather than sweet."
+  },
+  {
+    "id": "dior-hypnotic-poison-eau-sensuelle",
+    "brand": "Dior",
+    "name": "Hypnotic Poison Eau Sensuelle",
+    "gender": "Feminine",
+    "topNotes": [
+      "Orange Blossom",
+      "Ylang-Ylang",
+      "Rose"
+    ],
+    "heartNotes": [
+      "Orchid",
+      "Tuberose",
+      "Green Notes"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Sandalwood",
+      "Musk"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A lighter, greener take on Hypnotic Poison's almond-vanilla signature."
+  },
+  {
+    "id": "dior-miss-dior-le-parfum",
+    "brand": "Dior",
+    "name": "Miss Dior Le Parfum",
+    "gender": "Feminine",
+    "topNotes": [
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Turkish Rose",
+      "Bulgarian Rose"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Patchouli",
+      "Vanilla"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A denser, amber-patchouli concentration of Miss Dior's rose heart."
+  },
+  {
+    "id": "dior-tendre-poison",
+    "brand": "Dior",
+    "name": "Tendre Poison",
+    "gender": "Feminine",
+    "topNotes": [
+      "Asafoetida",
+      "Bergamot",
+      "Rosewood",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Tuberose",
+      "Honey",
+      "Orange Blossom",
+      "Freesia"
+    ],
+    "baseNotes": [
+      "Musk",
+      "Sandalwood",
+      "Heliotrope"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A gentler, honeyed white-floral spin on the original Poison."
+  },
+  {
+    "id": "dior-jadore-lor",
+    "brand": "Dior",
+    "name": "J'Adore L'Or",
+    "gender": "Feminine",
+    "topNotes": [
+      "Jasmine",
+      "Rose"
+    ],
+    "heartNotes": [
+      "Vanilla",
+      "Tonka Bean"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Labdanum",
+      "Patchouli"
+    ],
+    "family": "Oriental",
+    "priceTier": 4,
+    "description": "A richer, ambery concentration of J'Adore's jasmine-rose heart."
+  },
+  {
+    "id": "dior-dune-pour-homme",
+    "brand": "Dior",
+    "name": "Dune Pour Homme",
+    "gender": "Masculine",
+    "topNotes": [
+      "Fig Leaf",
+      "Cassis",
+      "Sage",
+      "Basil"
+    ],
+    "heartNotes": [
+      "Fig Wood",
+      "Rose",
+      "Mignonette"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Cedar",
+      "Tonka Bean"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A green, salt-air woody scent - the masculine counterpart to Dune's mineral mood."
+  },
+  {
+    "id": "dior-oud-ispahan",
+    "brand": "Dior",
+    "name": "Oud Ispahan",
+    "gender": "Unisex",
+    "topNotes": [
+      "Labdanum"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Patchouli",
+      "Saffron"
+    ],
+    "baseNotes": [
+      "Agarwood",
+      "Sandalwood",
+      "Cedar"
+    ],
+    "family": "Woody",
+    "priceTier": 4,
+    "description": "A dark rose-oud scent from Dior's Maison exclusive line, rich and resinous."
+  },
+  {
+    "id": "dior-jadore-infinissime",
+    "brand": "Dior",
+    "name": "J'Adore Infinissime",
+    "gender": "Feminine",
+    "topNotes": [
+      "Blood Orange",
+      "Pink Pepper",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Tuberose",
+      "Jasmine Sambac",
+      "Ylang-Ylang",
+      "Lily-of-the-Valley"
+    ],
+    "baseNotes": [
+      "Sandalwood"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "An intensified, tuberose-heavy concentration of the J'Adore lineage."
+  },
+  {
+    "id": "dior-jadore-in-joy",
+    "brand": "Dior",
+    "name": "J'Adore in Joy",
+    "gender": "Feminine",
+    "topNotes": [
+      "Sea Salt"
+    ],
+    "heartNotes": [
+      "Jasmine Sambac",
+      "Ylang-Ylang",
+      "Neroli",
+      "Tuberose"
+    ],
+    "baseNotes": [
+      "Peach"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A lighter, salt-kissed take on J'Adore with a soft peachy finish."
+  },
+  {
+    "id": "dior-les-creations-forever-and-ever",
+    "brand": "Dior",
+    "name": "Les Créations de Monsieur Dior: Forever and Ever",
+    "gender": "Feminine",
+    "topNotes": [
+      "Freesia"
+    ],
+    "heartNotes": [
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Rose Tincture"
+    ],
+    "family": "Floral",
+    "priceTier": 4,
+    "description": "A minimalist, all-natural-feeling freesia-jasmine scent over a rich rose tincture base."
+  },
+  {
+    "id": "ysl-paris",
+    "brand": "Yves Saint Laurent",
+    "name": "Paris",
+    "gender": "Feminine",
+    "topNotes": [
+      "Rose",
+      "Mimosa",
+      "Hyacinth",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Violet",
+      "Lily",
+      "Ylang-Ylang"
+    ],
+    "baseNotes": [
+      "Iris",
+      "Musk",
+      "Sandalwood",
+      "Oakmoss"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A dense, powdery rose-violet scent - one of the great 1980s floral classics."
+  },
+  {
+    "id": "ysl-belle-dopium",
+    "brand": "Yves Saint Laurent",
+    "name": "Belle d'Opium",
+    "gender": "Feminine",
+    "topNotes": [
+      "Casablanca Lily",
+      "Gardenia",
+      "Jasmine"
+    ],
+    "heartNotes": [
+      "Incense",
+      "Tobacco",
+      "Peach",
+      "Rose"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Patchouli",
+      "Amber"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A sultry, incense-tobacco flanker of Opium with a fruity-floral top."
+  },
+  {
+    "id": "ysl-opium-pour-homme",
+    "brand": "Yves Saint Laurent",
+    "name": "Opium Pour Homme",
+    "gender": "Masculine",
+    "topNotes": [
+      "Black Currant",
+      "Star Anise"
+    ],
+    "heartNotes": [
+      "Pepper",
+      "Galanga"
+    ],
+    "baseNotes": [
+      "Bourbon Vanilla",
+      "Tolu Balsam",
+      "Cedar"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A spiced, vanilla-anise masculine take on the Opium name."
+  },
+  {
+    "id": "ysl-myslf",
+    "brand": "Yves Saint Laurent",
+    "name": "MYSLF",
+    "gender": "Masculine",
+    "topNotes": [
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Patchouli"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A clean, patchouli-grounded orange blossom scent - YSL's modern signature masculine."
+  },
+  {
+    "id": "ysl-y-le-parfum",
+    "brand": "Yves Saint Laurent",
+    "name": "Y Le Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Apple",
+      "Aldehydes",
+      "Grapefruit",
+      "Ginger"
+    ],
+    "heartNotes": [
+      "Sage",
+      "Lavender",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Tonka Bean",
+      "Cedar",
+      "Olibanum"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 3,
+    "description": "A denser, more resinous concentration of Y's apple-sage freshness."
+  },
+  {
+    "id": "ysl-m7",
+    "brand": "Yves Saint Laurent",
+    "name": "M7",
+    "gender": "Masculine",
+    "topNotes": [
+      "Rosemary",
+      "Mandarin",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Agarwood",
+      "Vetiver"
+    ],
+    "baseNotes": [
+      "Amber",
+      "Musk"
+    ],
+    "family": "Woody",
+    "priceTier": 3,
+    "description": "A landmark early-2000s oud scent that introduced Western noses to agarwood."
+  },
+  {
+    "id": "ysl-y-edt",
+    "brand": "Yves Saint Laurent",
+    "name": "Y",
+    "gender": "Masculine",
+    "topNotes": [
+      "Aldehydes",
+      "Bergamot",
+      "Ginger",
+      "Mint",
+      "Lemon"
+    ],
+    "heartNotes": [
+      "Apple",
+      "Violet Leaf",
+      "Sage",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Ambergris",
+      "Musk",
+      "Cedar"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A crisp green-apple-and-aldehyde scent - YSL's modern answer to the classic fougère."
+  },
+  {
+    "id": "ysl-body-kouros",
+    "brand": "Yves Saint Laurent",
+    "name": "Body Kouros",
+    "gender": "Masculine",
+    "topNotes": [
+      "Eucalyptus",
+      "Incense"
+    ],
+    "heartNotes": [
+      "Cedar",
+      "Clary Sage"
+    ],
+    "baseNotes": [
+      "Benzoin"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A skin-scent flanker of Kouros, softer and more incense-forward than the original."
+  },
+  {
+    "id": "ysl-la-nuit-de-lhomme-le-parfum",
+    "brand": "Yves Saint Laurent",
+    "name": "La Nuit de l'Homme Le Parfum",
+    "gender": "Masculine",
+    "topNotes": [
+      "Pepper",
+      "Anise",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Fruity Notes",
+      "Lavender",
+      "Labdanum"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Patchouli",
+      "Vetiver"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 3,
+    "description": "A richer, sweeter concentration of La Nuit de l'Homme's peppery lavender."
+  },
+  {
+    "id": "ysl-tuxedo",
+    "brand": "Yves Saint Laurent",
+    "name": "Tuxedo",
+    "gender": "Unisex",
+    "topNotes": [
+      "Violet Leaf",
+      "Coriander",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Black Pepper",
+      "Lily-of-the-Valley"
+    ],
+    "baseNotes": [
+      "Patchouli",
+      "Ambergris",
+      "Bourbon Vanilla"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A dressy, peppered patchouli-vanilla scent, dark and formal as the name implies."
+  },
+  {
+    "id": "ysl-manifesto-lelixir",
+    "brand": "Yves Saint Laurent",
+    "name": "Manifesto L'Elixir",
+    "gender": "Feminine",
+    "topNotes": [
+      "Bergamot",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "Heliotrope",
+      "Jasmine Sambac",
+      "Tuberose"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Cashmere Wood",
+      "Ambroxan"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A denser, more powdery vanilla concentration of Manifesto."
+  },
+  {
+    "id": "ysl-black-opium-nuit-blanche",
+    "brand": "Yves Saint Laurent",
+    "name": "Black Opium Nuit Blanche",
+    "gender": "Feminine",
+    "topNotes": [
+      "Rice",
+      "Anise",
+      "Bourbon Pepper"
+    ],
+    "heartNotes": [
+      "Coffee",
+      "Orange Blossom",
+      "Peony"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Milk",
+      "Caramel",
+      "Sandalwood"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A milky, rice-powder flanker of Black Opium - softer and creamier than the coffee-forward original."
+  },
+  {
+    "id": "ysl-lhomme-libre",
+    "brand": "Yves Saint Laurent",
+    "name": "L'Homme Libre",
+    "gender": "Masculine",
+    "topNotes": [
+      "Violet Leaf",
+      "Basil",
+      "Star Anise",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Pink Pepper",
+      "Nutmeg"
+    ],
+    "baseNotes": [
+      "Vetiver",
+      "Patchouli"
+    ],
+    "family": "Fresh Spicy",
+    "priceTier": 3,
+    "description": "A green, peppery flanker of L'Homme with a lifted, ozonic edge."
+  },
+  {
+    "id": "ysl-lhomme-ultime",
+    "brand": "Yves Saint Laurent",
+    "name": "L'Homme Ultime",
+    "gender": "Masculine",
+    "topNotes": [
+      "Ginger",
+      "Grapefruit",
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Sage",
+      "Geranium"
+    ],
+    "baseNotes": [
+      "Cedar",
+      "Vetiver",
+      "Cashmere Wood"
+    ],
+    "family": "Oriental",
+    "priceTier": 3,
+    "description": "A spiced, citrus-forward flanker of L'Homme with a smooth cashmere-wood finish."
+  },
+  {
+    "id": "ysl-baby-doll",
+    "brand": "Yves Saint Laurent",
+    "name": "Baby Doll",
+    "gender": "Feminine",
+    "topNotes": [
+      "Black Currant",
+      "Pineapple",
+      "Orange",
+      "Apple"
+    ],
+    "heartNotes": [
+      "Rose",
+      "Freesia",
+      "Heliotrope",
+      "Lily-of-the-Valley"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Cedar",
+      "Sandalwood"
+    ],
+    "family": "Floral",
+    "priceTier": 3,
+    "description": "A playful, fruity-rose scent from YSL's late-90s Baby Doll era."
+  },
+  {
+    "id": "ysl-black-opium-le-parfum",
+    "brand": "Yves Saint Laurent",
+    "name": "Black Opium Le Parfum",
+    "gender": "Feminine",
+    "topNotes": [
+      "Cinnamon",
+      "Pear",
+      "Green Mandarin"
+    ],
+    "heartNotes": [
+      "Solar Notes",
+      "Jasmine Sambac",
+      "Orange Blossom"
+    ],
+    "baseNotes": [
+      "Vanilla",
+      "Coffee",
+      "Patchouli"
+    ],
+    "family": "Gourmand",
+    "priceTier": 3,
+    "description": "A denser, more intense coffee-vanilla concentration of Black Opium."
+  },
+  {
+    "id": "ysl-nu",
+    "brand": "Yves Saint Laurent",
+    "name": "Nu",
+    "gender": "Feminine",
+    "topNotes": [
+      "Cardamom",
+      "Bergamot"
+    ],
+    "heartNotes": [
+      "Black Pepper",
+      "Incense",
+      "Orchid",
+      "Jasmine"
+    ],
+    "baseNotes": [
+      "Sandalwood",
+      "Vetiver",
+      "Musk",
+      "Frankincense"
+    ],
+    "family": "Woody",
+    "priceTier": 3,
+    "description": "A minimalist, incense-woody scent - understated and a little androgynous."
+  },
+  {
+    "id": "ysl-saharienne",
+    "brand": "Yves Saint Laurent",
+    "name": "Saharienne",
+    "gender": "Feminine",
+    "topNotes": [
+      "Amalfi Lemon",
+      "Bergamot",
+      "Mandarin"
+    ],
+    "heartNotes": [
+      "White Flowers",
+      "African Orange Flower",
+      "Galbanum"
+    ],
+    "baseNotes": [
+      "Ginger",
+      "Pink Pepper"
+    ],
+    "family": "Fresh",
+    "priceTier": 3,
+    "description": "A sparkling citrus-floral scent named for the desert-explorer style YSL loved."
   }
 ]

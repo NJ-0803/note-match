@@ -14,6 +14,7 @@ const BRAND_ALIASES: Record<string, string> = {
   dg: "Dolce & Gabbana",
   vr: "Viktor & Rolf",
   pdm: "Parfums de Marly",
+  lv: "Louis Vuitton",
 };
 
 // Only the leading token is checked (not substrings anywhere in the query)

@@ -25962,7 +25962,88 @@
       ]
     }
   ],
-  "narciso-rodriguez-fleur-musc": [],
+  "narciso-rodriguez-fleur-musc": [
+    {
+      "id": "armani-emporio-armani-she",
+      "score": 0.94,
+      "sharedNotes": [
+        "Rose",
+        "Pear",
+        "Freesia",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "chloe-eau-de-parfum",
+      "score": 0.9,
+      "sharedNotes": [
+        "Rose",
+        "Freesia",
+        "Amber",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ysl-paris",
+      "score": 0.86,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Sandalwood",
+        "Amber"
+      ]
+    },
+    {
+      "id": "creed-original-santal",
+      "score": 0.82,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Amber",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "moschino-toy-boy",
+      "score": 0.78,
+      "sharedNotes": [
+        "Sandalwood",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "frederic-malle-musc-ravageur",
+      "score": 0.75,
+      "sharedNotes": [
+        "Musk",
+        "Amber",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "byredo-mojave-ghost",
+      "score": 0.72,
+      "sharedNotes": [
+        "Musk",
+        "Amber",
+        "Sandalwood",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "jo-malone-english-pear-freesia",
+      "score": 0.7,
+      "sharedNotes": [
+        "Pear",
+        "Freesia",
+        "Rose",
+        "Amber"
+      ]
+    }
+  ],
   "marc-jacobs-daisy-dream": [
     {
       "id": "ysl-parisienne",
@@ -31189,12 +31270,6427 @@
       ]
     }
   ],
-  "jpg-kokorico": [],
-  "jpg-ma-dame": [],
-  "jpg-gaultier-divine": [],
-  "jpg-classique-essence-de-parfum": [],
-  "jpg-scandal-pour-homme-le-parfum": [],
-  "jpg-scandal-le-parfum": [],
-  "jpg-le-male-essence-de-parfum": [],
-  "jpg-fragile": []
+  "jpg-kokorico": [
+    {
+      "id": "montale-intense-cafe",
+      "score": 0.94,
+      "sharedNotes": [
+        "Cacao",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dior-homme-intense",
+      "score": 0.89,
+      "sharedNotes": [
+        "Cocoa (Cacao)",
+        "Vetiver",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.81,
+      "sharedNotes": [
+        "Patchouli",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dolce-gabbana-k",
+      "score": 0.78,
+      "sharedNotes": [
+        "Patchouli",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "hermes-terre-dhermes",
+      "score": 0.75,
+      "sharedNotes": [
+        "Patchouli",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-explorer",
+      "score": 0.72,
+      "sharedNotes": [
+        "Patchouli",
+        "Cedar",
+        "Vetiver"
+      ]
+    }
+  ],
+  "jpg-ma-dame": [
+    {
+      "id": "zara-applejuice",
+      "score": 0.92,
+      "sharedNotes": [
+        "Orange",
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "mfk-a-la-rose",
+      "score": 0.88,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "lancome-idole",
+      "score": 0.85,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "chanel-no5-leau",
+      "score": 0.83,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "givenchy-very-irresistible",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "marc-jacobs-perfect",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "initio-musk-therapy",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-miss-dior-cherie",
+      "score": 0.72,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    }
+  ],
+  "jpg-gaultier-divine": [
+    {
+      "id": "lancome-magie-noire",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Ylang‑Ylang",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-woman",
+      "score": 0.9,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Lily",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "vr-flowerbomb",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-paris",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Lily",
+        "Ylang‑Ylang",
+        "Musk"
+      ]
+    },
+    {
+      "id": "kilian-good-girl-gone-bad",
+      "score": 0.83,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Ylang‑Ylang",
+        "Musk"
+      ]
+    },
+    {
+      "id": "armani-acqua-di-gio",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Lily",
+        "Musk"
+      ]
+    },
+    {
+      "id": "gucci-flora",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Musk"
+      ]
+    }
+  ],
+  "jpg-classique-essence-de-parfum": [
+    {
+      "id": "mancera-tonka-cola",
+      "score": 0.92,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Benzoin"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-le-parfum",
+      "score": 0.89,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "paco-olympea",
+      "score": 0.86,
+      "sharedNotes": [
+        "Ginger",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "tf-lost-cherry",
+      "score": 0.83,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.81,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "chanel-bois-des-iles",
+      "score": 0.78,
+      "sharedNotes": [
+        "Aldehydes",
+        "Vanilla",
+        "Benzoin"
+      ]
+    },
+    {
+      "id": "guerlain-spiritueuse-double-vanille",
+      "score": 0.75,
+      "sharedNotes": [
+        "Vanilla",
+        "Benzoin"
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-male-le-parfum",
+      "score": 0.73,
+      "sharedNotes": [
+        "Vanilla"
+      ]
+    }
+  ],
+  "jpg-scandal-pour-homme-le-parfum": [
+    {
+      "id": "jpg-le-male",
+      "score": 0.93,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-mon-guerlain",
+      "score": 0.89,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Geranium‑like"
+      ]
+    },
+    {
+      "id": "versace-eros-flame",
+      "score": 0.86,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Geranium‑like"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.84,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Geranium‑like"
+      ]
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "score": 0.82,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Geranium‑like"
+      ]
+    },
+    {
+      "id": "montblanc-legend",
+      "score": 0.78,
+      "sharedNotes": [
+        "Geranium",
+        "Tonka Bean",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-lhomme-ideal",
+      "score": 0.76,
+      "sharedNotes": [
+        "Tonka Bean",
+        "Sandalwood",
+        "Geranium‑like"
+      ]
+    },
+    {
+      "id": "brut-classic",
+      "score": 0.74,
+      "sharedNotes": [
+        "Geranium",
+        "Tonka Bean",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "jpg-scandal-le-parfum": [
+    {
+      "id": "thierry-mugler-angel",
+      "score": 0.94,
+      "sharedNotes": [
+        "Jasmine",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium",
+      "score": 0.92,
+      "sharedNotes": [
+        "Jasmine",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "vr-bonbon",
+      "score": 0.9,
+      "sharedNotes": [
+        "Jasmine",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "zara-oriental",
+      "score": 0.88,
+      "sharedNotes": [
+        "Jasmine",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "lattafa-yara",
+      "score": 0.86,
+      "sharedNotes": [
+        "Jasmine",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-nuit-blanche",
+      "score": 0.84,
+      "sharedNotes": [
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "thierry-mugler-a-men",
+      "score": 0.82,
+      "sharedNotes": [
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "jpg-ultra-male",
+      "score": 0.8,
+      "sharedNotes": [
+        "Caramel",
+        "Vanilla"
+      ]
+    }
+  ],
+  "jpg-le-male-essence-de-parfum": [
+    {
+      "id": "jpg-le-male",
+      "score": 0.95,
+      "sharedNotes": [
+        "Cardamom",
+        "Bergamot",
+        "Lavender",
+        "Cinnamon",
+        "Vanilla",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "score": 0.88,
+      "sharedNotes": [
+        "Cardamom",
+        "Cinnamon",
+        "Vanilla",
+        "Amber",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "paco-pure-xs",
+      "score": 0.85,
+      "sharedNotes": [
+        "Cardamom",
+        "Lavender",
+        "Cinnamon",
+        "Vanilla",
+        "Amber",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "diptyque-eau-duelle",
+      "score": 0.8,
+      "sharedNotes": [
+        "Cardamom",
+        "Pepper",
+        "Vanilla",
+        "Amber",
+        "Cinnamon"
+      ]
+    },
+    {
+      "id": "al-haramain-laventure",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Cinnamon",
+        "Lavender",
+        "Vanilla",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "frederic-malle-musc-ravageur",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Cinnamon",
+        "Vanilla",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "guerlain-habit-rouge",
+      "score": 0.73,
+      "sharedNotes": [
+        "Cinnamon",
+        "Bergamot",
+        "Vanilla",
+        "Amber",
+        "Leather",
+        "Lavender"
+      ]
+    },
+    {
+      "id": "tf-ombre-leather",
+      "score": 0.7,
+      "sharedNotes": [
+        "Cardamom",
+        "Leather",
+        "Amberwood",
+        "Musk",
+        "Cinnamon",
+        "Vanilla"
+      ]
+    }
+  ],
+  "jpg-fragile": [
+    {
+      "id": "kilian-good-girl-gone-bad",
+      "score": 0.92,
+      "sharedNotes": [
+        "tuberose",
+        "jasmine",
+        "ylang‑ylang",
+        "amber",
+        "vanilla",
+        "musk"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.88,
+      "sharedNotes": [
+        "jasmine",
+        "iris",
+        "rose",
+        "vanilla",
+        "musk",
+        "amber"
+      ]
+    },
+    {
+      "id": "chanel-gabrielle",
+      "score": 0.85,
+      "sharedNotes": [
+        "orange blossom",
+        "jasmine",
+        "ylang‑ylang",
+        "tuberose",
+        "vanilla",
+        "amber",
+        "musk"
+      ]
+    },
+    {
+      "id": "dior-pure-poison",
+      "score": 0.82,
+      "sharedNotes": [
+        "orange blossom",
+        "jasmine",
+        "amber",
+        "vanilla",
+        "musk"
+      ]
+    },
+    {
+      "id": "guerlain-nahema",
+      "score": 0.78,
+      "sharedNotes": [
+        "rose",
+        "jasmine",
+        "ylang‑ylang",
+        "vanilla",
+        "amber",
+        "musk"
+      ]
+    },
+    {
+      "id": "narciso-rodriguez-pure-musc",
+      "score": 0.74,
+      "sharedNotes": [
+        "orange blossom",
+        "vanilla",
+        "amber",
+        "musk"
+      ]
+    },
+    {
+      "id": "lancome-tresor",
+      "score": 0.72,
+      "sharedNotes": [
+        "rose",
+        "iris",
+        "vanilla",
+        "amber",
+        "musk"
+      ]
+    },
+    {
+      "id": "dolce-gabbana-pour-femme",
+      "score": 0.7,
+      "sharedNotes": [
+        "tuberose",
+        "iris",
+        "vanilla",
+        "musk"
+      ]
+    }
+  ],
+  "jpg-classique-intense": [
+    {
+      "id": "givenchy-linterdit",
+      "score": 0.95,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.93,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "lancome-la-nuit-tresor",
+      "score": 0.9,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.88,
+      "sharedNotes": [
+        "Orange",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "creed-aventus",
+      "score": 0.85,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco",
+      "score": 0.82,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "armani-si-passione",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "vr-flowerbomb",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli"
+      ]
+    }
+  ],
+  "mancera-aoud-lemon-mint": [
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.93,
+      "sharedNotes": [
+        "Lemon",
+        "Mint",
+        "White Musk",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.88,
+      "sharedNotes": [
+        "Agarwood",
+        "Patchouli",
+        "Vanilla",
+        "Leather",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-intense-cedrat-boise",
+      "score": 0.85,
+      "sharedNotes": [
+        "Oud",
+        "Patchouli",
+        "Leather",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-homme-parfum",
+      "score": 0.82,
+      "sharedNotes": [
+        "Agarwood",
+        "Sandalwood",
+        "Cedar",
+        "Leather",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "montblanc-explorer",
+      "score": 0.8,
+      "sharedNotes": [
+        "Patchouli",
+        "Leather",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "paco-1-million",
+      "score": 0.78,
+      "sharedNotes": [
+        "Mint",
+        "Leather",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "guerlain-habit-rouge",
+      "score": 0.76,
+      "sharedNotes": [
+        "Lemon",
+        "Vanilla",
+        "Leather",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "le-labo-vetiver-46",
+      "score": 0.74,
+      "sharedNotes": [
+        "Mint",
+        "Leather",
+        "Vetiver",
+        "White Musk"
+      ]
+    }
+  ],
+  "mancera-tonka-cola": [
+    {
+      "id": "jpg-scandal-by-night",
+      "score": 0.92,
+      "sharedNotes": [
+        "Cherry",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "tf-lost-cherry",
+      "score": 0.88,
+      "sharedNotes": [
+        "Cherry",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-le-parfum",
+      "score": 0.85,
+      "sharedNotes": [
+        "Cinnamon",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "jpg-le-male",
+      "score": 0.84,
+      "sharedNotes": [
+        "Cinnamon",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "lattafa-khamrah",
+      "score": 0.8,
+      "sharedNotes": [
+        "Cinnamon",
+        "Nutmeg",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-poison-girl",
+      "score": 0.77,
+      "sharedNotes": [
+        "Lemon",
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium",
+      "score": 0.75,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.7,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Tonka Bean",
+        "Vanilla"
+      ]
+    }
+  ],
+  "mancera-hindu-kush": [
+    {
+      "id": "diptyque-eau-duelle",
+      "score": 0.92,
+      "sharedNotes": [
+        "Incense",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "lattafa-asad",
+      "score": 0.89,
+      "sharedNotes": [
+        "Guaiac Wood",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "initio-oud-for-happiness",
+      "score": 0.88,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "initio-oud-for-greatness",
+      "score": 0.86,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla",
+        "Cardamom",
+        "Pepper"
+      ]
+    },
+    {
+      "id": "roja-danger-pour-homme",
+      "score": 0.84,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla",
+        "Cardamom"
+      ]
+    },
+    {
+      "id": "givenchy-pi",
+      "score": 0.82,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla",
+        "Spice"
+      ]
+    },
+    {
+      "id": "xerjoff-accento",
+      "score": 0.8,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-jadore-lor",
+      "score": 0.78,
+      "sharedNotes": [
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    }
+  ],
+  "mancera-sicily": [
+    {
+      "id": "dior-joy",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Peach",
+        "Jasmine",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "ck-one",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Pineapple",
+        "Jasmine",
+        "Violet",
+        "Musk"
+      ]
+    },
+    {
+      "id": "mfk-aqua-universalis",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-no5-leau",
+      "score": 0.81,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Ylang‑Ylang",
+        "Jasmine",
+        "Musk"
+      ]
+    },
+    {
+      "id": "gucci-rush",
+      "score": 0.78,
+      "sharedNotes": [
+        "Peach",
+        "Pineapple",
+        "Jasmine",
+        "Violet",
+        "Woody Notes"
+      ]
+    },
+    {
+      "id": "creed-silver-mountain-water",
+      "score": 0.76,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Jasmine",
+        "Musk"
+      ]
+    },
+    {
+      "id": "tommy-hilfiger-tommy-girl",
+      "score": 0.75,
+      "sharedNotes": [
+        "Grapefruit",
+        "Peach",
+        "Jasmine",
+        "Musk"
+      ]
+    },
+    {
+      "id": "jpg-le-beau",
+      "score": 0.73,
+      "sharedNotes": [
+        "Bergamot",
+        "Grapefruit",
+        "Jasmine",
+        "Cedar",
+        "Musk"
+      ]
+    }
+  ],
+  "mancera-intense-cedrat-boise": [
+    {
+      "id": "creed-aventus",
+      "score": 0.92,
+      "sharedNotes": [
+        "Black Currant",
+        "Patchouli",
+        "Oakmoss",
+        "Ambergris",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "creed-aventus-cologne",
+      "score": 0.9,
+      "sharedNotes": [
+        "Black Currant",
+        "Patchouli",
+        "Oakmoss",
+        "Ambergris",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "chanel-antaeus",
+      "score": 0.88,
+      "sharedNotes": [
+        "Leather",
+        "Patchouli",
+        "Oakmoss",
+        "Amber",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "amouage-jubilation-xxv",
+      "score": 0.84,
+      "sharedNotes": [
+        "Oud",
+        "Sandalwood",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "initio-paragon",
+      "score": 0.82,
+      "sharedNotes": [
+        "Leather",
+        "Oud",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "mancera-aoud-lemon-mint",
+      "score": 0.8,
+      "sharedNotes": [
+        "Leather",
+        "Oud",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "polo-ralph-lauren",
+      "score": 0.78,
+      "sharedNotes": [
+        "Leather",
+        "Patchouli",
+        "Oakmoss",
+        "Amber"
+      ]
+    },
+    {
+      "id": "givenchy-ange-ou-demon",
+      "score": 0.76,
+      "sharedNotes": [
+        "Patchouli",
+        "Sandalwood",
+        "Vanilla",
+        "Leather"
+      ]
+    }
+  ],
+  "mancera-coco-vanille": [
+    {
+      "id": "mancera-holidays",
+      "score": 0.92,
+      "sharedNotes": [
+        "Coconut",
+        "Tiare Flower",
+        "Ylang‑Ylang",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-jardin-exclusif",
+      "score": 0.88,
+      "sharedNotes": [
+        "White Peach",
+        "Jasmine",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "thierry-mugler-angel",
+      "score": 0.82,
+      "sharedNotes": [
+        "Coconut",
+        "Jasmine",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "tf-soleil-blanc",
+      "score": 0.8,
+      "sharedNotes": [
+        "Coconut",
+        "Ylang‑Ylang",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "dior-joy",
+      "score": 0.78,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.75,
+      "sharedNotes": [
+        "Madagascar Vanilla",
+        "White Musk",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "ysl-black-opium",
+      "score": 0.72,
+      "sharedNotes": [
+        "Jasmine",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-roses-greedy",
+      "score": 0.7,
+      "sharedNotes": [
+        "Coconut",
+        "Jasmine",
+        "Madagascar Vanilla",
+        "White Musk"
+      ]
+    }
+  ],
+  "mancera-roses-greedy": [
+    {
+      "id": "guerlain-nahema",
+      "score": 0.92,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "mancera-velvet-vanilla",
+      "score": 0.88,
+      "sharedNotes": [
+        "Black Currant",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "lancome-tresor",
+      "score": 0.85,
+      "sharedNotes": [
+        "Peach",
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "layerr-wottagirl-blush",
+      "score": 0.83,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    {
+      "id": "engage-woman-w1",
+      "score": 0.82,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    {
+      "id": "chanel-chance",
+      "score": 0.8,
+      "sharedNotes": [
+        "Pink Pepper",
+        "Jasmine",
+        "White Musk",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "guerlain-jicky",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Amber"
+      ]
+    }
+  ],
+  "mancera-velvet-vanilla": [
+    {
+      "id": "mancera-roses-greedy",
+      "score": 0.92,
+      "sharedNotes": [
+        "Black Currant",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "armani-my-way",
+      "score": 0.88,
+      "sharedNotes": [
+        "Tuberose",
+        "Jasmine",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.85,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "jpg-fragile",
+      "score": 0.83,
+      "sharedNotes": [
+        "Tuberose",
+        "Jasmine",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "prada-paradoxe",
+      "score": 0.78,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "score": 0.76,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "rasasi-blue-lady",
+      "score": 0.74,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Musk"
+      ]
+    }
+  ],
+  "mancera-aoud-vanille": [
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.92,
+      "sharedNotes": [
+        "Agarwood",
+        "Saffron",
+        "Cardamom",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-oud-ispahan",
+      "score": 0.88,
+      "sharedNotes": [
+        "Agarwood (Oud)",
+        "Saffron",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mfk-oud-satin-mood",
+      "score": 0.86,
+      "sharedNotes": [
+        "Saffron",
+        "Oud",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "score": 0.84,
+      "sharedNotes": [
+        "Cardamom",
+        "Vanilla",
+        "Sandalwood",
+        "Cinnamon"
+      ]
+    },
+    {
+      "id": "ajmal-wisal",
+      "score": 0.82,
+      "sharedNotes": [
+        "Saffron",
+        "Oud",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "arabian-oud-kalemat",
+      "score": 0.8,
+      "sharedNotes": [
+        "Saffron",
+        "Oud",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "amouage-jubilation-xxv",
+      "score": 0.78,
+      "sharedNotes": [
+        "Cardamom",
+        "Vanilla",
+        "Sandalwood",
+        "Oud"
+      ]
+    },
+    {
+      "id": "roja-amber-aoud",
+      "score": 0.76,
+      "sharedNotes": [
+        "Saffron",
+        "Oud",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "mancera-holidays": [
+    {
+      "id": "mancera-coco-vanille",
+      "score": 0.92,
+      "sharedNotes": [
+        "Coconut",
+        "Tiare Flower",
+        "Ylang‑Ylang",
+        "Vanilla",
+        "Sandalwood",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison-eau-sensuelle",
+      "score": 0.84,
+      "sharedNotes": [
+        "Ylang‑Ylang",
+        "Vanilla",
+        "Sandalwood",
+        "Musk",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "mugler-aura",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "dior-dune",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Ylang‑Ylang",
+        "Jasmine",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-nahema",
+      "score": 0.73,
+      "sharedNotes": [
+        "Bergamot",
+        "Ylang‑Ylang",
+        "Jasmine",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-dolce-vita",
+      "score": 0.71,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Sandalwood",
+        "Coconut"
+      ]
+    },
+    {
+      "id": "zara-femme-2018",
+      "score": 0.68,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Musk",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "mancera-black-gold": [
+    {
+      "id": "park-avenue-good-morning",
+      "score": 0.92,
+      "sharedNotes": [
+        "Lavender",
+        "Citrus",
+        "Musk",
+        "Amber",
+        "Woody Notes",
+        "Spices"
+      ]
+    },
+    {
+      "id": "wild-stone-ultimate",
+      "score": 0.88,
+      "sharedNotes": [
+        "Lavender",
+        "Spices",
+        "Musk",
+        "Amber",
+        "Woody Notes"
+      ]
+    },
+    {
+      "id": "wild-stone-code-platinum",
+      "score": 0.86,
+      "sharedNotes": [
+        "Lavender",
+        "Spices",
+        "Musk",
+        "Amber",
+        "Woody Notes"
+      ]
+    },
+    {
+      "id": "tf-oud-minerale",
+      "score": 0.83,
+      "sharedNotes": [
+        "Oud",
+        "Amber",
+        "Musk",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "tf-cafe-rose",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "tf-tuscan-leather",
+      "score": 0.78,
+      "sharedNotes": [
+        "Leather",
+        "Jasmine",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "roja-enigma-pour-homme",
+      "score": 0.75,
+      "sharedNotes": [
+        "Oud",
+        "Leather",
+        "Cinnamon",
+        "Amber"
+      ]
+    },
+    {
+      "id": "creed-aventus",
+      "score": 0.7,
+      "sharedNotes": [
+        "Jasmine",
+        "Patchouli",
+        "Amber",
+        "Musk",
+        "Woody Notes"
+      ]
+    }
+  ],
+  "mancera-jardin-exclusif": [
+    {
+      "id": "mancera-coco-vanille",
+      "score": 0.92,
+      "sharedNotes": [
+        "White Peach",
+        "Jasmine",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "ysl-mon-paris",
+      "score": 0.88,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine",
+        "Ambergris",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "score": 0.84,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.81,
+      "sharedNotes": [
+        "Green Apple",
+        "Jasmine",
+        "Vanilla",
+        "White Musk",
+        "Sandalwood",
+        "Ambergris"
+      ]
+    },
+    {
+      "id": "marc-jacobs-daisy-dream",
+      "score": 0.78,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine",
+        "Violet",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "mancera-velvet-vanilla",
+      "score": 0.74,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.7,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Sandalwood",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "zara-oriental",
+      "score": 0.68,
+      "sharedNotes": [
+        "Caramel",
+        "Vanilla",
+        "Jasmine",
+        "Ambergris"
+      ]
+    }
+  ],
+  "zara-rose-gourmand-for-her": [
+    {
+      "id": "guerlain-habit-rouge",
+      "score": 0.92,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "guerlain-jicky",
+      "score": 0.88,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "gucci-rush",
+      "score": 0.84,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "initio-oud-for-happiness",
+      "score": 0.81,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "chanel-egoiste",
+      "score": 0.79,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "burberry-her",
+      "score": 0.75,
+      "sharedNotes": [
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "vr-bonbon",
+      "score": 0.72,
+      "sharedNotes": [
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "diptyque-eau-duelle",
+      "score": 0.68,
+      "sharedNotes": [
+        "Vanilla",
+        "Amber"
+      ]
+    }
+  ],
+  "zara-applejuice": [
+    {
+      "id": "ysl-y-edt",
+      "score": 0.92,
+      "sharedNotes": [
+        "Apple",
+        "Violet leaf",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.88,
+      "sharedNotes": [
+        "Apple",
+        "Orange",
+        "Cedar",
+        "Sandalwood",
+        "Rose"
+      ]
+    },
+    {
+      "id": "ysl-parisienne",
+      "score": 0.85,
+      "sharedNotes": [
+        "Peony",
+        "Violet",
+        "Rose",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "estee-lauder-pleasures",
+      "score": 0.82,
+      "sharedNotes": [
+        "Peony",
+        "Violet",
+        "Cedar",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ck-one",
+      "score": 0.78,
+      "sharedNotes": [
+        "Violet",
+        "Musk",
+        "Cedar",
+        "Bergamot",
+        "Lemon"
+      ]
+    },
+    {
+      "id": "ysl-paris",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Violet",
+        "Musk",
+        "Sandalwood",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "chanel-no5-leau",
+      "score": 0.72,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-dune-pour-homme",
+      "score": 0.68,
+      "sharedNotes": [
+        "Rose",
+        "Cedar",
+        "Sandalwood",
+        "Fig Leaf",
+        "Basil"
+      ]
+    }
+  ],
+  "zara-sunrise-on-the-red-sand-dunes": [
+    {
+      "id": "jpg-classique",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Ginger",
+        "Mandarin",
+        "Orange Blossom",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "sospiro-erba-pura",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Orange Blossom",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "jpg-fragile",
+      "score": 0.85,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Ginger",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "dior-homme-sport",
+      "score": 0.8,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot (related citrus)",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "ck-obsession",
+      "score": 0.78,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "park-avenue-good-morning",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot (citrus)",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "ysl-m7",
+      "score": 0.73,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "armaf-derby",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Musk",
+        "Amber"
+      ]
+    }
+  ],
+  "zara-oriental": [
+    {
+      "id": "dior-miss-dior-cherie",
+      "score": 0.95,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Caramel",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "creed-aventus",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Jasmine",
+        "Patchouli",
+        "Musk",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "vr-flowerbomb",
+      "score": 0.9,
+      "sharedNotes": [
+        "Bergamot",
+        "Freesia",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "thierry-mugler-angel",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Vanilla",
+        "Caramel",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "armani-si-passione",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "armani-si",
+      "score": 0.83,
+      "sharedNotes": [
+        "Freesia",
+        "Rose",
+        "Patchouli",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-black-opium",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "juliette-has-a-gun-lady-vengeance",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Patchouli",
+        "Musk"
+      ]
+    }
+  ],
+  "zara-9-0-zara": [
+    {
+      "id": "le-labo-santal-33",
+      "score": 0.92,
+      "sharedNotes": [
+        "Iris",
+        "Cardamom",
+        "Cedar",
+        "Amber"
+      ]
+    },
+    {
+      "id": "creed-bois-du-portugal",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Cedar",
+        "Amber",
+        "Vetiver",
+        "Pepper"
+      ]
+    },
+    {
+      "id": "amouage-dia-man",
+      "score": 0.85,
+      "sharedNotes": [
+        "Coriander",
+        "Cardamom",
+        "Cedar",
+        "Amber",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "lacoste-essential",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Cedar",
+        "Vetiver",
+        "Amber"
+      ]
+    },
+    {
+      "id": "lv-orage",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Iris",
+        "Pepper",
+        "Cedar",
+        "Amber"
+      ]
+    },
+    {
+      "id": "prada-lhomme",
+      "score": 0.78,
+      "sharedNotes": [
+        "Iris",
+        "Cardamom",
+        "Pepper",
+        "Amber",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "le-labo-rose-31",
+      "score": 0.75,
+      "sharedNotes": [
+        "Iris",
+        "Cedar",
+        "Amber",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "tf-beau-de-jour",
+      "score": 0.73,
+      "sharedNotes": [
+        "Iris",
+        "Vetiver",
+        "Amber",
+        "Cedar"
+      ]
+    }
+  ],
+  "zara-vibrant-leather-oud": [
+    {
+      "id": "byredo-gypsy-water",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Incense",
+        "Amber"
+      ]
+    },
+    {
+      "id": "amouage-interlude-man",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Incense",
+        "Amber"
+      ]
+    },
+    {
+      "id": "ysl-m7",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Agarwood",
+        "Amber"
+      ]
+    },
+    {
+      "id": "armani-acqua-di-gio-absolu",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Incense",
+        "Amber"
+      ]
+    },
+    {
+      "id": "diptyque-eau-duelle",
+      "score": 0.78,
+      "sharedNotes": [
+        "Incense",
+        "Amber"
+      ]
+    },
+    {
+      "id": "lacoste-essential",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Amber"
+      ]
+    },
+    {
+      "id": "creed-bois-du-portugal",
+      "score": 0.72,
+      "sharedNotes": [
+        "Bergamot",
+        "Amber"
+      ]
+    },
+    {
+      "id": "wild-stone-code-platinum",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Amber",
+        "Woody Notes"
+      ]
+    }
+  ],
+  "zara-cherry-smoothie": [
+    {
+      "id": "tf-lost-cherry",
+      "score": 0.92,
+      "sharedNotes": [
+        "Cherry",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "jpg-scandal-by-night",
+      "score": 0.88,
+      "sharedNotes": [
+        "Cherry",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "mancera-tonka-cola",
+      "score": 0.85,
+      "sharedNotes": [
+        "Cherry",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "dior-poison-girl",
+      "score": 0.78,
+      "sharedNotes": [
+        "Almond",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-male-le-parfum",
+      "score": 0.74,
+      "sharedNotes": [
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "serge-lutens-un-bois-vanille",
+      "score": 0.71,
+      "sharedNotes": [
+        "Almond",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.68,
+      "sharedNotes": [
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "pdm-pegasus",
+      "score": 0.65,
+      "sharedNotes": [
+        "Almond",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    }
+  ],
+  "zara-sand-desert-at-sunset": [
+    {
+      "id": "amouage-interlude-man",
+      "score": 0.94,
+      "sharedNotes": [
+        "Incense",
+        "Cinnamon",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "creed-spice-and-wood",
+      "score": 0.88,
+      "sharedNotes": [
+        "Cinnamon",
+        "Tonka Bean",
+        "Cedar",
+        "Sandalwood (clean woody‑amber)"
+      ]
+    },
+    {
+      "id": "chanel-allure-homme-sport-eau-extreme",
+      "score": 0.86,
+      "sharedNotes": [
+        "Orange",
+        "Cinnamon",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-sauvage-elixir",
+      "score": 0.82,
+      "sharedNotes": [
+        "Cinnamon",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "vr-spicebomb-extreme",
+      "score": 0.8,
+      "sharedNotes": [
+        "Cinnamon",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "old-spice-original",
+      "score": 0.78,
+      "sharedNotes": [
+        "Cinnamon",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "guerlain-shalimar",
+      "score": 0.75,
+      "sharedNotes": [
+        "Iris",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "le-labo-santal-33",
+      "score": 0.72,
+      "sharedNotes": [
+        "Iris",
+        "Cedar"
+      ]
+    }
+  ],
+  "zara-femme-2018": [
+    {
+      "id": "zara-oriental",
+      "score": 0.93,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Patchouli",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "pdm-valaya",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Peony",
+        "Vanilla",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.86,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Patchouli",
+        "Sandalwood",
+        "Tonka Bean",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-manifesto",
+      "score": 0.84,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Tonka Bean",
+        "Sandalwood",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "jean-paul-gaultier-le-male-le-parfum",
+      "score": 0.81,
+      "sharedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Tonka Bean",
+        "Musk"
+      ]
+    },
+    {
+      "id": "frederic-malle-musc-ravageur",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison",
+      "score": 0.75,
+      "sharedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "initio-musk-therapy",
+      "score": 0.72,
+      "sharedNotes": [
+        "Musk",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "zara-fashionably-london": [
+    {
+      "id": "mfk-a-la-rose",
+      "score": 0.92,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "diptyque-eau-rose",
+      "score": 0.9,
+      "sharedNotes": [
+        "Rose",
+        "Musk",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Musk"
+      ]
+    },
+    {
+      "id": "vr-flowerbomb",
+      "score": 0.86,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Musk"
+      ]
+    },
+    {
+      "id": "rasasi-blue-lady",
+      "score": 0.84,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Musk"
+      ]
+    },
+    {
+      "id": "titan-skinn-celeste",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Musk"
+      ]
+    },
+    {
+      "id": "layerr-wottagirl-blush",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Musk"
+      ]
+    }
+  ],
+  "zara-elegantly-tokyo": [
+    {
+      "id": "dior-dune",
+      "score": 0.92,
+      "sharedNotes": [
+        "Lily",
+        "Jasmine",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dolce-gabbana-the-one-women",
+      "score": 0.85,
+      "sharedNotes": [
+        "Lily",
+        "Jasmine",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "jpg-gaultier-divine",
+      "score": 0.82,
+      "sharedNotes": [
+        "Lily",
+        "Jasmine",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-nu",
+      "score": 0.78,
+      "sharedNotes": [
+        "Jasmine",
+        "Sandalwood",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.74,
+      "sharedNotes": [
+        "Jasmine",
+        "Sandalwood",
+        "Cedar",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "bulgari-aqva-pour-homme",
+      "score": 0.7,
+      "sharedNotes": [
+        "Akigalawood"
+      ]
+    },
+    {
+      "id": "valentino-born-in-roma",
+      "score": 0.68,
+      "sharedNotes": [
+        "Jasmine",
+        "Cedar"
+      ]
+    }
+  ],
+  "zara-violet-blossom": [
+    {
+      "id": "lv-apogee",
+      "score": 0.95,
+      "sharedNotes": [
+        "Magnolia",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "pdm-sedley",
+      "score": 0.88,
+      "sharedNotes": [
+        "Violet",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "bvlgari-jasmin-noir",
+      "score": 0.85,
+      "sharedNotes": [
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "chloe-eau-de-parfum",
+      "score": 0.8,
+      "sharedNotes": [
+        "Magnolia"
+      ]
+    },
+    {
+      "id": "victoria-secret-bombshell",
+      "score": 0.78,
+      "sharedNotes": [
+        "Magnolia"
+      ]
+    },
+    {
+      "id": "versace-bright-crystal",
+      "score": 0.75,
+      "sharedNotes": [
+        "Magnolia"
+      ]
+    },
+    {
+      "id": "versace-bright-crystal-absolu",
+      "score": 0.73,
+      "sharedNotes": [
+        "Magnolia"
+      ]
+    }
+  ],
+  "zara-gardenia": [
+    {
+      "id": "ysl-black-opium-le-parfum",
+      "score": 0.93,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Coffee",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-nuit-blanche",
+      "score": 0.89,
+      "sharedNotes": [
+        "Coffee",
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium",
+      "score": 0.86,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Coffee",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.78,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "lancome-la-nuit-tresor",
+      "score": 0.76,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "paco-pure-xs-for-her",
+      "score": 0.74,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.71,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "kilian-love-dont-be-shy",
+      "score": 0.68,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla"
+      ]
+    }
+  ],
+  "lv-pacific-chill": [
+    {
+      "id": "hermes-eau-dorange-verte",
+      "score": 0.85,
+      "sharedNotes": [
+        "Orange",
+        "Mint",
+        "Blackcurrant"
+      ]
+    },
+    {
+      "id": "jpg-le-beau-paradise-garden",
+      "score": 0.7,
+      "sharedNotes": [
+        "Mint",
+        "Fig"
+      ]
+    },
+    {
+      "id": "hugo-boss-hugo-man",
+      "score": 0.65,
+      "sharedNotes": [
+        "Mint"
+      ]
+    },
+    {
+      "id": "ck-eternity-men",
+      "score": 0.6,
+      "sharedNotes": [
+        "Basil"
+      ]
+    },
+    {
+      "id": "mugler-womanity",
+      "score": 0.55,
+      "sharedNotes": [
+        "Fig"
+      ]
+    },
+    {
+      "id": "nishane-ege",
+      "score": 0.5,
+      "sharedNotes": [
+        "Fig"
+      ]
+    },
+    {
+      "id": "hermes-un-jardin-en-mediterranee",
+      "score": 0.45,
+      "sharedNotes": [
+        "Fig"
+      ]
+    },
+    {
+      "id": "dior-dune-pour-homme",
+      "score": 0.4,
+      "sharedNotes": [
+        "Basil",
+        "Fig"
+      ]
+    }
+  ],
+  "lv-attrape-reves": [
+    {
+      "id": "pdm-delina",
+      "score": 0.94,
+      "sharedNotes": [
+        "Bergamot",
+        "Lychee",
+        "Turkish Rose",
+        "Peony",
+        "Cacao"
+      ]
+    },
+    {
+      "id": "montale-intense-cafe",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Cacao",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "givenchy-very-irresistible",
+      "score": 0.86,
+      "sharedNotes": [
+        "Litchi",
+        "Peony",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.83,
+      "sharedNotes": [
+        "Litchi",
+        "Bergamot",
+        "Rose",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "tf-noir",
+      "score": 0.81,
+      "sharedNotes": [
+        "Bergamot",
+        "Ginger",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "gucci-flora",
+      "score": 0.79,
+      "sharedNotes": [
+        "Bergamot",
+        "Peony",
+        "Rose",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "ysl-parisienne",
+      "score": 0.76,
+      "sharedNotes": [
+        "Peony",
+        "Rose",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "armani-si-passione",
+      "score": 0.73,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Patchouli"
+      ]
+    }
+  ],
+  "lv-meteore": [
+    {
+      "id": "lv-sur-la-route",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Cardamom",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "ysl-lhomme-libre",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Cardamom",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "mancera-cedrat-boise",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Nutmeg",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "prada-luna-rossa",
+      "score": 0.86,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Cardamom",
+        "Nutmeg",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-allure-homme-sport",
+      "score": 0.84,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot",
+        "Cardamom",
+        "Neroli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "score": 0.83,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dior-homme-sport",
+      "score": 0.81,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot",
+        "Cardamom",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "clive-christian-1872",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Nutmeg",
+        "Vetiver"
+      ]
+    }
+  ],
+  "lv-orage": [
+    {
+      "id": "hermes-terre-dhermes",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot/Grapefruit",
+        "Pepper",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dior-homme",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Iris",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "zara-9-0-zara",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Iris",
+        "Pepper",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.82,
+      "sharedNotes": [
+        "Grapefruit",
+        "Iris",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-explorer",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vetiver",
+        "Pepper"
+      ]
+    },
+    {
+      "id": "chanel-antaeus",
+      "score": 0.76,
+      "sharedNotes": [
+        "Bergamot",
+        "Grapefruit",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.73,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "tf-noir",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Vetiver",
+        "Patchouli",
+        "Pepper"
+      ]
+    }
+  ],
+  "lv-rose-des-vents": [
+    {
+      "id": "mancera-roses-greedy",
+      "score": 0.92,
+      "sharedNotes": [
+        "Peach",
+        "Black Currant",
+        "White Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "mancera-roses-vanille",
+      "score": 0.88,
+      "sharedNotes": [
+        "Turkish Rose",
+        "White Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-joy",
+      "score": 0.85,
+      "sharedNotes": [
+        "Peach",
+        "White Musk",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-miss-dior-absolutely-blooming",
+      "score": 0.82,
+      "sharedNotes": [
+        "Black Currant",
+        "White Musk",
+        "May Rose"
+      ]
+    },
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.79,
+      "sharedNotes": [
+        "Black Currant",
+        "White Musk",
+        "Cedar",
+        "Rose"
+      ]
+    },
+    {
+      "id": "montblanc-legend-spirit",
+      "score": 0.75,
+      "sharedNotes": [
+        "Violet Leaf",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "le-labo-santal-33",
+      "score": 0.73,
+      "sharedNotes": [
+        "Iris",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "lancome-tresor",
+      "score": 0.7,
+      "sharedNotes": [
+        "Peach",
+        "Iris",
+        "Cedar"
+      ]
+    }
+  ],
+  "lv-city-of-stars": [
+    {
+      "id": "dunhill-desire-blue",
+      "score": 0.92,
+      "sharedNotes": [
+        "Lemon",
+        "Bergamot",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "creed-silver-mountain-water",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "creed-himalaya",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ch-212-men",
+      "score": 0.83,
+      "sharedNotes": [
+        "Bergamot",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "sospiro-erba-pura",
+      "score": 0.81,
+      "sharedNotes": [
+        "Bergamot",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "azzaro-chrome",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ck-eternity-men",
+      "score": 0.75,
+      "sharedNotes": [
+        "Lemon",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.72,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Musk",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "lv-matiere-noire": [
+    {
+      "id": "armaf-club-de-nuit-intense",
+      "score": 0.92,
+      "sharedNotes": [
+        "Blackcurrant",
+        "Rose",
+        "Jasmine",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "dior-oud-ispahan",
+      "score": 0.86,
+      "sharedNotes": [
+        "Agarwood",
+        "Patchouli",
+        "Rose"
+      ]
+    },
+    {
+      "id": "lv-fleur-du-desert",
+      "score": 0.84,
+      "sharedNotes": [
+        "Agarwood",
+        "Rose",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "lancome-magie-noire",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Patchouli",
+        "Incense"
+      ]
+    },
+    {
+      "id": "chanel-coco",
+      "score": 0.76,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "dior-midnight-poison",
+      "score": 0.74,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli"
+      ]
+    }
+  ],
+  "lv-on-the-beach": [
+    {
+      "id": "4711-original-eau-de-cologne",
+      "score": 0.8,
+      "sharedNotes": [
+        "Neroli",
+        "Rosemary"
+      ]
+    },
+    {
+      "id": "chanel-chance-eau-fraiche",
+      "score": 0.78,
+      "sharedNotes": [
+        "Pink Pepper",
+        "Neroli"
+      ]
+    },
+    {
+      "id": "lv-meteore",
+      "score": 0.75,
+      "sharedNotes": [
+        "Pink Pepper",
+        "Neroli"
+      ]
+    },
+    {
+      "id": "issey-miyake-leau-dissey-homme",
+      "score": 0.7,
+      "sharedNotes": [
+        "Yuzu"
+      ]
+    },
+    {
+      "id": "issey-miyake-leau-bleue-dissey",
+      "score": 0.68,
+      "sharedNotes": [
+        "Yuzu"
+      ]
+    },
+    {
+      "id": "hermes-un-jardin-en-mediterranee",
+      "score": 0.65,
+      "sharedNotes": [
+        "Cypress"
+      ]
+    },
+    {
+      "id": "gucci-guilty-absolute",
+      "score": 0.6,
+      "sharedNotes": [
+        "Cypress"
+      ]
+    }
+  ],
+  "lv-contre-moi": [
+    {
+      "id": "montale-intense-cafe",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Cacao",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.89,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Rose",
+        "Vanilla",
+        "Cacao"
+      ]
+    },
+    {
+      "id": "lancome-la-nuit-tresor",
+      "score": 0.86,
+      "sharedNotes": [
+        "Rose",
+        "Orange Blossom",
+        "Vanilla",
+        "Cacao"
+      ]
+    },
+    {
+      "id": "dior-poison-girl",
+      "score": 0.84,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Rose",
+        "Vanilla",
+        "Almond"
+      ]
+    },
+    {
+      "id": "ch-good-girl",
+      "score": 0.81,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Vanilla",
+        "Cacao",
+        "Ambrette"
+      ]
+    },
+    {
+      "id": "mancera-tonka-cola",
+      "score": 0.78,
+      "sharedNotes": [
+        "Lemon",
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Orange Blossom",
+        "Vanilla",
+        "Ambrette"
+      ]
+    },
+    {
+      "id": "tf-neroli-portofino",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Orange Blossom"
+      ]
+    }
+  ],
+  "lv-sur-la-route": [
+    {
+      "id": "lv-meteore",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Cardamom",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Cardamom",
+        "Cedar",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "mancera-cedrat-boise",
+      "score": 0.84,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Nutmeg",
+        "Cedar",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "montblanc-emblem",
+      "score": 0.81,
+      "sharedNotes": [
+        "Cardamom",
+        "Nutmeg",
+        "Patchouli",
+        "Leather",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "ysl-lhomme-libre",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Cardamom",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "clive-christian-1872",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Cardamom",
+        "Nutmeg",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "burberry-london-men",
+      "score": 0.73,
+      "sharedNotes": [
+        "Bergamot",
+        "Nutmeg",
+        "Cedar",
+        "Leather"
+      ]
+    },
+    {
+      "id": "dior-fahrenheit",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Nutmeg",
+        "Cedar",
+        "Patchouli"
+      ]
+    }
+  ],
+  "lv-fleur-du-desert": [
+    {
+      "id": "paco-lady-million",
+      "score": 0.88,
+      "sharedNotes": [
+        "Honey",
+        "Orange Blossom",
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "givenchy-linterdit",
+      "score": 0.82,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine",
+        "Ambroxan",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.78,
+      "sharedNotes": [
+        "Cinnamon",
+        "Agarwood",
+        "Jasmine",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "jpg-fragile",
+      "score": 0.75,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine",
+        "Rose",
+        "Cinnamon"
+      ]
+    },
+    {
+      "id": "lv-matiere-noire",
+      "score": 0.74,
+      "sharedNotes": [
+        "Agarwood",
+        "Rose",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.72,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Orange Blossom",
+        "Vanilla",
+        "Amber"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.7,
+      "sharedNotes": [
+        "Jasmine",
+        "Orange Blossom",
+        "Rose",
+        "Vanilla"
+      ]
+    }
+  ],
+  "lv-apogee": [
+    {
+      "id": "dior-addict-2",
+      "score": 0.87,
+      "sharedNotes": [
+        "Lily-of-the-Valley",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.84,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Lily-of-the-Valley",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-joy",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Freesia",
+        "Lily-of-the-Valley",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.76,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mancera-roses-greedy",
+      "score": 0.73,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "score": 0.7,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "lancome-tresor",
+      "score": 0.68,
+      "sharedNotes": [
+        "Rose",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "lv-mille-feux": [
+    {
+      "id": "guerlain-habit-rouge",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Sandalwood",
+        "Leather",
+        "Amber"
+      ]
+    },
+    {
+      "id": "guerlain-lhomme-ideal",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Sandalwood",
+        "Iris",
+        "Leather"
+      ]
+    },
+    {
+      "id": "xerjoff-alexandria-ii",
+      "score": 0.86,
+      "sharedNotes": [
+        "Saffron",
+        "Rose",
+        "Bergamot",
+        "Sandalwood",
+        "Amber"
+      ]
+    },
+    {
+      "id": "roja-amber-aoud",
+      "score": 0.84,
+      "sharedNotes": [
+        "Saffron",
+        "Rose",
+        "Bergamot",
+        "Sandalwood",
+        "Amber"
+      ]
+    },
+    {
+      "id": "penhaligons-halfeti",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Saffron",
+        "Rose",
+        "Leather"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Iris",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-no-19",
+      "score": 0.75,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Iris",
+        "Leather"
+      ]
+    },
+    {
+      "id": "dior-ambre-nuit",
+      "score": 0.72,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "dior-midnight-poison": [
+    {
+      "id": "dior-dune",
+      "score": 0.93,
+      "sharedNotes": [
+        "bergamot",
+        "mandarin",
+        "rose",
+        "patchouli",
+        "amber",
+        "vanilla"
+      ]
+    },
+    {
+      "id": "roja-danger-pour-homme",
+      "score": 0.84,
+      "sharedNotes": [
+        "bergamot",
+        "rose",
+        "amber",
+        "patchouli",
+        "vanilla"
+      ]
+    },
+    {
+      "id": "guerlain-jicky",
+      "score": 0.81,
+      "sharedNotes": [
+        "bergamot",
+        "rose",
+        "vanilla",
+        "amber",
+        "patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.79,
+      "sharedNotes": [
+        "bergamot",
+        "mandarin",
+        "rose",
+        "vanilla",
+        "amber",
+        "patchouli"
+      ]
+    },
+    {
+      "id": "guerlain-habit-rouge",
+      "score": 0.77,
+      "sharedNotes": [
+        "bergamot",
+        "mandarin",
+        "rose",
+        "amber",
+        "vanilla",
+        "patchouli"
+      ]
+    },
+    {
+      "id": "gucci-guilty",
+      "score": 0.75,
+      "sharedNotes": [
+        "mandarin",
+        "patchouli",
+        "amber",
+        "vanilla"
+      ]
+    },
+    {
+      "id": "montale-intense-cafe",
+      "score": 0.73,
+      "sharedNotes": [
+        "bergamot",
+        "vanilla",
+        "amber",
+        "patchouli"
+      ]
+    }
+  ],
+  "dior-poison-girl": [
+    {
+      "id": "jpg-scandal-by-night",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bitter Orange",
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.88,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean",
+        "Rose"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.85,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean",
+        "Almond"
+      ]
+    },
+    {
+      "id": "lattafa-yara",
+      "score": 0.83,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean",
+        "Pear"
+      ]
+    },
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.81,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Tonka Bean",
+        "Almond"
+      ]
+    },
+    {
+      "id": "zara-cherry-smoothie",
+      "score": 0.78,
+      "sharedNotes": [
+        "Vanilla",
+        "Tonka Bean",
+        "Almond"
+      ]
+    },
+    {
+      "id": "serge-lutens-un-bois-vanille",
+      "score": 0.75,
+      "sharedNotes": [
+        "Vanilla",
+        "Tonka Bean",
+        "Almond"
+      ]
+    },
+    {
+      "id": "tf-lost-cherry",
+      "score": 0.72,
+      "sharedNotes": [
+        "Almond",
+        "Vanilla",
+        "Tonka Bean"
+      ]
+    }
+  ],
+  "dior-homme-parfum": [
+    {
+      "id": "dior-oud-ispahan",
+      "score": 0.93,
+      "sharedNotes": [
+        "Rose",
+        "Leather",
+        "Sandalwood",
+        "Agarwood",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "le-labo-santal-33",
+      "score": 0.88,
+      "sharedNotes": [
+        "Iris",
+        "Leather",
+        "Sandalwood",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-fahrenheit",
+      "score": 0.83,
+      "sharedNotes": [
+        "Leather",
+        "Sandalwood",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "serge-lutens-feminite-du-bois",
+      "score": 0.79,
+      "sharedNotes": [
+        "Rose",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "montblanc-explorer",
+      "score": 0.75,
+      "sharedNotes": [
+        "Leather",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "byredo-black-saffron",
+      "score": 0.71,
+      "sharedNotes": [
+        "Rose",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-heritage",
+      "score": 0.68,
+      "sharedNotes": [
+        "Leather",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "bvlgari-man-wood-essence",
+      "score": 0.65,
+      "sharedNotes": [
+        "Cedar",
+        "Sandalwood",
+        "Leather"
+      ]
+    }
+  ],
+  "dior-miss-dior-cherie": [
+    {
+      "id": "armaf-club-de-nuit-intense",
+      "score": 0.92,
+      "sharedNotes": [
+        "Pineapple",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "creed-aventus",
+      "score": 0.89,
+      "sharedNotes": [
+        "Pineapple",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Musk",
+        "Amber",
+        "Citrus"
+      ]
+    },
+    {
+      "id": "zara-oriental",
+      "score": 0.86,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Patchouli",
+        "Caramel",
+        "Musk"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-woman",
+      "score": 0.84,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "paco-lady-million",
+      "score": 0.82,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Caramel"
+      ]
+    },
+    {
+      "id": "vr-bonbon",
+      "score": 0.8,
+      "sharedNotes": [
+        "Mandarin",
+        "Caramel",
+        "Jasmine",
+        "Amber"
+      ]
+    },
+    {
+      "id": "titan-skinn-celeste",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Musk",
+        "Amber"
+      ]
+    }
+  ],
+  "dior-miss-dior-absolutely-blooming": [
+    {
+      "id": "lv-rose-des-vents",
+      "score": 0.92,
+      "sharedNotes": [
+        "Black Currant",
+        "May Rose",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-roses-greedy",
+      "score": 0.89,
+      "sharedNotes": [
+        "Black Currant",
+        "Pink Pepper",
+        "Rose",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "ysl-mon-paris",
+      "score": 0.85,
+      "sharedNotes": [
+        "Raspberry",
+        "Peony",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "versace-bright-crystal",
+      "score": 0.83,
+      "sharedNotes": [
+        "Pomegranate",
+        "Peony",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "banana-republic-wildbloom",
+      "score": 0.8,
+      "sharedNotes": [
+        "Pink Pepper",
+        "Peony",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "mancera-velvet-vanilla",
+      "score": 0.75,
+      "sharedNotes": [
+        "Black Currant",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "kenzo-flower-by-kenzo",
+      "score": 0.72,
+      "sharedNotes": [
+        "Black Currant",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "chanel-chance",
+      "score": 0.7,
+      "sharedNotes": [
+        "Pink Pepper",
+        "White Musk"
+      ]
+    }
+  ],
+  "dior-joy": [
+    {
+      "id": "guerlain-nahema",
+      "score": 0.92,
+      "sharedNotes": [
+        "bergamot",
+        "jasmine",
+        "peach",
+        "white musk",
+        "sandalwood",
+        "cedar"
+      ]
+    },
+    {
+      "id": "mancera-sicily",
+      "score": 0.86,
+      "sharedNotes": [
+        "mandarin",
+        "bergamot",
+        "peach",
+        "jasmine",
+        "white musk",
+        "cedar"
+      ]
+    },
+    {
+      "id": "ck-obsession",
+      "score": 0.84,
+      "sharedNotes": [
+        "mandarin",
+        "bergamot",
+        "peach",
+        "jasmine",
+        "musk",
+        "sandalwood",
+        "cedar"
+      ]
+    },
+    {
+      "id": "azzaro-chrome",
+      "score": 0.81,
+      "sharedNotes": [
+        "bergamot",
+        "jasmine",
+        "cedar",
+        "musk"
+      ]
+    },
+    {
+      "id": "dior-addict-2",
+      "score": 0.79,
+      "sharedNotes": [
+        "white musk",
+        "cedar",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "lv-apogee",
+      "score": 0.78,
+      "sharedNotes": [
+        "jasmine",
+        "white musk",
+        "sandalwood",
+        "cedar"
+      ]
+    },
+    {
+      "id": "byredo-mojave-ghost",
+      "score": 0.76,
+      "sharedNotes": [
+        "jasmine",
+        "sandalwood",
+        "musk",
+        "cedar"
+      ]
+    }
+  ],
+  "dior-fahrenheit-le-parfum": [
+    {
+      "id": "ysl-tuxedo",
+      "score": 0.94,
+      "sharedNotes": [
+        "Violet Leaf",
+        "Coriander",
+        "Bourbon Vanilla"
+      ]
+    },
+    {
+      "id": "tf-velvet-orchid",
+      "score": 0.91,
+      "sharedNotes": [
+        "Mandarin",
+        "Suede",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-opium-pour-homme",
+      "score": 0.89,
+      "sharedNotes": [
+        "Coriander",
+        "Bourbon Vanilla"
+      ]
+    },
+    {
+      "id": "margiela-replica-jazz-club",
+      "score": 0.85,
+      "sharedNotes": [
+        "Rum",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-poison",
+      "score": 0.83,
+      "sharedNotes": [
+        "Coriander",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "chanel-coco",
+      "score": 0.8,
+      "sharedNotes": [
+        "Mandarin",
+        "Coriander",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.78,
+      "sharedNotes": [
+        "Mandarin",
+        "Vanilla"
+      ]
+    }
+  ],
+  "dior-addict-2": [
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.88,
+      "sharedNotes": [
+        "Freesia",
+        "Lily-of-the-Valley",
+        "Orange",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "lv-apogee",
+      "score": 0.82,
+      "sharedNotes": [
+        "Lily-of-the-Valley",
+        "Orange",
+        "White Musk",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "zara-applejuice",
+      "score": 0.78,
+      "sharedNotes": [
+        "Orange",
+        "Grapefruit",
+        "Sandalwood",
+        "Cedar",
+        "White Musk"
+      ]
+    },
+    {
+      "id": "dior-jadore-infinissime",
+      "score": 0.75,
+      "sharedNotes": [
+        "Lily-of-the-Valley",
+        "White Musk",
+        "Sandalwood",
+        "Orange"
+      ]
+    },
+    {
+      "id": "dior-joy",
+      "score": 0.73,
+      "sharedNotes": [
+        "White Musk",
+        "Sandalwood",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "versace-bright-crystal-absolu",
+      "score": 0.7,
+      "sharedNotes": [
+        "Pomegranate",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-miss-dior-absolutely-blooming",
+      "score": 0.68,
+      "sharedNotes": [
+        "Pomegranate",
+        "White Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-homme",
+      "score": 0.65,
+      "sharedNotes": [
+        "Grapefruit",
+        "Cedar",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "dior-hypnotic-poison-eau-sensuelle": [
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.92,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Tuberose",
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "chanel-gabrielle",
+      "score": 0.88,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Ylang‑Ylang",
+        "Tuberose",
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "jpg-fragile",
+      "score": 0.86,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Ylang‑Ylang",
+        "Tuberose",
+        "Vanilla",
+        "Musk"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.83,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Rose",
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "givenchy-amarige",
+      "score": 0.8,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Tuberose",
+        "Ylang‑Ylang",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison",
+      "score": 0.78,
+      "sharedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ch-212-vip",
+      "score": 0.75,
+      "sharedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "initio-musk-therapy",
+      "score": 0.72,
+      "sharedNotes": [
+        "Vanilla",
+        "Sandalwood",
+        "Musk"
+      ]
+    }
+  ],
+  "dior-miss-dior-le-parfum": [
+    {
+      "id": "dior-midnight-poison",
+      "score": 0.92,
+      "sharedNotes": [
+        "Mandarin",
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-jadore-lor",
+      "score": 0.88,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-opium",
+      "score": 0.85,
+      "sharedNotes": [
+        "Mandarin",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.82,
+      "sharedNotes": [
+        "Mandarin",
+        "Rose",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "initio-oud-for-happiness",
+      "score": 0.78,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "roja-danger-pour-homme",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "montale-black-aoud",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bulgarian Rose",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "narciso-rodriguez-for-her",
+      "score": 0.68,
+      "sharedNotes": [
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Vanilla"
+      ]
+    }
+  ],
+  "dior-tendre-poison": [
+    {
+      "id": "chanel-gabrielle",
+      "score": 0.92,
+      "sharedNotes": [
+        "tuberose",
+        "orange blossom",
+        "musk",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "gucci-bloom-profumo-di-fiori",
+      "score": 0.9,
+      "sharedNotes": [
+        "tuberose",
+        "orange blossom",
+        "sandalwood"
+      ]
+    },
+    {
+      "id": "nishane-hundred-silent-ways",
+      "score": 0.88,
+      "sharedNotes": [
+        "bergamot",
+        "tuberose",
+        "musk",
+        "sandwood"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison-eau-sensuelle",
+      "score": 0.85,
+      "sharedNotes": [
+        "orange blossom",
+        "tuberose",
+        "sandalwood",
+        "musk"
+      ]
+    },
+    {
+      "id": "creed-love-in-white",
+      "score": 0.83,
+      "sharedNotes": [
+        "bergamot",
+        "mandarin",
+        "orange blossom",
+        "musk",
+        "sandwood"
+      ]
+    },
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.8,
+      "sharedNotes": [
+        "freesia",
+        "heliotrope",
+        "musk",
+        "sandwood"
+      ]
+    },
+    {
+      "id": "gucci-bloom",
+      "score": 0.78,
+      "sharedNotes": [
+        "tuberose",
+        "orange blossom",
+        "sandalwood",
+        "musk"
+      ]
+    },
+    {
+      "id": "sospiro-erba-pura",
+      "score": 0.75,
+      "sharedNotes": [
+        "bergamot",
+        "mandarin",
+        "orange blossom",
+        "sandwood"
+      ]
+    }
+  ],
+  "dior-jadore-lor": [
+    {
+      "id": "chanel-coco",
+      "score": 0.92,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Amber",
+        "Labdanum",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.9,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Amber",
+        "Tonka Bean",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "gucci-rush",
+      "score": 0.88,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "chanel-coco-mademoiselle",
+      "score": 0.85,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "roja-danger-pour-homme",
+      "score": 0.83,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Vanilla",
+        "Amber",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "guerlain-jicky",
+      "score": 0.82,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Vanilla",
+        "Tonka Bean",
+        "Amber"
+      ]
+    },
+    {
+      "id": "paco-lady-million",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "serge-lutens-ambre-sultan",
+      "score": 0.78,
+      "sharedNotes": [
+        "Vanilla",
+        "Amber",
+        "Patchouli",
+        "Labdanum"
+      ]
+    }
+  ],
+  "dior-dune-pour-homme": [
+    {
+      "id": "zara-applejuice",
+      "score": 0.94,
+      "sharedNotes": [
+        "Rose",
+        "Sandalwood",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "creed-spice-and-wood",
+      "score": 0.9,
+      "sharedNotes": [
+        "Sandalwood",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "ysl-manifesto",
+      "score": 0.88,
+      "sharedNotes": [
+        "Sandalwood",
+        "Cedar",
+        "Tonka Bean",
+        "Rose"
+      ]
+    },
+    {
+      "id": "creed-original-vetiver",
+      "score": 0.86,
+      "sharedNotes": [
+        "Sandalwood",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "guerlain-homme",
+      "score": 0.84,
+      "sharedNotes": [
+        "Sandalwood",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "burberry-weekend-men",
+      "score": 0.82,
+      "sharedNotes": [
+        "Sage",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "ysl-y",
+      "score": 0.8,
+      "sharedNotes": [
+        "Sage",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "creed-viking",
+      "score": 0.78,
+      "sharedNotes": [
+        "Sage",
+        "Sandalwood",
+        "Tonka Bean"
+      ]
+    }
+  ],
+  "dior-oud-ispahan": [
+    {
+      "id": "dior-homme-parfum",
+      "score": 0.92,
+      "sharedNotes": [
+        "Rose",
+        "Sandalwood",
+        "Cedar",
+        "Agarwood"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.89,
+      "sharedNotes": [
+        "Labdanum",
+        "Sandalwood",
+        "Cedar",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "byredo-black-saffron",
+      "score": 0.87,
+      "sharedNotes": [
+        "Saffron",
+        "Cedar",
+        "Rose",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "score": 0.85,
+      "sharedNotes": [
+        "Saffron",
+        "Rose",
+        "Patchouli",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.83,
+      "sharedNotes": [
+        "Saffron",
+        "Patchouli",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-ambre-nuit",
+      "score": 0.8,
+      "sharedNotes": [
+        "Rose",
+        "Cedar",
+        "Sandalwood",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "creed-spice-and-wood",
+      "score": 0.78,
+      "sharedNotes": [
+        "Cedar",
+        "Sandalwood",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "acqua-di-parma-colonia",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Sandalwood",
+        "Cedar",
+        "Patchouli"
+      ]
+    }
+  ],
+  "dior-jadore-infinissime": [
+    {
+      "id": "nishane-hundred-silent-ways",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Tuberose",
+        "Jasmine Sambac",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "gucci-bloom-profumo-di-fiori",
+      "score": 0.88,
+      "sharedNotes": [
+        "Jasmine",
+        "Tuberose",
+        "Jasmine Sambac",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-gabrielle",
+      "score": 0.85,
+      "sharedNotes": [
+        "Jasmine",
+        "Ylang‑Ylang",
+        "Tuberose",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "givenchy-amarige",
+      "score": 0.82,
+      "sharedNotes": [
+        "Tuberose",
+        "Ylang‑Ylang",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ysl-manifesto",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Lily‑of‑the‑Valley",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-tendre-poison",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Tuberose",
+        "Ylang‑Ylang",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-jadore-in-joy",
+      "score": 0.75,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Ylang‑Ylang",
+        "Tuberose"
+      ]
+    },
+    {
+      "id": "bottega-veneta-eau-de-parfum",
+      "score": 0.72,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Jasmine Sambac",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "dior-jadore-in-joy": [
+    {
+      "id": "dior-jadore-infinissime",
+      "score": 0.92,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Ylang‑Ylang",
+        "Tuberose"
+      ]
+    },
+    {
+      "id": "givenchy-amarige",
+      "score": 0.88,
+      "sharedNotes": [
+        "Tuberose",
+        "Ylang‑Ylang",
+        "Peach"
+      ]
+    },
+    {
+      "id": "kilian-good-girl-gone-bad",
+      "score": 0.85,
+      "sharedNotes": [
+        "Neroli",
+        "Tuberose",
+        "Ylang‑Ylang",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "gucci-bloom",
+      "score": 0.83,
+      "sharedNotes": [
+        "Jasmine",
+        "Tuberose",
+        "Peach"
+      ]
+    },
+    {
+      "id": "guerlain-nahema",
+      "score": 0.8,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Ylang‑Ylang"
+      ]
+    },
+    {
+      "id": "chanel-gabrielle",
+      "score": 0.78,
+      "sharedNotes": [
+        "Jasmine",
+        "Tuberose",
+        "Ylang‑Ylang"
+      ]
+    },
+    {
+      "id": "tf-soleil-blanc",
+      "score": 0.76,
+      "sharedNotes": [
+        "Tuberose",
+        "Neroli",
+        "Ylang‑Ylang"
+      ]
+    },
+    {
+      "id": "gucci-bloom-profumo-di-fiori",
+      "score": 0.74,
+      "sharedNotes": [
+        "Jasmine",
+        "Tuberose",
+        "Peach"
+      ]
+    }
+  ],
+  "dior-les-creations-forever-and-ever": [
+    {
+      "id": "vr-flowerbomb",
+      "score": 0.9,
+      "sharedNotes": [
+        "Freesia",
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.85,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "chanel-chance-eau-tendre",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "byredo-mojave-ghost",
+      "score": 0.78,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "kilian-good-girl-gone-bad",
+      "score": 0.75,
+      "sharedNotes": [
+        "Jasmine",
+        "Amber"
+      ]
+    },
+    {
+      "id": "marc-jacobs-daisy",
+      "score": 0.73,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "banana-republic-wildbloom",
+      "score": 0.7,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    },
+    {
+      "id": "bath-body-works-japanese-cherry-blossom",
+      "score": 0.68,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose"
+      ]
+    }
+  ],
+  "ysl-paris": [
+    {
+      "id": "chanel-no-5",
+      "score": 0.92,
+      "sharedNotes": [
+        "Rose",
+        "Jasmine",
+        "Iris",
+        "Musk",
+        "Bergamot",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "hermes-caleche",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Iris",
+        "Oakmoss",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "dior-dune",
+      "score": 0.84,
+      "sharedNotes": [
+        "Rose",
+        "Lily",
+        "Ylang‑Ylang",
+        "Sandalwood",
+        "Oakmoss",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "lancome-magie-noire",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Iris",
+        "Rose",
+        "Ylang‑Ylang",
+        "Oakmoss",
+        "Musk"
+      ]
+    },
+    {
+      "id": "chanel-no-19",
+      "score": 0.77,
+      "sharedNotes": [
+        "Iris",
+        "Rose",
+        "Ylang‑Ylang",
+        "Musk",
+        "Oakmoss",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "diptyque-eau-rose",
+      "score": 0.74,
+      "sharedNotes": [
+        "Rose",
+        "Iris",
+        "Musk",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mfk-724",
+      "score": 0.71,
+      "sharedNotes": [
+        "Bergamot",
+        "Iris",
+        "Violet",
+        "Sandalwood",
+        "Musk"
+      ]
+    }
+  ],
+  "ysl-belle-dopium": [
+    {
+      "id": "paco-lady-million",
+      "score": 0.89,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Gardenia",
+        "Patchouli",
+        "Amber",
+        "Honey"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-woman",
+      "score": 0.85,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Amber",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-ambre-nuit",
+      "score": 0.8,
+      "sharedNotes": [
+        "Amber",
+        "Patchouli",
+        "Sandalwood",
+        "Rose"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.78,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Incense",
+        "Patchouli",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "mancera-red-tobacco",
+      "score": 0.73,
+      "sharedNotes": [
+        "Tobacco",
+        "Sandalwood",
+        "Patchouli",
+        "Jasmine"
+      ]
+    },
+    {
+      "id": "mancera-instant-crush",
+      "score": 0.7,
+      "sharedNotes": [
+        "Jasmine",
+        "Rose",
+        "Patchouli",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ck-obsession",
+      "score": 0.68,
+      "sharedNotes": [
+        "Peach",
+        "Jasmine",
+        "Sandalwood",
+        "Amber"
+      ]
+    },
+    {
+      "id": "frederic-malle-portrait-of-a-lady",
+      "score": 0.65,
+      "sharedNotes": [
+        "Incense",
+        "Patchouli",
+        "Sandalwood",
+        "Jasmine"
+      ]
+    }
+  ],
+  "ysl-opium-pour-homme": [
+    {
+      "id": "ysl-libre",
+      "score": 0.83,
+      "sharedNotes": [
+        "Black Currant",
+        "Vanilla",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "ysl-manifesto",
+      "score": 0.8,
+      "sharedNotes": [
+        "Black Currant",
+        "Vanilla",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "ysl-baby-doll",
+      "score": 0.78,
+      "sharedNotes": [
+        "Black Currant",
+        "Vanilla",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "ysl-tuxedo",
+      "score": 0.76,
+      "sharedNotes": [
+        "Black Currant",
+        "Pepper",
+        "Bourbon Vanilla",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "hermes-terre-dhermes",
+      "score": 0.71,
+      "sharedNotes": [
+        "Pepper",
+        "Cedar",
+        "Benzoin"
+      ]
+    },
+    {
+      "id": "hermes-eau-des-merveilles",
+      "score": 0.69,
+      "sharedNotes": [
+        "Pepper",
+        "Cedar",
+        "Amber"
+      ]
+    },
+    {
+      "id": "dior-fahrenheit-le-parfum",
+      "score": 0.68,
+      "sharedNotes": [
+        "Bourbon Vanilla",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "dior-dolce-vita",
+      "score": 0.65,
+      "sharedNotes": [
+        "Vanilla",
+        "Cedar"
+      ]
+    }
+  ],
+  "ysl-myslf": [
+    {
+      "id": "versace-dylan-blue",
+      "score": 0.93,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Orange Blossom",
+        "Ambroxan"
+      ]
+    },
+    {
+      "id": "givenchy-linterdit",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Orange Blossom",
+        "Patchouli",
+        "Ambroxan"
+      ]
+    },
+    {
+      "id": "sospiro-erba-pura",
+      "score": 0.87,
+      "sharedNotes": [
+        "Bergamot",
+        "Orange Blossom",
+        "Patchouli",
+        "Musk"
+      ]
+    },
+    {
+      "id": "tf-neroli-portofino",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Orange Blossom",
+        "Patchouli",
+        "Ambrette"
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "score": 0.83,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Ambroxan",
+        "Pepper"
+      ]
+    },
+    {
+      "id": "hermes-eau-dorange-verte",
+      "score": 0.8,
+      "sharedNotes": [
+        "Orange",
+        "Patchouli",
+        "Orange Blossom",
+        "Lemon"
+      ]
+    },
+    {
+      "id": "gucci-guilty-pour-homme",
+      "score": 0.78,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Patchouli",
+        "Neroli",
+        "Cedar"
+      ]
+    }
+  ],
+  "ysl-y-le-parfum": [
+    {
+      "id": "ysl-y",
+      "score": 0.95,
+      "sharedNotes": [
+        "Apple",
+        "Ginger",
+        "Sage",
+        "Geranium",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "ysl-y-edt",
+      "score": 0.92,
+      "sharedNotes": [
+        "Apple",
+        "Ginger",
+        "Aldehydes",
+        "Sage",
+        "Geranium",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "ysl-lhomme-ultime",
+      "score": 0.88,
+      "sharedNotes": [
+        "Ginger",
+        "Grapefruit",
+        "Sage",
+        "Geranium",
+        "Cedar",
+        "Tonka Bean"
+      ]
+    },
+    {
+      "id": "guerlain-homme",
+      "score": 0.84,
+      "sharedNotes": [
+        "Grapefruit",
+        "Ginger",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "creed-viking",
+      "score": 0.8,
+      "sharedNotes": [
+        "Sage",
+        "Lavender",
+        "Geranium",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "montblanc-legend",
+      "score": 0.78,
+      "sharedNotes": [
+        "Geranium",
+        "Tonka Bean",
+        "Cedar",
+        "Bergamot",
+        "Lavender"
+      ]
+    },
+    {
+      "id": "brut-classic",
+      "score": 0.75,
+      "sharedNotes": [
+        "Geranium",
+        "Cedar",
+        "Tonka Bean",
+        "Lavender",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "azzaro-wanted",
+      "score": 0.7,
+      "sharedNotes": [
+        "Ginger",
+        "Tonka Bean",
+        "Cedar"
+      ]
+    }
+  ],
+  "ysl-m7": [
+    {
+      "id": "lacoste-essential",
+      "score": 0.95,
+      "sharedNotes": [
+        "Bergamot",
+        "Rosemary",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "penhaligons-endymion",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "creed-bois-du-portugal",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "le-labo-vetiver-46",
+      "score": 0.8,
+      "sharedNotes": [
+        "Vetiver",
+        "Amber",
+        "Musk",
+        "Bergamot"
+      ]
+    },
+    {
+      "id": "dior-homme-sport",
+      "score": 0.75,
+      "sharedNotes": [
+        "Mandarin",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "zara-9-0-zara",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "zara-sunrise-on-the-red-sand-dunes",
+      "score": 0.65,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Amber",
+        "Musk"
+      ]
+    },
+    {
+      "id": "byredo-bal-dafrique",
+      "score": 0.6,
+      "sharedNotes": [
+        "Bergamot",
+        "Vetiver",
+        "Amber",
+        "Musk"
+      ]
+    }
+  ],
+  "ysl-y-edt": [
+    {
+      "id": "ysl-y-le-parfum",
+      "score": 0.92,
+      "sharedNotes": [
+        "Apple",
+        "Aldehydes",
+        "Ginger",
+        "Sage",
+        "Geranium",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ysl-y",
+      "score": 0.88,
+      "sharedNotes": [
+        "Apple",
+        "Bergamot",
+        "Ginger",
+        "Sage",
+        "Geranium",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "creed-himalaya",
+      "score": 0.83,
+      "sharedNotes": [
+        "Bergamot",
+        "Violet Leaf",
+        "Ambergris",
+        "Musk"
+      ]
+    },
+    {
+      "id": "le-labo-bergamote-22",
+      "score": 0.79,
+      "sharedNotes": [
+        "Bergamot",
+        "Cedar",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "gucci-memoire-dune-odeur",
+      "score": 0.77,
+      "sharedNotes": [
+        "Aldehydes",
+        "Sage",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "mugler-cologne",
+      "score": 0.74,
+      "sharedNotes": [
+        "Bergamot",
+        "Cedar",
+        "Musk"
+      ]
+    },
+    {
+      "id": "ck-one",
+      "score": 0.71,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Cedar",
+        "Musk",
+        "Amber"
+      ]
+    },
+    {
+      "id": "nautica-voyage",
+      "score": 0.68,
+      "sharedNotes": [
+        "Apple",
+        "Bergamot",
+        "Cedar",
+        "Musk"
+      ]
+    }
+  ],
+  "ysl-body-kouros": [
+    {
+      "id": "dolce-gabbana-light-blue-eau-intense-pour-homme",
+      "score": 0.92,
+      "sharedNotes": [
+        "Cedar",
+        "Clary Sage",
+        "Incense"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.88,
+      "sharedNotes": [
+        "Incense",
+        "Cedar",
+        "Benzoin",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "ysl-lhomme-ultime",
+      "score": 0.84,
+      "sharedNotes": [
+        "Clary Sage",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "tf-black-orchid",
+      "score": 0.8,
+      "sharedNotes": [
+        "Incense",
+        "Benzoin",
+        "Cedar"
+      ]
+    },
+    {
+      "id": "prada-amber-pour-homme",
+      "score": 0.78,
+      "sharedNotes": [
+        "Cedar",
+        "Benzoin",
+        "Amber"
+      ]
+    },
+    {
+      "id": "chanel-bois-des-iles",
+      "score": 0.75,
+      "sharedNotes": [
+        "Cedar",
+        "Benzoin"
+      ]
+    },
+    {
+      "id": "hermes-terre-dhermes",
+      "score": 0.72,
+      "sharedNotes": [
+        "Cedar",
+        "Benzoin",
+        "Incense"
+      ]
+    },
+    {
+      "id": "serge-lutens-fille-en-aiguilles",
+      "score": 0.7,
+      "sharedNotes": [
+        "Incense",
+        "Cedar",
+        "Benzoin"
+      ]
+    }
+  ],
+  "ysl-la-nuit-de-lhomme-le-parfum": [
+    {
+      "id": "dior-sauvage",
+      "score": 0.95,
+      "sharedNotes": [
+        "Bergamot",
+        "Pepper",
+        "Lavender",
+        "Labdanum",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "ysl-lhomme-libre",
+      "score": 0.85,
+      "sharedNotes": [
+        "Bergamot",
+        "Star Anise",
+        "Pepper",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-emblem",
+      "score": 0.8,
+      "sharedNotes": [
+        "Lavender",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-individuel",
+      "score": 0.78,
+      "sharedNotes": [
+        "Lavender",
+        "Vanilla",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.75,
+      "sharedNotes": [
+        "Labdanum",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "chanel-allure-homme",
+      "score": 0.72,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "creed-aventus",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Patchouli",
+        "Vanilla",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "ysl-la-nuit-de-lhomme",
+      "score": 0.68,
+      "sharedNotes": [
+        "Bergamot",
+        "Lavender",
+        "Vetiver"
+      ]
+    }
+  ],
+  "ysl-tuxedo": [
+    {
+      "id": "chanel-coco",
+      "score": 0.95,
+      "sharedNotes": [
+        "Bergamot",
+        "Coriander",
+        "Rose",
+        "Patchouli",
+        "Vanilla",
+        "Ambergris"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-intense",
+      "score": 0.9,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Patchouli",
+        "Ambergris",
+        "Black Pepper"
+      ]
+    },
+    {
+      "id": "armaf-club-de-nuit-woman",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Lily‑of‑the‑Valley",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "chanel-coco-noir",
+      "score": 0.86,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Patchouli",
+        "Vanilla",
+        "Ambergris",
+        "Black Pepper"
+      ]
+    },
+    {
+      "id": "dior-ambre-nuit",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Rose",
+        "Patchouli",
+        "Amber"
+      ]
+    },
+    {
+      "id": "dior-fahrenheit-le-parfum",
+      "score": 0.8,
+      "sharedNotes": [
+        "Violet Leaf",
+        "Coriander",
+        "Rose",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "tf-noir",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Black Pepper",
+        "Patchouli",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "versace-dylan-blue",
+      "score": 0.75,
+      "sharedNotes": [
+        "Violet Leaf",
+        "Bergamot",
+        "Patchouli",
+        "Black Pepper"
+      ]
+    }
+  ],
+  "ysl-manifesto-lelixir": [
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.93,
+      "sharedNotes": [
+        "Bergamot",
+        "Tuberose",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "mugler-aura",
+      "score": 0.9,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-manifesto",
+      "score": 0.88,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "paco-olympea",
+      "score": 0.85,
+      "sharedNotes": [
+        "Green Mandarin",
+        "Jasmine Sambac",
+        "Vanilla",
+        "Cashmeran"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison-eau-sensuelle",
+      "score": 0.83,
+      "sharedNotes": [
+        "Tuberose",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-le-parfum",
+      "score": 0.8,
+      "sharedNotes": [
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-tendre-poison",
+      "score": 0.78,
+      "sharedNotes": [
+        "Tuberose",
+        "Heliotrope",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "zara-cherry-smoothie",
+      "score": 0.75,
+      "sharedNotes": [
+        "Heliotrope",
+        "Vanilla",
+        "Cherry (sweet)"
+      ]
+    }
+  ],
+  "ysl-black-opium-nuit-blanche": [
+    {
+      "id": "ysl-black-opium",
+      "score": 0.95,
+      "sharedNotes": [
+        "Coffee",
+        "Vanilla",
+        "Orange Blossom",
+        "Caramel",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-le-parfum",
+      "score": 0.9,
+      "sharedNotes": [
+        "Coffee",
+        "Vanilla",
+        "Orange Blossom",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "xerjoff-erba-pura-alt",
+      "score": 0.88,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-addict",
+      "score": 0.85,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Caramel"
+      ]
+    },
+    {
+      "id": "lattafa-yara",
+      "score": 0.84,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Caramel"
+      ]
+    },
+    {
+      "id": "thierry-mugler-a-men",
+      "score": 0.82,
+      "sharedNotes": [
+        "Coffee",
+        "Caramel",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "pdm-valaya",
+      "score": 0.8,
+      "sharedNotes": [
+        "Peony",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "dior-hypnotic-poison-eau-sensuelle",
+      "score": 0.78,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "ysl-lhomme-libre": [
+    {
+      "id": "ysl-la-nuit-de-lhomme-le-parfum",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Anise",
+        "Nutmeg",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-legend-spirit",
+      "score": 0.84,
+      "sharedNotes": [
+        "Violet Leaf",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "lv-meteore",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper",
+        "Nutmeg",
+        "Patchouli",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "frederic-malle-geranium-pour-monsieur",
+      "score": 0.8,
+      "sharedNotes": [
+        "Nutmeg",
+        "Vetiver",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "chanel-allure-homme",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "mancera-cedrat-boise",
+      "score": 0.76,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Nutmeg",
+        "Vetiver"
+      ]
+    },
+    {
+      "id": "montblanc-emblem",
+      "score": 0.75,
+      "sharedNotes": [
+        "Cardamom",
+        "Vetiver"
+      ]
+    }
+  ],
+  "ysl-lhomme-ultime": [
+    {
+      "id": "ysl-y",
+      "score": 0.92,
+      "sharedNotes": [
+        "ginger",
+        "bergamot",
+        "sage",
+        "geranium",
+        "cedar",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "ysl-y-le-parfum",
+      "score": 0.89,
+      "sharedNotes": [
+        "ginger",
+        "bergamot",
+        "sage",
+        "geranium",
+        "cedar"
+      ]
+    },
+    {
+      "id": "dolce-gabbana-k",
+      "score": 0.84,
+      "sharedNotes": [
+        "cardamom",
+        "sage",
+        "geranium",
+        "cedar",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "ysl-lhomme",
+      "score": 0.82,
+      "sharedNotes": [
+        "bergamot",
+        "ginger",
+        "cedar",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "ysl-y-edt",
+      "score": 0.8,
+      "sharedNotes": [
+        "ginger",
+        "bergamot",
+        "sage",
+        "geranium",
+        "cedar",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "tf-noir",
+      "score": 0.78,
+      "sharedNotes": [
+        "bergamot",
+        "ginger",
+        "vetiver"
+      ]
+    },
+    {
+      "id": "zara-9-0-zara",
+      "score": 0.75,
+      "sharedNotes": [
+        "cardamom",
+        "bergamot",
+        "vetiver",
+        "cedar"
+      ]
+    },
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.73,
+      "sharedNotes": [
+        "bergamot",
+        "ginger",
+        "vetiver",
+        "cedar"
+      ]
+    }
+  ],
+  "ysl-baby-doll": [
+    {
+      "id": "lancome-tresor",
+      "score": 0.9,
+      "sharedNotes": [
+        "Pineapple",
+        "Rose",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "chanel-no-5",
+      "score": 0.88,
+      "sharedNotes": [
+        "Rose",
+        "Lily‑of‑the‑Valley",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "lv-apogee",
+      "score": 0.85,
+      "sharedNotes": [
+        "Lily‑of‑the‑Valley",
+        "Rose",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "zara-applejuice",
+      "score": 0.8,
+      "sharedNotes": [
+        "Apple",
+        "Orange",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "dior-addict-2",
+      "score": 0.78,
+      "sharedNotes": [
+        "Freesia",
+        "Lily‑of‑the‑Valley",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "serge-lutens-feminite-du-bois",
+      "score": 0.75,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Cedar",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "guerlain-nahema",
+      "score": 0.72,
+      "sharedNotes": [
+        "Rose",
+        "Vanilla",
+        "Sandalwood"
+      ]
+    }
+  ],
+  "ysl-black-opium-le-parfum": [
+    {
+      "id": "ysl-black-opium",
+      "score": 0.92,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine Sambac",
+        "Orange Blossom",
+        "Vanilla",
+        "Patchouli",
+        "Coffee"
+      ]
+    },
+    {
+      "id": "ysl-mon-paris",
+      "score": 0.88,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine Sambac",
+        "Orange Blossom",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "lancome-la-vie-est-belle",
+      "score": 0.86,
+      "sharedNotes": [
+        "Pear",
+        "Jasmine Sambac",
+        "Orange Blossom",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "paco-olympea",
+      "score": 0.84,
+      "sharedNotes": [
+        "Green Mandarin",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "ysl-black-opium-nuit-blanche",
+      "score": 0.83,
+      "sharedNotes": [
+        "Coffee",
+        "Orange Blossom",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "montale-intense-cafe",
+      "score": 0.81,
+      "sharedNotes": [
+        "Coffee",
+        "Vanilla",
+        "Patchouli"
+      ]
+    },
+    {
+      "id": "jpg-classique-essence-de-parfum",
+      "score": 0.79,
+      "sharedNotes": [
+        "Orange Blossom",
+        "Jasmine Sambac",
+        "Vanilla"
+      ]
+    },
+    {
+      "id": "jpg-ultra-male",
+      "score": 0.78,
+      "sharedNotes": [
+        "Mandarin",
+        "Vanilla",
+        "Patchouli"
+      ]
+    }
+  ],
+  "ysl-nu": [
+    {
+      "id": "chanel-bleu-de-chanel",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom (pink pepper/ginger)",
+        "Jasmine",
+        "Vetiver",
+        "Sandalwood",
+        "Musk",
+        "Incense"
+      ]
+    },
+    {
+      "id": "amouage-reflection-man",
+      "score": 0.89,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Sandalwood",
+        "Vetiver",
+        "Frankincense",
+        "Cardamom (spice)"
+      ]
+    },
+    {
+      "id": "amouage-reflection-woman",
+      "score": 0.87,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Orchid",
+        "Sandalwood",
+        "Vetiver",
+        "Musk",
+        "Frankincense"
+      ]
+    },
+    {
+      "id": "amouage-dia-man",
+      "score": 0.85,
+      "sharedNotes": [
+        "Cardamom",
+        "Cedar/Incense",
+        "Vetiver",
+        "Frankincense",
+        "Musk"
+      ]
+    },
+    {
+      "id": "rasasi-hawas-her",
+      "score": 0.82,
+      "sharedNotes": [
+        "Bergamot",
+        "Jasmine",
+        "Orchid",
+        "Sandalwood",
+        "Musk"
+      ]
+    },
+    {
+      "id": "loewe-001-man",
+      "score": 0.8,
+      "sharedNotes": [
+        "Bergamot",
+        "Cardamom",
+        "Musk",
+        "Vetiver",
+        "Sandalwood"
+      ]
+    },
+    {
+      "id": "tf-grey-vetiver",
+      "score": 0.77,
+      "sharedNotes": [
+        "Vetiver",
+        "Sandalwood",
+        "Musk",
+        "Nutmeg/Cardamom"
+      ]
+    },
+    {
+      "id": "dior-bois-dargent",
+      "score": 0.75,
+      "sharedNotes": [
+        "Incense",
+        "Sandalwood",
+        "Musk",
+        "Nutmeg"
+      ]
+    }
+  ],
+  "ysl-saharienne": [
+    {
+      "id": "creed-silver-mountain-water",
+      "score": 0.92,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Galbanum"
+      ]
+    },
+    {
+      "id": "lv-meteore",
+      "score": 0.89,
+      "sharedNotes": [
+        "Mandarin",
+        "Bergamot",
+        "Pink Pepper"
+      ]
+    },
+    {
+      "id": "zara-sunrise-on-the-red-sand-dunes",
+      "score": 0.86,
+      "sharedNotes": [
+        "Bergamot",
+        "Mandarin",
+        "Ginger"
+      ]
+    },
+    {
+      "id": "ysl-y-edt",
+      "score": 0.78,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon",
+        "Ginger"
+      ]
+    },
+    {
+      "id": "dior-sauvage",
+      "score": 0.74,
+      "sharedNotes": [
+        "Bergamot",
+        "Pink Pepper"
+      ]
+    },
+    {
+      "id": "dior-eau-sauvage",
+      "score": 0.7,
+      "sharedNotes": [
+        "Bergamot",
+        "Lemon"
+      ]
+    },
+    {
+      "id": "lv-imagination",
+      "score": 0.66,
+      "sharedNotes": [
+        "Bergamot",
+        "Ginger"
+      ]
+    }
+  ]
 }

@@ -14,7 +14,7 @@ export default function MaskReveal({
   className?: string;
 }) {
   return (
-    <span className="block overflow-hidden">
+    <span className="-mb-[0.18em] block overflow-hidden pb-[0.18em]">
       <motion.span
         initial={{ y: "110%", opacity: 0, filter: "blur(10px)" }}
         animate={{ y: "0%", opacity: 1, filter: "blur(0px)" }}

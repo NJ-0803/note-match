@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
+import MaskReveal from "@/components/motion/MaskReveal";
 
 const LINKS = [
   { href: "/", label: "Discover" },
@@ -77,22 +78,25 @@ export default function Navigation() {
 
             <nav className="flex flex-1 flex-col items-start justify-center gap-2 px-6 sm:px-16">
               {LINKS.map((link, i) => (
-                <motion.div
+                <Link
                   key={link.href}
-                  initial={{ opacity: 0, y: 16 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.08 + i * 0.06 }}
+                  href={link.href}
+                  data-cursor="Open"
+                  className="group flex items-baseline gap-4 font-display text-4xl tracking-tight text-foreground/70 transition-colors hover:text-foreground sm:text-6xl"
                 >
-                  <Link
-                    href={link.href}
-                    className="group flex items-baseline gap-4 font-display text-4xl tracking-tight text-foreground/70 transition-colors hover:text-foreground sm:text-6xl"
+                  <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{ duration: 0.3, delay: 0.1 + i * 0.06 }}
+                    className="font-mono text-sm text-accent"
                   >
-                    <span className="font-mono text-sm text-accent">
-                      {String(i + 1).padStart(2, "0")}
-                    </span>
-                    {link.label}
-                  </Link>
-                </motion.div>
+                    {String(i + 1).padStart(2, "0")}
+                  </motion.span>
+                  <span className="relative inline-block">
+                    <MaskReveal text={link.label} delay={0.14 + i * 0.06} />
+                    <span className="absolute -bottom-1 left-0 h-px w-0 bg-accent transition-all duration-300 ease-out group-hover:w-full" />
+                  </span>
+                </Link>
               ))}
             </nav>
           </motion.div>

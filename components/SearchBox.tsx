@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useRef, useState } from "react";
+import { useId, useMemo, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence, motion } from "motion/react";
 import { createSearchIndex, searchPerfumes } from "@/lib/search";
@@ -11,10 +11,17 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
   const [query, setQuery] = useState("");
   const [open, setOpen] = useState(false);
   const [focused, setFocused] = useState(false);
+  const [activeIndex, setActiveIndex] = useState(-1);
   const router = useRouter();
   const index = useMemo(() => createSearchIndex(perfumes), [perfumes]);
   const results = useMemo(() => searchPerfumes(index, query), [index, query]);
   const containerRef = useRef<HTMLDivElement>(null);
+  const resultListId = useId();
+
+  function chooseResult(resultIndex: number) {
+    const perfume = results[resultIndex];
+    if (perfume) router.push(`/perfume/${perfume.id}`);
+  }
 
   return (
     <div className="relative" ref={containerRef}>
@@ -33,6 +40,7 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
           onChange={(e) => {
             setQuery(e.target.value);
             setOpen(true);
+            setActiveIndex(-1);
           }}
           onFocus={() => {
             setOpen(true);
@@ -42,7 +50,33 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
             setTimeout(() => setOpen(false), 150);
             setFocused(false);
           }}
+          onKeyDown={(e) => {
+            if (e.key === "ArrowDown" && results.length > 0) {
+              e.preventDefault();
+              setOpen(true);
+              setActiveIndex((current) => (current + 1) % results.length);
+            }
+            if (e.key === "ArrowUp" && results.length > 0) {
+              e.preventDefault();
+              setOpen(true);
+              setActiveIndex((current) => (current <= 0 ? results.length - 1 : current - 1));
+            }
+            if (e.key === "Enter" && activeIndex >= 0) {
+              e.preventDefault();
+              chooseResult(activeIndex);
+            }
+            if (e.key === "Escape") {
+              setOpen(false);
+              setActiveIndex(-1);
+              e.currentTarget.blur();
+            }
+          }}
           placeholder="Search fragrance..."
+          aria-activedescendant={activeIndex >= 0 ? `${resultListId}-${activeIndex}` : undefined}
+          aria-autocomplete="list"
+          aria-controls={resultListId}
+          aria-expanded={open && results.length > 0}
+          role="combobox"
           className="w-full border-0 bg-transparent text-left text-base text-foreground outline-none placeholder:text-muted-foreground/70 sm:text-lg"
         />
       </GlowPill>
@@ -54,7 +88,9 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -8 }}
             transition={{ duration: 0.25, ease: "easeOut" }}
-            className="absolute inset-x-0 z-20 mt-3 overflow-hidden"
+            id={resultListId}
+            role="listbox"
+            className="absolute inset-x-0 z-20 mt-3 overflow-hidden rounded-[1.35rem] border border-border/80 bg-[#11100f]/92 p-2 shadow-[0_24px_70px_rgba(0,0,0,0.38)] backdrop-blur-xl"
           >
             {results.map((p, i) => (
               <motion.li
@@ -65,8 +101,16 @@ export default function SearchBox({ perfumes }: { perfumes: Perfume[] }) {
               >
                 <button
                   type="button"
-                  onMouseDown={() => router.push(`/perfume/${p.id}`)}
-                  className="flex w-full flex-col items-center px-4 py-2.5 text-center transition-colors hover:text-accent"
+                  id={`${resultListId}-${i}`}
+                  onMouseDown={(e) => {
+                    e.preventDefault();
+                    chooseResult(i);
+                  }}
+                  role="option"
+                  aria-selected={activeIndex === i}
+                  className={`flex w-full flex-col items-center rounded-xl px-4 py-2.5 text-center transition-colors hover:bg-accent/10 hover:text-accent ${
+                    activeIndex === i ? "bg-accent/10 text-accent" : ""
+                  }`}
                 >
                   <span className="text-[10px] uppercase tracking-wide text-muted-foreground">{p.brand}</span>
                   <span className="text-sm font-medium text-foreground">{p.name}</span>

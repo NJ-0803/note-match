@@ -6,8 +6,6 @@ import { usePointerParallax } from "@/lib/usePointerParallax";
 import FloatingIngredient, { type IngredientConfig } from "./FloatingIngredient";
 import ElectricFlow from "./ElectricFlow";
 import MaskReveal from "@/components/motion/MaskReveal";
-import VariableProximity from "@/components/motion/VariableProximity";
-import DecryptedText from "@/components/motion/DecryptedText";
 
 const INGREDIENTS: IngredientConfig[] = [
   {
@@ -127,34 +125,30 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
 
       {!prefersReducedMotion && <ElectricFlow pointerX={x} pointerY={y} />}
 
-      {/* Eyebrow */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.15 }}
         className="relative z-20 flex justify-center pt-10 sm:pt-12"
       >
-        <p className="text-xs uppercase tracking-[0.3em] text-accent">
-          <VariableProximity text="N° 001 — Olfactory Discovery System" />
-        </p>
+        <p className="text-xs uppercase tracking-[0.3em] text-accent">A better way to find a fragrance</p>
       </motion.div>
 
-      {/* Editorial headline, asymmetric placement */}
-      <div className="hero-heading-block relative z-20 mx-auto flex w-full max-w-6xl flex-col justify-between px-6 py-6 sm:px-10">
-        <h1 className="font-display text-[13vw] font-medium leading-[0.88] tracking-tight text-foreground sm:text-[6.4vw]">
-          <MaskReveal text="Own a scent" delay={0.8} />
-          <MaskReveal text="you love?" delay={0.92} className="text-foreground/80" />
+      <div className="hero-heading-block relative z-20 mx-auto flex w-full max-w-6xl flex-col items-center px-6 pb-6 pt-[clamp(4rem,10vh,8rem)] text-center sm:px-10">
+        <h1 className="font-display text-[clamp(4.25rem,10.5vw,9.5rem)] font-medium leading-[0.82] tracking-[-0.065em] text-foreground">
+          <MaskReveal text="Find the scent" delay={0.8} />
+          <MaskReveal text="that follows you." delay={0.94} className="text-foreground/72" />
         </h1>
-
-        <h2 className="self-end text-right font-display text-[5.5vw] font-medium leading-[0.95] tracking-tight text-foreground/70 sm:text-[4vw]">
-          <MaskReveal text="Find what" delay={1.04} />
-          <MaskReveal text="to wear next." delay={1.14} />
-        </h2>
+        <motion.p
+          initial={{ opacity: 0, y: 12 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 1.14 }}
+          className="mt-8 max-w-xl text-base leading-7 text-foreground/60 sm:text-lg"
+        >
+          Start with the perfume that already feels like you, or describe the atmosphere you want to leave behind.
+        </motion.p>
       </div>
 
-      {/* Search, appears last - always flows in normal document flow
-          right after the headline (see .hero-search-anchor in
-          globals.css), so it can never overlay it at any viewport size. */}
       <motion.div
         initial={{ opacity: 0, y: 24, filter: "blur(6px)" }}
         animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -171,9 +165,7 @@ export default function FloatingHero({ children }: { children: React.ReactNode }
         transition={{ duration: 0.6, delay: 1.6 }}
         className="pointer-events-none absolute inset-x-0 bottom-6 z-20 flex flex-col items-center gap-2"
       >
-        <p className="text-[10px] uppercase tracking-[0.35em] text-muted-foreground">
-          01 / <DecryptedText text="DISCOVER" delay={1600} speed={28} />
-        </p>
+        <p className="text-[10px] uppercase tracking-[0.35em] text-muted-foreground">Follow the notes</p>
         <div className="relative h-px w-14 overflow-hidden bg-foreground/15">
           <motion.div
             animate={{ x: ["-100%", "100%"] }}

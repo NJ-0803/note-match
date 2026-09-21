@@ -21,7 +21,7 @@ export default function ModeSwitchSearch({ perfumes }: { perfumes: Perfume[] }) 
 
   return (
     <div>
-      <div className="mb-8 flex justify-center gap-3 font-mono text-sm uppercase tracking-[0.2em] sm:text-base">
+      <div aria-label="Search mode" className="mb-8 flex justify-center gap-3 font-mono text-sm uppercase tracking-[0.2em] sm:text-base" role="tablist">
         {MODES.map((m) => {
           const active = mode === m.id;
           return (
@@ -30,6 +30,11 @@ export default function ModeSwitchSearch({ perfumes }: { perfumes: Perfume[] }) 
               type="button"
               data-cursor="Enter"
               onClick={() => setMode(m.id)}
+              aria-controls={`search-panel-${m.id}`}
+              aria-selected={active}
+              id={`search-tab-${m.id}`}
+              role="tab"
+              tabIndex={active ? 0 : -1}
               style={active ? { boxShadow: "0 0 18px 1px color-mix(in srgb, var(--accent) 55%, transparent)" } : undefined}
               className={`relative overflow-hidden rounded-full border px-5 py-2.5 transition-colors duration-300 ${
                 active
@@ -52,6 +57,9 @@ export default function ModeSwitchSearch({ perfumes }: { perfumes: Perfume[] }) 
       <AnimatePresence mode="wait">
         <motion.div
           key={mode}
+          aria-labelledby={`search-tab-${mode}`}
+          id={`search-panel-${mode}`}
+          role="tabpanel"
           initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           exit={{ opacity: 0, y: -10, filter: "blur(4px)" }}

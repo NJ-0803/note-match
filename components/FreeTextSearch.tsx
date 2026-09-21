@@ -6,6 +6,7 @@ import type { Perfume } from "@/types/perfume";
 import PerfumeCard from "./PerfumeCard";
 import MagneticButton from "./motion/MagneticButton";
 import GlowPill from "./motion/GlowPill";
+import ThinkingOrb from "./motion/ThinkingOrb";
 
 interface ApiMatch {
   id: string;
@@ -70,8 +71,18 @@ export default function FreeTextSearch({ perfumes }: { perfumes: Perfume[] }) {
           disabled={loading}
           className="rounded-full border border-border px-6 py-2 text-xs uppercase tracking-[0.25em] text-foreground transition-colors hover:border-accent hover:text-accent disabled:opacity-50"
         >
-          {loading ? "Thinking…" : "Find"}
+          {loading ? (
+            <span className="flex items-center gap-2.5">
+              <ThinkingOrb size={20} label="Matching your scent description" />
+              Matching notes
+            </span>
+          ) : (
+            "Find"
+          )}
         </MagneticButton>
+        <p aria-live="polite" className="sr-only">
+          {loading ? "Matching your scent description" : ""}
+        </p>
       </form>
 
       {error && <p className="mt-3 text-center text-sm text-red-400">{error}</p>}
